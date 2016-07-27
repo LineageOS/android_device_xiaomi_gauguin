@@ -444,4 +444,7 @@
                 <string ...>M -5,0 L -5,10 L 5,10 L 5,0 Z @dp</string>
          @see https://www.w3.org/TR/SVG/paths.html#PathData -->
     <string name="config_mainBuiltInDisplayCutout">M 0,0 H -32 V 91 H 32 V 0 H 0 Z</string>
+
+    <!-- If this is true, device supports Sustained Performance Mode. -->
+    <bool name="config_sustainedPerformanceModeSupported">true</bool>
 </resources>
