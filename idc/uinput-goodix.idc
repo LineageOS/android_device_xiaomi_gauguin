@@ -8,7 +8,8 @@
 # as published by the Free Software Foundation.
 #
 
-#key  304    DPAD_CENTER  VIRTUAL
-#key  102   HOME         VIRTUAL
-#key  108   SYSTEM_NAVIGATION_DOWN
-#key  103   SYSTEM_NAVIGATION_DOWN
+device.internal = 1
+
+keyboard.layout = uinput-goodix
+keyboard.builtIn = 1
+keyboard.orientationAware = 1
