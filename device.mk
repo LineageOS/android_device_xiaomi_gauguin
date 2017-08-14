@@ -222,6 +222,11 @@ PRODUCT_PACKAGES += \
     libhwbinder \
     libhwbinder.vendor
 
+# IDC
+PRODUCT_COPY_FILES += \
+    $(DEVICE_PATH)/idc/uinput-goodix.idc:system/usr/idc/uinput-goodix.idc \
+    $(DEVICE_PATH)/idc/uinput-fpc.idc:system/usr/idc/uinput-fpc.idc
+
 # Init scripts
 PRODUCT_PACKAGES += \
     fstab.default \
