@@ -523,4 +523,7 @@
     <!-- Whether the device enable the non-standalone (NSA) mode of 5G NR.-->
     <bool name="config_telephony5gNonStandalone">true</bool>
 
+    <!-- Whether the new Auto Selection Network UI should be shown -->
+    <bool name="config_enableNewAutoSelectNetworkUI">true</bool>
+
 </resources>
