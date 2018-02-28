@@ -193,6 +193,7 @@ persist.vendor.radio.redir_party_num=1
 persist.vendor.radio.sib16_support=1
 ro.telephony.default_cdma_sub=0
 ro.vendor.radio.5g=3
+vendor.rild.libpath=/vendor/lib64/libril-qc-hal-qmi.so
 telephony.lteOnCdmaDevice=1
 
 # Sensor

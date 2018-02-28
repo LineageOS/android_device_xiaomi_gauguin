@@ -48,7 +48,6 @@ ro.nfc.port=I2C
 # RIL
 persist.vendor.radio.report_codec=1
 ril.subscription.types=NV,RUIM
-rild.libpath=/vendor/lib64/libril-qc-hal-qmi.so
 ro.telephony.default_network=33,33
 ro.vendor.radio.features_common=3
 
