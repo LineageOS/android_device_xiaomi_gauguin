@@ -7,6 +7,7 @@
 cc_library_static {
     name: "libinit_gauguin",
     srcs: ["init_gauguin.cpp"],
+    shared_libs: ["libbase"],
     recovery_available: true,
     include_dirs: [
         "system/core/base/include",
