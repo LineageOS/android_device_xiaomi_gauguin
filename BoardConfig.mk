@@ -44,6 +44,9 @@ TARGET_KERNEL_CONFIG := vendor/gauguin_user_defconfig
 # Platform
 TARGET_BOARD_PLATFORM := lito
 
+# Bluetooth
+BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(DEVICE_PATH)/bluetooth/include
+
 # Init
 TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_gauguin
 TARGET_RECOVERY_DEVICE_MODULES := libinit_gauguin
