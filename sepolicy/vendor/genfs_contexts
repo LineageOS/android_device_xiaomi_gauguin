@@ -14,8 +14,12 @@ genfscon sysfs /devices/platform/soc/soc:maxim_ds28e16/power_supply/batt_verify 
 # kmsg
 genfscon proc /last_kmsg                                                        u:object_r:proc_last_kmsg:s0
 
+# MM
+genfscon proc /sys/vm/swappiness		      u:object_r:proc_swappiness:s0
+
 # RTC
 genfscon sysfs /devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-06/c440000.qcom,spmi:qcom,pmk8350@6:rtc@6100/rtc              u:object_r:sysfs_rtc:s0
+
 # Touchpanel
 genfscon sysfs /touchpanel                                                      u:object_r:sysfs_touchpanel:s0
 
