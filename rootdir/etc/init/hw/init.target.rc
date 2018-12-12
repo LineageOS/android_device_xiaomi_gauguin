@@ -33,7 +33,8 @@ import /vendor/etc/init/hw/init.gauguin.fingerprint.rc
 import /vendor/etc/init/hw/init.gauguin.nfc.rc
 
 on early-init
-    write /proc/sys/kernel/sched_boost 1
+    # Disable EAS
+    write /sys/kernel/debug/sched_features NO_ENERGY_AWARE
 
 on init
     #Moving to init as this is needed for qseecomd
@@ -91,7 +92,13 @@ on charger
     setprop vendor.usb.controller a600000.dwc3
     setprop sys.usb.configfs 1
 
+    # Enable EAS
+    write /sys/kernel/debug/sched_features ENERGY_AWARE
+
 on property:sys.boot_completed=1
+    # Enable EAS
+    write /sys/kernel/debug/sched_features ENERGY_AWARE
+
     # Enable ZRAM on boot_complete
     swapon_all /vendor/etc/fstab.zram
     write /proc/sys/vm/swappiness 100

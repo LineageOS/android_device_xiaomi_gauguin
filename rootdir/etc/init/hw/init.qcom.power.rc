@@ -97,9 +97,6 @@ on property:sys.boot_completed=1
     write /dev/cpuset/background/cpus 0-5
     write /dev/cpuset/system-background/cpus 0-5
 
-    # Turn off scheduler boost at the end
-    write /proc/sys/kernel/sched_boost 0
-
     # Turn off sleep modes
     write /sys/module/lpm_levels/parameters/sleep_disabled 0
 
