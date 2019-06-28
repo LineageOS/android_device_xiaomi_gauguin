@@ -43,6 +43,16 @@ on init
     start vendor.qseecomd
     start keymaster-4-0
 
+    # bring back all cores
+    write /sys/devices/system/cpu/cpu0/online 1
+    write /sys/devices/system/cpu/cpu1/online 1
+    write /sys/devices/system/cpu/cpu2/online 1
+    write /sys/devices/system/cpu/cpu3/online 1
+    write /sys/devices/system/cpu/cpu4/online 1
+    write /sys/devices/system/cpu/cpu5/online 1
+    write /sys/devices/system/cpu/cpu6/online 1
+    write /sys/devices/system/cpu/cpu7/online 1
+
     # ZRAM setup
     write /sys/block/zram0/comp_algorithm lz4
     write /proc/sys/vm/page-cluster 0
@@ -87,17 +97,23 @@ on boot && property:persist.vendor.usb.controller.default=*
 on property:vendor.usb.controller=*
     setprop sys.usb.controller ${vendor.usb.controller}
 
-on charger
+on property:init.svc.vendor.charger=running
     start vendor.power_off_alarm
+
     setprop vendor.usb.controller a600000.dwc3
     setprop sys.usb.configfs 1
+    setprop vendor.setup.power 1
 
-    # Enable EAS
-    write /sys/kernel/debug/sched_features ENERGY_AWARE
+    # keep one LITTLE and one big
+    write /sys/devices/system/cpu/cpu1/online 0
+    write /sys/devices/system/cpu/cpu2/online 0
+    write /sys/devices/system/cpu/cpu3/online 0
+    write /sys/devices/system/cpu/cpu4/online 0
+    write /sys/devices/system/cpu/cpu5/online 0
+    write /sys/devices/system/cpu/cpu7/online 0
 
 on property:sys.boot_completed=1
-    # Enable EAS
-    write /sys/kernel/debug/sched_features ENERGY_AWARE
+    setprop vendor.setup.power 1
 
     # Enable ZRAM on boot_complete
     swapon_all /vendor/etc/fstab.zram
