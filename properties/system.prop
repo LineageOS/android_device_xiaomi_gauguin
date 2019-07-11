@@ -57,10 +57,6 @@ persist.data.df.dev_name=rmnet_usb0
 persist.data.wda.enable=true
 persist.rmnet.data.enable=true
 
-# SSR
-persist.vendor.ssr.enable_ramdumps=1
-persist.vendor.ssr.restart_level=ALL_ENABLE
-
 # Time
 persist.timed.enable=true
 
