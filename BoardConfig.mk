@@ -44,6 +44,10 @@ TARGET_KERNEL_CONFIG := vendor/gauguin_user_defconfig
 # Platform
 TARGET_BOARD_PLATFORM := lito
 
+# Init
+TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_gauguin
+TARGET_RECOVERY_DEVICE_MODULES := libinit_gauguin
+
 # Metadata
 BOARD_USES_METADATA_PARTITION := true
 
