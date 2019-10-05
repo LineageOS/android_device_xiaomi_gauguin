@@ -285,11 +285,11 @@
       "ResetOnInit": true
     },
     {
-      "Name": "SchedFeatures",
-      "Path": "/sys/kernel/debug/sched_features",
+      "Name": "EnergyAware",
+      "Path": "/proc/sys/kernel/sched_energy_aware",
       "Values": [
-        "NO_ENERGY_AWARE",
-        "ENERGY_AWARE"
+        "0",
+        "1"
       ],
       "ResetOnInit": true
     },
@@ -426,9 +426,9 @@
     },
     {
       "PowerHint": "LAUNCH",
-      "Node": "SchedFeatures",
+      "Node": "EnergyAware",
       "Duration": 5000,
-      "Value": "NO_ENERGY_AWARE"
+      "Value": "0"
     },
     {
       "PowerHint": "LAUNCH",
