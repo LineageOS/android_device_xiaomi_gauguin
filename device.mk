@@ -17,6 +17,9 @@ PRODUCT_SOONG_NAMESPACES += \
 # Shipping API level
 PRODUCT_SHIPPING_API_LEVEL := 29
 
+# Partitions
+PRODUCT_USE_DYNAMIC_PARTITIONS := true
+
 # HIDL
 PRODUCT_PACKAGES += \
     android.hidl.base@1.0 \
