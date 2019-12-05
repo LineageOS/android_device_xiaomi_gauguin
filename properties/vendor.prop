@@ -223,6 +223,9 @@ ro.soc.model=SM7225
 # System properties
 ro.product.property_source_order=odm,vendor,product,system_ext,system
 
+# Verity
+ro.apk_verity.mode=2
+
 # WiFi
 wifi.aware.interface=wifi-aware0
 
