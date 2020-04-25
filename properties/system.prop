@@ -1,6 +1,9 @@
 # Charger
 ro.charger.enable_suspend=1
 
+# Dalvik
+dalvik.vm.dex2oat64.enabled=true
+
 # Display
 debug.sf.enable_hwc_vds=1
 qemu.sf.lcd_density=440
