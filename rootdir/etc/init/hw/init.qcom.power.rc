@@ -81,45 +81,6 @@ on property:sys.boot_completed=1
     write /sys/devices/platform/soc/soc:qcom,npu-npu-llcc-bw/devfreq/soc:qcom,npu-npu-llcc-bw/bw_hwmon/up_scale 250
     write /sys/devices/virtual/npu/msm_npu/pwr 0
 
-    # Enable mem_latency governor for L3, LLCC, and DDR scaling
-    write /sys/devices/platform/soc/soc:qcom,cpu0-cpu-llcc-lat/devfreq/soc:qcom,cpu0-cpu-llcc-lat/governor mem_latency
-    write /sys/devices/platform/soc/soc:qcom,cpu0-cpu-llcc-lat/devfreq/soc:qcom,cpu0-cpu-llcc-lat/polling_interval 8
-    write /sys/devices/platform/soc/soc:qcom,cpu0-cpu-llcc-lat/devfreq/soc:qcom,cpu0-cpu-llcc-lat/mem_latency/ratio_ceil 400
-
-    write /sys/devices/platform/soc/soc:qcom,cpu0-llcc-ddr-lat/devfreq/soc:qcom,cpu0-llcc-ddr-lat/governor mem_latency
-    write /sys/devices/platform/soc/soc:qcom,cpu0-llcc-ddr-lat/devfreq/soc:qcom,cpu0-llcc-ddr-lat/polling_interval 8
-    write /sys/devices/platform/soc/soc:qcom,cpu0-llcc-ddr-lat/devfreq/soc:qcom,cpu0-llcc-ddr-lat/mem_latency/ratio_ceil 400
-
-    write /sys/devices/platform/soc/soc:qcom,cpu6-cpu-llcc-lat/devfreq/soc:qcom,cpu6-cpu-llcc-lat/governor mem_latency
-    write /sys/devices/platform/soc/soc:qcom,cpu6-cpu-llcc-lat/devfreq/soc:qcom,cpu6-cpu-llcc-lat/polling_interval 8
-    write /sys/devices/platform/soc/soc:qcom,cpu6-cpu-llcc-lat/devfreq/soc:qcom,cpu6-cpu-llcc-lat/mem_latency/ratio_ceil 400
-
-    write /sys/devices/platform/soc/18321000.qcom,devfreq-l3/18321000.qcom,devfreq-l3:qcom,cpu0-cpu-l3-lat/devfreq/18321000.qcom,devfreq-l3:qcom,cpu0-cpu-l3-lat/governor mem_latency
-    write /sys/devices/platform/soc/18321000.qcom,devfreq-l3/18321000.qcom,devfreq-l3:qcom,cpu0-cpu-l3-lat/devfreq/18321000.qcom,devfreq-l3:qcom,cpu0-cpu-l3-lat/polling_interval 8
-    write /sys/devices/platform/soc/18321000.qcom,devfreq-l3/18321000.qcom,devfreq-l3:qcom,cpu0-cpu-l3-lat/devfreq/18321000.qcom,devfreq-l3:qcom,cpu0-cpu-l3-lat/mem_latency/ratio_ceil 400
-
-    write /sys/devices/platform/soc/18321000.qcom,devfreq-l3/18321000.qcom,devfreq-l3:qcom,cpu6-cpu-l3-lat/devfreq/18321000.qcom,devfreq-l3:qcom,cpu6-cpu-l3-lat/governor mem_latency
-    write /sys/devices/platform/soc/18321000.qcom,devfreq-l3/18321000.qcom,devfreq-l3:qcom,cpu6-cpu-l3-lat/devfreq/18321000.qcom,devfreq-l3:qcom,cpu6-cpu-l3-lat/polling_interval 10
-    #Gold L3 ratio ceil
-    write /sys/devices/platform/soc/18321000.qcom,devfreq-l3/18321000.qcom,devfreq-l3:qcom,cpu6-cpu-l3-lat/devfreq/18321000.qcom,devfreq-l3:qcom,cpu6-cpu-l3-lat/mem_latency/ratio_ceil 4000
-
-    write /sys/devices/platform/soc/soc:qcom,cpu6-llcc-ddr-lat/devfreq/soc:qcom,cpu6-llcc-ddr-lat/governor mem_latency
-    write /sys/devices/platform/soc/soc:qcom,cpu6-llcc-ddr-lat/devfreq/soc:qcom,cpu6-llcc-ddr-lat/polling_interval 10
-    write /sys/devices/platform/soc/soc:qcom,cpu6-llcc-ddr-lat/devfreq/soc:qcom,cpu6-llcc-ddr-lat/mem_latency/ratio_ceil 400
-
-    #Enable compute governor for gold latfloor
-    write /sys/devices/platform/soc/soc:qcom,cpu0-cpu-ddr-latfloor/devfreq/soc:qcom,cpu0-cpu-ddr-latfloor/governor compute
-    write /sys/devices/platform/soc/soc:qcom,cpu0-cpu-ddr-latfloor/devfreq/soc:qcom,cpu0-cpu-ddr-latfloor/polling_interval 8
-
-    write /sys/devices/platform/soc/soc:qcom,cpu6-cpu-ddr-latfloor/devfreq/soc:qcom,cpu6-cpu-ddr-latfloor/governor compute
-    write /sys/devices/platform/soc/soc:qcom,cpu6-cpu-ddr-latfloor/devfreq/soc:qcom,cpu6-cpu-ddr-latfloor/polling_interval 8
-
-    # Enable cdspl3 governor for L3 cdsp nodes
-    write /sys/devices/platform/soc/18321000.qcom,devfreq-l3/18321000.qcom,devfreq-l3:qcom,cdsp-cdsp-l3-lat/devfreq/18321000.qcom,devfreq-l3:qcom,cdsp-cdsp-l3-lat/governor cdspl3
-
-    write /sys/devices/platform/soc/18321000.qcom,devfreq-l3/18321000.qcom,devfreq-l3:qcom,cpu6-cpu-l3-lat/devfreq/18321000.qcom,devfreq-l3:qcom,cpu6-cpu-l3-lat/wb_filter_ratio 25000
-    write /sys/devices/platform/soc/18321000.qcom,devfreq-l3/18321000.qcom,devfreq-l3:qcom,cpu6-cpu-l3-lat/devfreq/18321000.qcom,devfreq-l3:qcom,cpu6-cpu-l3-lat/wb_pct_thres 60
-
     # Configure governor settings for big.LITTLE cluster
     write /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor schedutil
     write /sys/devices/system/cpu/cpu6/cpufreq/scaling_governor schedutil
@@ -144,3 +105,12 @@ on property:sys.boot_completed=1
 
     # Enable PowerHAL hint processing
     setprop vendor.powerhal.init 1
+
+    start dcvs-sh
+
+service dcvs-sh /vendor/bin/init.qti.dcvs.sh
+    class late_start
+    user root
+    group root system
+    disabled
+    oneshot
