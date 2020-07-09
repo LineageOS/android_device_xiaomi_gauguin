@@ -39,9 +39,6 @@ media.stagefright.enable-scan=true
 media.stagefright.thumbnail.prefer_hw_codecs=true
 ro.media.recorder-max-base-layer-fps=60
 
-# NFC
-ro.nfc.port=I2C
-
 # RIL
 persist.vendor.radio.report_codec=1
 ril.subscription.types=NV,RUIM
