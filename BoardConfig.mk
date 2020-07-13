@@ -58,7 +58,6 @@ TARGET_KERNEL_CONFIG := gauguin_defconfig
 
 # Platform
 TARGET_BOARD_PLATFORM := lito
-BOARD_VENDOR := xiaomi
 
 # Audio
 AUDIO_FEATURE_ENABLED_EXTENDED_COMPRESS_FORMAT := true
