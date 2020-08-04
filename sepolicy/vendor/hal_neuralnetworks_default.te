@@ -1,1 +1,4 @@
 get_prop(vendor_hal_neuralnetworks_default, vendor_adsprpc_prop)
+
+# b/159570217 suppress warning related to zeroth.debuglog.logmask
+dontaudit vendor_hal_neuralnetworks_default default_prop:file { open read };
