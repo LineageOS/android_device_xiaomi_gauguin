@@ -102,6 +102,10 @@ on charger
     setprop vendor.usb.controller a600000.dwc3
     setprop sys.usb.configfs 1
 
+on property:sys.boot_completed=1
+    # Enable ZRAM on boot_complete
+    swapon_all /vendor/etc/fstab.zram
+
 #pd-mapper
 service vendor.pd_mapper /vendor/bin/pd-mapper
     class core
