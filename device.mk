@@ -14,6 +14,10 @@ $(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
 
+# Boot animation
+TARGET_SCREEN_HEIGHT := 2400
+TARGET_SCREEN_WIDTH := 1080
+
 # Shipping API level
 PRODUCT_SHIPPING_API_LEVEL := 29
 
