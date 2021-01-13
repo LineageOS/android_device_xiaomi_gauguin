@@ -5689,8 +5689,11 @@ case "$target" in
 	echo 400000000 > /proc/sys/kernel/sched_coloc_downmigrate_ns
 
 	# cpuset parameters
-	echo 0-3 > /dev/cpuset/background/cpus
-	echo 0-3 > /dev/cpuset/system-background/cpus
+	echo 0-2     > /dev/cpuset/background/cpus
+	echo 0-3     > /dev/cpuset/system-background/cpus
+	echo 4-7     > /dev/cpuset/foreground/boost/cpus
+	echo 0-2,4-7 > /dev/cpuset/foreground/cpus
+	echo 0-7     > /dev/cpuset/top-app/cpus
 
 	# Turn off scheduler boost at the end
 	echo 0 > /proc/sys/kernel/sched_boost
@@ -5708,8 +5711,10 @@ case "$target" in
 	echo 1 > /sys/devices/system/cpu/cpufreq/policy0/schedutil/pl
 
 	# configure input boost settings
-	echo "0:1324800" > /sys/devices/system/cpu/cpu_boost/input_boost_freq
+	echo "0:1612800" > /sys/devices/system/cpu/cpu_boost/input_boost_freq
 	echo 120 > /sys/devices/system/cpu/cpu_boost/input_boost_ms
+	echo "0:1804800 1:0 2:0 3:0 4:2419200 5:0 6:0 7:2841600" > /sys/devices/system/cpu/cpu_boost/powerkey_input_boost_freq
+	echo 400 > /sys/devices/system/cpu/cpu_boost/powerkey_input_boost_ms
 
 	# configure governor settings for gold cluster
 	echo "schedutil" > /sys/devices/system/cpu/cpufreq/policy4/scaling_governor

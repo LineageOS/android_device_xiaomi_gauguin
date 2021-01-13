@@ -30,8 +30,11 @@ on early-init
 
 on fs
     mkdir /mnt/vendor/persist/camera 0777 root root
+    mkdir /mnt/vendor/persist/audio 0755 system system
+    mkdir /mnt/vendor/persist/subsys 0770 root system
 
     chmod 0666 /sys/kernel/boot_adsp/ssr
+    chmod 644 /mnt/vendor/persist/audio/us_manual_cal
 
 on init
     # Mipi Display feature
