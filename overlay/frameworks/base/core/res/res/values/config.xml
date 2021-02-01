@@ -516,4 +516,11 @@
 
     <!-- Doze: should the TYPE_PICK_UP_GESTURE sensor be used as a pulse signal. -->
     <bool name="config_dozePulsePickup">true</bool>
+
+   <!-- Whether the device enable the standalone (SA) mode of 5G NR.-->
+    <bool name="config_telephony5gStandalone">true</bool>
+
+    <!-- Whether the device enable the non-standalone (NSA) mode of 5G NR.-->
+    <bool name="config_telephony5gNonStandalone">true</bool>
+
 </resources>
