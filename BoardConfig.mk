@@ -45,6 +45,7 @@ BOARD_KERNEL_CMDLINE := \
     swiotlb=2048 \
     cgroup.memory=nokmem,nosocket \
     loop.max_part=7
+BOARD_KERNEL_CMDLINE += androidboot.init_fatal_reboot_target=recovery
 
 BOARD_KERNEL_IMAGE_NAME := Image
 BOARD_BOOTIMG_HEADER_VERSION := 2
