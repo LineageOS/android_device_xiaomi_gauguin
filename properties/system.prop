@@ -20,6 +20,9 @@ ro.vendor.use_data_netmgrd=true
 debug.sf.enable_hwc_vds=1
 qemu.sf.lcd_density=440
 
+# FUSE passthrough
+persist.sys.fuse.passthrough.enable=true
+
 # IMS
 persist.dbg.volte_avail_ovr=1
 persist.dbg.vt_avail_ovr=0
