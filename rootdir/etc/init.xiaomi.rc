@@ -91,8 +91,19 @@ on property:vendor.camera.bokeh.disable=1
 on property:vendor.camera.bokeh.disable=0
     setprop persist.vendor.camera.bokeh.disable 0
 
+on property:ro.boot.product.hardware.sku=nfc
+    enable vendor.nfc_hal_service
+
 service nv_mac /vendor/bin/nv_mac
     class late_start
     user system
     group system inet net_admin wifi net_raw
     oneshot
+
+service vendor.nfc_hal_service /vendor/bin/hw/android.hardware.nfc@1.2-service
+    override
+    class hal
+    user nfc
+    group nfc
+    writepid /dev/cpuset/system-background/tasks
+    disabled
