@@ -11,10 +11,6 @@ persist.dbg.volte_avail_ovr=1
 persist.dbg.vt_avail_ovr=0
 persist.dbg.wfc_avail_ovr=1
 
-# IOP
-vendor.iop.enable_prefetch_ofr=1
-vendor.iop.enable_uxe=1
-
 # Media
 mm.enable.smoothstreaming=true
 ro.media.recorder-max-base-layer-fps=60
