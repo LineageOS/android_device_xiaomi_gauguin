@@ -166,6 +166,9 @@ ro.hardware.egl=adreno
 ro.hardware.vulkan=adreno
 vendor.gralloc.disable_ubwc=0
 
+# Incremental FS
+ro.incremental.enable=true
+
 # Keystore
 ro.hardware.keystore_desede=true
 
