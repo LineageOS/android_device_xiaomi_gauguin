@@ -550,7 +550,7 @@ vendor/lib64/vendor.display.color@1.5.so|9a2c10cbf8ed37371528cc33b7957ff6595ac2e
 vendor/lib64/vendor.display.postproc@1.0.so|6fd8249ae537e145f1940cdd264773898e6f64b9
 
 # DPM
-framework/tcmclient.jar
+system/framework/tcmclient.jar
 system_ext/bin/dpmd
 system_ext/etc/dpm/dpm.conf
 system_ext/etc/init/dpmd.rc
