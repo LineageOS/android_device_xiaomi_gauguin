@@ -24,6 +24,9 @@ TARGET_2ND_CPU_VARIANT_RUNTIME := cortex-a76
 # Assert
 TARGET_OTA_ASSERT_DEVICE := gauguin,gauguinpro,gauguininpro
 
+# Build
+BUILD_BROKEN_DUP_RULES := true
+
 # Bootloader
 TARGET_BOOTLOADER_BOARD_NAME := gauguin
 TARGET_NO_BOOTLOADER := true
