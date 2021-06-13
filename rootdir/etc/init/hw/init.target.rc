@@ -93,7 +93,6 @@ on post-fs
     chmod 0644 /dev/elliptic1
 
 on late-fs
-    wait_for_prop hwservicemanager.ready true
     mount_all --late
 
 on early-boot
