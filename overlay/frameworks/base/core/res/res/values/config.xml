@@ -146,7 +146,7 @@
          attributes.  This is used by the connectivity manager to decide which networks can coexist
          based on the hardware -->
     <!-- An Array of "[ConnectivityManager connectionType],
-                      [# simultaneous connection types]"  -->
+                    [# simultaneous connection types]"  -->
     <string-array translatable="false" name="radioAttributes">
         <item>"1,1"</item>
         <item>"0,1"</item>
@@ -204,10 +204,10 @@
          Here are a few of them:
          * The WiFi radio must support WiFi P2P.
          * The WiFi radio must support concurrent connections to the WiFi display and
-           to an access point.
+          to an access point.
          * The Audio Flinger audio_policy.conf file must specify a rule for the "r_submix"
-           remote submix module.  This module is used to record and stream system
-           audio output to the WiFi display encoder in the media server.
+          remote submix module.  This module is used to record and stream system
+          audio output to the WiFi display encoder in the media server.
          * The remote submix module "audio.r_submix.default" must be installed on the device.
          * The device must be provisioned with HDCP keys (for protected content).
     -->
@@ -285,7 +285,7 @@
          The N entries of this array define N + 1 control points as follows:
          (1-based arrays)
 
-         Point 1:            (0, value[1]):             lux <= 0
+         Point 1:           (0, value[1]):            lux <= 0
          Point 2:     (level[1], value[2]):  0        < lux <= level[1]
          Point 3:     (level[2], value[3]):  level[2] < lux <= level[3]
          ...
@@ -442,9 +442,9 @@
          appended after the path string to interpret coordinates in dp instead of px units.
          Note that a physical cutout should be configured in pixels for the best results.
          Example for a 10px x 10px square top-center cutout:
-                <string ...>M -5,0 L -5,10 L 5,10 L 5,0 Z</string>
+               <string ...>M -5,0 L -5,10 L 5,10 L 5,0 Z</string>
          Example for a 10dp x 10dp square top-center cutout:
-                <string ...>M -5,0 L -5,10 L 5,10 L 5,0 Z @dp</string>
+               <string ...>M -5,0 L -5,10 L 5,10 L 5,0 Z @dp</string>
          @see https://www.w3.org/TR/SVG/paths.html#PathData -->
     <string name="config_mainBuiltInDisplayCutout">M 0,0 H -32 V 91 H 32 V 0 H 0 Z</string>
 
@@ -464,4 +464,38 @@
          config_defaultRefreshRate may be set to 0, in which case the value set for
          config_defaultPeakRefreshRate will act as the default frame rate. -->
     <integer name="config_defaultRefreshRate">120</integer>
+
+    <!-- Indicate available ColorDisplayManager.COLOR_MODE_xxx. -->
+    <integer-array name="config_availableColorModes">
+        <item>0</item> <!-- COLOR_MODE_NATURAL   -->
+        <item>1</item> <!-- COLOR_MODE_BOOSTED   -->
+        <item>3</item> <!-- COLOR_MODE_AUTOMATIC -->
+    </integer-array>
+
+    <!-- Color mode to use when accessibility transforms are enabled. This color mode must be
+         supported by the device, but not necessarily appear in config_availableColorModes. The
+         regularly selected color mode will be used if this value is negative. -->
+    <integer name="config_accessibilityColorMode">2</integer>
+
+    <!-- The following two arrays specify which color space to use for display composition when a
+         certain color mode is active.
+         Composition color spaces are defined in android.view.Display.COLOR_MODE_xxx, and color
+         modes are defined in ColorDisplayManager.COLOR_MODE_xxx and
+         ColorDisplayManager.VENDOR_COLOR_MODE_xxx.
+         The color space COLOR_MODE_DEFAULT (0) lets the system select the most appropriate
+         composition color space for currently displayed content. Other values (e.g.,
+         COLOR_MODE_SRGB) override system selection; these other color spaces must be supported by
+         the device for for display composition.
+         If a color mode does not have a corresponding color space specified in this array, the
+         currently set composition color space will not be modified.-->
+    <integer-array name="config_displayCompositionColorModes">
+        <item>0</item> <!-- COLOR_MODE_NATURAL   -->
+        <item>1</item> <!-- COLOR_MODE_BOOSTED   -->
+        <item>3</item> <!-- COLOR_MODE_AUTOMATIC -->
+    </integer-array>
+    <integer-array name="config_displayCompositionColorSpaces">
+        <item>0</item> <!-- COLOR_MODE_DEFAULT    -->
+        <item>0</item> <!-- COLOR_MODE_DEFAULT    -->
+        <item>9</item> <!-- COLOR_MODE_DISPLAY_P3 -->
+    </integer-array>
 </resources>
