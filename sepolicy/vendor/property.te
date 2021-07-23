@@ -1,0 +1,9 @@
+type vendor_fp_prop, property_type;
+
+type vendor_fm_prop, property_type;
+
+type vendor_device_prop, property_type;
+
+type power_prop, property_type;
+
+type thermal_normal_prop, property_type;
