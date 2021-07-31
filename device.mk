@@ -14,6 +14,9 @@ $(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
 
+# Shipping API level
+PRODUCT_SHIPPING_API_LEVEL := 29
+
 # HIDL
 PRODUCT_PACKAGES += \
     android.hidl.base@1.0 \
