@@ -41,7 +41,8 @@ PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
     hardware/google/interfaces \
     hardware/google/pixel \
-    hardware/xiaomi
+    hardware/xiaomi \
+    vendor/qcom/opensource/usb/etc
 
 # Boot animation
 TARGET_SCREEN_HEIGHT := 2400
@@ -479,6 +480,8 @@ PRODUCT_COPY_FILES += \
 
 # USB
 $(call inherit-product, vendor/qcom/opensource/usb/vendor_product.mk)
+
+TARGET_KERNEL_VERSION := 4.19
 
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.usb.accessory.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.usb.accessory.xml \
