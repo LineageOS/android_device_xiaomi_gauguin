@@ -150,6 +150,7 @@ vendor/firmware/RCV-cs35l41-revB2-dsp1-spk-prot.bin
 
 # Audio FX Modules
 vendor/lib/soundfx/libasphere.so
+vendor/lib/soundfx/libmisoundfx.so
 vendor/lib/soundfx/libqcbassboost.so
 vendor/lib/soundfx/libqcreverb.so
 vendor/lib/soundfx/libqcvirt.so
