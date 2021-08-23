@@ -20,5 +20,9 @@ ril.subscription.types=NV,RUIM
 ro.telephony.default_network=33,33
 ro.vendor.radio.features_common=3
 
+# SSR
+persist.vendor.ssr.enable_ramdumps=1
+persist.vendor.ssr.restart_level=ALL_ENABLE
+
 # Vendor
 ro.vendor.qti.va_aosp.support=1
