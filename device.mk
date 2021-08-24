@@ -375,7 +375,7 @@ PRODUCT_PACKAGES += \
 
 # Vibrator
 PRODUCT_PACKAGES += \
-    vendor.qti.hardware.vibrator.service
+    vendor.qti.hardware.vibrator.service.xiaomi_gauguin
 
 # WiFi
 PRODUCT_PACKAGES += \
