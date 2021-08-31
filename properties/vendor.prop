@@ -69,6 +69,7 @@ bluetooth.profile.pan.nap.enabled?=true
 bluetooth.profile.pan.panu.enabled?=true
 bluetooth.profile.pbap.server.enabled?=true
 bluetooth.profile.sap.server.enabled?=true
+vendor.qcom.bluetooth.soc=cherokee
 
 # Camera
 camera.disable_zsl_mode=true
