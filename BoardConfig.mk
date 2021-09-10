@@ -87,9 +87,13 @@ TARGET_FS_CONFIG_GEN := $(DEVICE_PATH)/configs/config.fs
 TARGET_HEALTH_CHARGING_CONTROL_SUPPORTS_BYPASS := false
 
 # HIDL
-DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := $(DEVICE_PATH)/configs/vintf/framework_compatibility_matrix.xml
+DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := \
+    $(DEVICE_PATH)/configs/vintf/framework_compatibility_matrix.xml \
+    vendor/lineage/config/device_framework_matrix.xml
+
 DEVICE_MANIFEST_FILE := $(DEVICE_PATH)/configs/vintf/manifest.xml
 DEVICE_MATRIX_FILE := $(DEVICE_PATH)/configs/vintf/compatibility_matrix.xml
+
 ODM_MANIFEST_NFC_FILES := $(DEVICE_PATH)/configs/vintf/manifest_nfc.xml
 ODM_MANIFEST_SKUS += nfc
 
