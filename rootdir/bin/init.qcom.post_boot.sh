@@ -95,9 +95,6 @@ case "$target" in
         # Enable conservative pl
         echo 1 > /proc/sys/kernel/sched_conservative_pl
 
-        echo "0:1248000" > /sys/devices/system/cpu/cpu_boost/input_boost_freq
-        echo 120 > /sys/devices/system/cpu/cpu_boost/input_boost_ms
-
 	# Disable wsf for all targets beacause we are using efk.
 	# wsf Range : 1..1000 So set to bare minimum value 1.
 	echo 1 > /proc/sys/vm/watermark_scale_factor
