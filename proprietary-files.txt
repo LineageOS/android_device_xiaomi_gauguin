@@ -995,8 +995,10 @@ vendor/lib64/unnhal-acc-common.so
 vendor/lib64/unnhal-acc-hta.so
 vendor/lib64/unnhal-acc-hvx.so
 
-# NFC Firmware
-vendor/lib/libsn100u_fw.so
+# NFC
+vendor/etc/libnfc-nxp.conf
+vendor/etc/libnfc-nxp_RF.conf:vendor/libnfc-nxp_RF.conf
+vendor/lib/libsn100u_fw.so:vendor/lib64/libsn100u_fw.so
 
 # Peripheral manager
 vendor/bin/pm-proxy
