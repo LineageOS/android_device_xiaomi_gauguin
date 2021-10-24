@@ -1,0 +1,89 @@
+# Copyright (c) 2016, 2020, The Linux Foundation. All rights reserved.
+#
+# Redistribution and use in source and binary forms, with or without
+# modification, are permitted provided that the following conditions are met:
+#     * Redistributions of source code must retain the above copyright
+#       notice, this list of conditions and the following disclaimer.
+#     * Redistributions in binary form must reproduce the above copyright
+#       notice, this list of conditions and the following disclaimer in the
+#       documentation and/or other materials provided with the distribution.
+#     * Neither the name of The Linux Foundation nor
+#       the names of its contributors may be used to endorse or promote
+#       products derived from this software without specific prior written
+#       permission.
+#
+# THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+# AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+# IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+# NON-INFRINGEMENT ARE DISCLAIMED.  IN NO EVENT SHALL THE COPYRIGHT OWNER OR
+# CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,
+# EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,
+# PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS;
+# OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY,
+# WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR
+# OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF
+# ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+#
+
+on early-init
+    exec u:r:vendor_modprobe:s0 -- /vendor/bin/modprobe -a -d /vendor/lib/modules audio_tfa98xx audio_cs35l41
+
+on fs
+    mkdir /mnt/vendor/persist/camera 0777 root root
+
+    chmod 0666 /sys/kernel/boot_adsp/ssr
+
+on init
+    # Mipi Display feature
+    chmod 0777 /sys/devices/platform/soc/soc:qcom,dsi-display-primary/dynamic_dsi_clock
+
+on post-fs-data
+    mkdir /data/vendor/nfc 0770 nfc nfc
+    mkdir /data/vendor/mac_addr 0770 system wifi
+
+    chmod 0644 /dev/elliptic0
+    chmod 0644 /dev/elliptic1
+
+on boot
+    chown system system /sys/class/touch/touch_dev/palm_sensor
+
+    # Create persist for camera calibration data
+    mkdir /mnt/vendor/persist/camera 0755 system cameraserver
+
+    chown system system /sys/class/leds/white/brightness
+    chown system system /sys/class/leds/white/breath
+    chown system system /sys/class/leds/white/delay_off
+    chown system system /sys/class/leds/white/delay_on
+
+    # Set the default voltage to 5V
+    setprop persist.vendor.cp.taper_term_mv 5000
+    setprop persist.vendor.qg_cold_temp -150
+    setprop persist.vendor.qg_coff_gain 1
+    setprop persist.vendor.qg_cld_coff_gain 1.5
+
+on property:sys.boot_completed=1
+    mkdir /data/vendor/camera/model 0777 cameraserver audio
+    mkdir /data/vendor/camera/model/rt_model 0777 cameraserver audio
+
+    copy /vendor/etc/camera/model/rt_model/cache_data /data/vendor/camera/model/rt_model/cache_data
+    copy /vendor/etc/camera/model/rt_model/model_mdl_cache /data/vendor/camera/model/rt_model/model_mdl_cache
+    copy /vendor/etc/camera/model/rt_model/segment_model /data/vendor/camera/model/rt_model/segment_model
+
+    chmod 0777 /data/vendor/camera/model/rt_model/cache_data
+    chmod 0777 /data/vendor/camera/model/rt_model/model_mdl_cache
+    chmod 0777 /data/vendor/camera/model/rt_model/segment_model
+    chown cameraserver audio  /data/vendor/camera/model/rt_model/cache_data
+    chown cameraserver audio  /data/vendor/camera/model/rt_model/model_mdl_cache
+    chown cameraserver audio  /data/vendor/camera/model/rt_model/segment_model
+
+on property:vendor.camera.bokeh.disable=1
+    setprop persist.vendor.camera.bokeh.disable 1
+
+on property:vendor.camera.bokeh.disable=0
+    setprop persist.vendor.camera.bokeh.disable 0
+
+service nv_mac /vendor/bin/nv_mac
+    class late_start
+    user system
+    group system inet net_admin wifi net_raw
+    oneshot
