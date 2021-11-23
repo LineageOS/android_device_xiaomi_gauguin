@@ -427,7 +427,7 @@ vendor/lib64/libvidhance.so
 vendor/lib64/libwa_rtdof.so
 vendor/lib64/libxmi_hdr_checker.so
 vendor/lib64/libxmi_high_dynamic_range.so
-vendor/lib64/vendor.qti.hardware.camera.postproc@1.0-service-impl.so
+vendor/lib64/vendor.qti.hardware.camera.postproc@1.0-service-impl.so|aabcddc3af932023f64d51196a97dc11cf8ac3b2
 
 # Camera (Mi 10T Lite) - from V12.0.2.0.RJSMIXM
 vendor/lib/camera/com.qti.sensormodule.sunny_imx682.bin|8c24261a16ace9652cbfa56cc0662fc49e015017
