@@ -425,6 +425,12 @@ vendor/lib64/libxmi_hdr_checker.so
 vendor/lib64/libxmi_high_dynamic_range.so
 vendor/lib64/vendor.qti.hardware.camera.postproc@1.0-service-impl.so
 
+# Camera (Mi 10T Lite) - from V12.0.2.0.RJSMIXM
+vendor/lib/camera/com.qti.sensormodule.sunny_imx682.bin|8c24261a16ace9652cbfa56cc0662fc49e015017
+vendor/lib/camera/com.qti.tuned.gauguin_sunny_imx682_wide.bin|2e678e9ebaa8f1b7f0ba75e438bc11dd4cbe0f65
+vendor/lib64/camera/com.qti.sensormodule.sunny_imx682.bin|8c24261a16ace9652cbfa56cc0662fc49e015017
+vendor/lib64/camera/com.qti.tuned.gauguin_sunny_imx682_wide.bin|2e678e9ebaa8f1b7f0ba75e438bc11dd4cbe0f65
+
 # Camera Firmware
 vendor/firmware/CAMERA_ICP.elf
 
