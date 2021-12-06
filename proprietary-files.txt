@@ -624,6 +624,10 @@ vendor/lib64/libtrustedapploader.so
 vendor/lib64/libwvhidl.so
 vendor/lib64/mediadrm/libwvdrmengine.so
 
+# DRM (Widevine L1) - from from V12.0.2.0.RJSMIXM
+vendor/lib/liboemcrypto.so|2c1525754f661b20bd83a9cd4ca6b56d78d88476
+vendor/lib64/liboemcrypto.so|6967571dfa2de7f4d73731ab0879245361827831
+
 # ESE
 vendor/bin/hw/vendor.qti.esepowermanager@1.1-service
 vendor/etc/init/vendor.qti.esepowermanager@1.1-service.rc
