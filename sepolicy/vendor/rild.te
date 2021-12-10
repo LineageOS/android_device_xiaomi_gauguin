@@ -1,1 +1,2 @@
 set_prop(rild, deviceid_prop)
+allow rild vendor_qdisplay_service:service_manager find;
