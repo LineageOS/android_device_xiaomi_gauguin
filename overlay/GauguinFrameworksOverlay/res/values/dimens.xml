@@ -23,6 +23,9 @@
          -->
     <dimen name="status_bar_height">100.0px</dimen>
 
+   <!-- for 20dp of padding at 3.5px/dp at default density -->
+   <dimen name="rounded_corner_content_padding">10.0dip</dimen>
+
    <!-- Radius of the software rounded corners at the top of the display in its natural
         orientation. If zero, the value of rounded_corner_radius is used. -->
    <dimen name="rounded_corner_radius_top">94.0px</dimen>
