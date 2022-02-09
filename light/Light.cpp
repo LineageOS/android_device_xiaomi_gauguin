@@ -28,7 +28,7 @@
 #define BREATH          "breath"
 #define BRIGHTNESS      "brightness"
 
-#define MAX_LED_BRIGHTNESS    255
+#define MAX_LED_BRIGHTNESS    10
 #define MAX_LCD_BRIGHTNESS    4095
 
 namespace {
