@@ -1,5 +1,5 @@
 # Bluetooth
-bluetooth.profile.asha.central=false
+bluetooth.profile.asha.central.enabled=false
 
 # Camera
 vendor.camera.aux.packagelist=org.lineageos.snap,org.codeaurora.snapcam
