@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "cd22583e_3e86d524",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 25732
+      },
+      "writtenOn": "2022-02-17T05:53:55Z",
+      "side": 1,
+      "message": "My commit isn\u0027t really related to what you did there btw",
+      "revId": "7b3fc013aeb4c175b95473ce7c350132ce328e73",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
