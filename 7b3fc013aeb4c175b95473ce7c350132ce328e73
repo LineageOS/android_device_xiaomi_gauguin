@@ -16,6 +16,24 @@
       "message": "My commit isn\u0027t really related to what you did there btw",
       "revId": "7b3fc013aeb4c175b95473ce7c350132ce328e73",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "9fb8432f_3082144b",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 29515
+      },
+      "writtenOn": "2022-02-17T06:59:03Z",
+      "side": 1,
+      "message": "Thanks for the advices.",
+      "parentUuid": "cd22583e_3e86d524",
+      "revId": "7b3fc013aeb4c175b95473ce7c350132ce328e73",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
