@@ -16,6 +16,24 @@
       "message": "https://github.com/LineageOS/android_packages_apps_Settings/commit/95db7ae728d3664ec09ed0176c1cd4a792b2c5f9",
       "revId": "8070c9f87b2ee0ebca0b780400f18d05190f7ede",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "922c084d_325c6566",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 29515
+      },
+      "writtenOn": "2022-02-17T05:02:59Z",
+      "side": 1,
+      "message": "Seems like it has been fixed.",
+      "parentUuid": "4172c0ab_c98d0db0",
+      "revId": "8070c9f87b2ee0ebca0b780400f18d05190f7ede",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
