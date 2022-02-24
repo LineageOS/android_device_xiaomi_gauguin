@@ -199,6 +199,9 @@ firmware_directories /vendor/firmware_mnt/image/
 /dev/hidraw8              0660   system     system
 /dev/hidraw9              0660   system     system
 
+#rawdump
+/dev/block/platform/soc/*/by-name/rawdump       0660   root     system
+
 # wlan
 /dev/wcnss_wlan           0660   system     system
 /dev/wcnss_ctrl           0660   system     system
