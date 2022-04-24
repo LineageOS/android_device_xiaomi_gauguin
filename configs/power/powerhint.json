@@ -285,6 +285,14 @@
       "ResetOnInit": true
     },
     {
+      "Name": "DoubleTapToWakeEnable",
+      "Path": "/sys/touchpanel/double_tap",
+      "Values": [
+        "1",
+        "0"
+      ],
+    },
+    {
       "Name": "PowerHALMainState",
       "Path": "vendor.powerhal.state",
       "Values": [
@@ -510,6 +518,12 @@
       "Node": "GPUMaxFreq",
       "Duration": 0,
       "Value": "0"
+    },
+    {
+      "PowerHint": "DOUBLE_TAP_TO_WAKE",
+      "Node": "DoubleTapToWakeEnable",
+      "Duration": 0,
+      "Value": "1"
     },
     {
       "PowerHint": "FIXED_PERFORMANCE",
