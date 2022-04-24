@@ -147,9 +147,6 @@ TARGET_PRODUCT_PROP += $(DEVICE_PATH)/properties/product.prop
 TARGET_SYSTEM_PROP += $(DEVICE_PATH)/properties/system.prop
 TARGET_VENDOR_PROP += $(DEVICE_PATH)/properties/vendor.prop
 
-# Power
-TARGET_TAP_TO_WAKE_NODE := "/sys/touchpanel/double_tap"
-
 # QCOM
 BOARD_USES_QCOM_HARDWARE := true
 
