@@ -179,7 +179,7 @@ PRODUCT_PACKAGES += \
 
 # Fingerprint
 PRODUCT_PACKAGES += \
-    android.hardware.biometrics.fingerprint@2.1-service.xiaomi_gauguin
+    android.hardware.biometrics.fingerprint@2.3-service.xiaomi
 
 # Fastbootd
 PRODUCT_PACKAGES += \
