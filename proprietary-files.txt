@@ -1366,7 +1366,6 @@ vendor/lib64/libssccalapi.so
 vendor/lib64/libultrasound.so
 vendor/lib64/sensors.elliptic.so
 vendor/lib64/sensors.ssc.so
-vendor/lib64/sensors.touch.so
 vendor/lib64/vendor.qti.hardware.sensorscalibrate@1.0.so
 
 # Snapdragon Computer Vision Engine
