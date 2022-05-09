@@ -217,7 +217,6 @@ vendor/etc/camera/LDC_PACKDATA_VENDORID_0x01.bin
 vendor/etc/camera/LDC_PACKDATA_VENDORID_0x03.bin
 vendor/etc/camera/LDC_PACKDATA_VENDORID_0x07.bin
 vendor/etc/camera/media_profiles_forceaftrigger_apps.xml
-vendor/etc/camera/megviifacepp_0_5_2_model
 vendor/etc/camera/mibokeh_712_opencl.bin
 vendor/etc/camera/mibokeh_712_parameter.bin
 vendor/etc/camera/model_back.dlc
@@ -391,8 +390,6 @@ vendor/lib64/libfocus.so
 vendor/lib64/libft2vendor.so
 vendor/lib64/libHalSuperSensorServer.so
 vendor/lib64/libipebpsstriping.so
-vendor/lib64/libmegface.so
-vendor/lib64/libMegviiFacepp-0.5.2.so
 vendor/lib64/libMIAIHDRhvx_interface.so
 vendor/lib64/libmialgo_rfs.so
 vendor/lib64/libmialgo_sd.so
