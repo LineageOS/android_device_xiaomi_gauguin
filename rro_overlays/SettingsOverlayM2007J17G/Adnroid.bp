@@ -1,0 +1,4 @@
+runtime_resource_overlay {
+    name: "SettingsOverlayM2007J17G",
+    product_specific: true,
+}
