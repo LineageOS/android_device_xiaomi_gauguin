@@ -1,0 +1,2 @@
+allow vendor_ims vendor_diag_device:chr_file { read write };
+allow vendor_ims vendor_diag_device:chr_file { open };
