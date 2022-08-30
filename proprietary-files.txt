@@ -10,25 +10,9 @@ vendor/etc/acdbdata/Forte/Forte_Hdmi_cal.acdb
 vendor/etc/acdbdata/Forte/Forte_Headset_cal.acdb
 vendor/etc/acdbdata/Forte/Forte_Speaker_cal.acdb
 vendor/etc/acdbdata/Forte/Forte_workspaceFile.qwsp
-vendor/etc/acdbdata/MTP/lito-lagoonmtp-snd-card/MTP_Lagoon_Bluetooth_cal.acdb
-vendor/etc/acdbdata/MTP/lito-lagoonmtp-snd-card/MTP_Lagoon_General_cal.acdb
-vendor/etc/acdbdata/MTP/lito-lagoonmtp-snd-card/MTP_Lagoon_Global_cal.acdb
-vendor/etc/acdbdata/MTP/lito-lagoonmtp-snd-card/MTP_Lagoon_Handset_cal.acdb
-vendor/etc/acdbdata/MTP/lito-lagoonmtp-snd-card/MTP_Lagoon_Hdmi_cal.acdb
-vendor/etc/acdbdata/MTP/lito-lagoonmtp-snd-card/MTP_Lagoon_Headset_cal.acdb
-vendor/etc/acdbdata/MTP/lito-lagoonmtp-snd-card/MTP_Lagoon_Speaker_cal.acdb
-vendor/etc/acdbdata/MTP/lito-lagoonmtp-snd-card/MTP_Lagoon_workspaceFile.qwsp
 vendor/etc/acdbdata/nn_ns_models/fai__2.0.0_0.1__3.0.0_0.0__eai_1.00.pmd
 vendor/etc/acdbdata/nn_ns_models/fai__2.2.0_0.1__3.0.0_0.0__eai_1.00.pmd
 vendor/etc/acdbdata/nn_vad_models/fai_3.0.0_0.0_eai_1.00.pmd
-vendor/etc/acdbdata/QRD/lito-lagoonqrd-snd-card/QRD_Lagoon_Bluetooth_cal.acdb
-vendor/etc/acdbdata/QRD/lito-lagoonqrd-snd-card/QRD_Lagoon_General_cal.acdb
-vendor/etc/acdbdata/QRD/lito-lagoonqrd-snd-card/QRD_Lagoon_Global_cal.acdb
-vendor/etc/acdbdata/QRD/lito-lagoonqrd-snd-card/QRD_Lagoon_Handset_cal.acdb
-vendor/etc/acdbdata/QRD/lito-lagoonqrd-snd-card/QRD_Lagoon_Hdmi_cal.acdb
-vendor/etc/acdbdata/QRD/lito-lagoonqrd-snd-card/QRD_Lagoon_Headset_cal.acdb
-vendor/etc/acdbdata/QRD/lito-lagoonqrd-snd-card/QRD_Lagoon_Speaker_cal.acdb
-vendor/etc/acdbdata/QRD/lito-lagoonqrd-snd-card/QRD_Lagoon_workspaceFile.qwsp
 
 # ACDB Loader
 vendor/lib/libacdb-fts.so
