@@ -49,8 +49,9 @@ BOARD_KERNEL_SEPARATED_DTBO := true
 BOARD_MKBOOTIMG_ARGS += --header_version $(BOARD_BOOTIMG_HEADER_VERSION)
 BOARD_RAMDISK_USE_LZ4 := true
 
-TARGET_KERNEL_SOURCE := kernel/xiaomi/gauguin
 TARGET_KERNEL_CONFIG := vendor/lito-perf_defconfig vendor/xiaomi/gauguin.config
+TARGET_KERNEL_NO_GCC := true
+TARGET_KERNEL_SOURCE := kernel/xiaomi/gauguin
 
 # Platform
 TARGET_BOARD_PLATFORM := lito
