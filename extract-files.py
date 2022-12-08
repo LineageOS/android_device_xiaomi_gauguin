@@ -47,6 +47,8 @@ lib_fixups: lib_fixups_user_type = {
 }
 
 blob_fixups: blob_fixups_user_type = {
+    'vendor/etc/msm_irqbalance.conf': blob_fixup()
+        .regex_replace('IGNORED_IRQ=19,21,38$', 'IGNORED_IRQ=19,21,38,58,212'),
     'vendor/etc/init/init.batterysecret.rc': blob_fixup()
         .regex_replace(' +seclabel u:r:batterysecret:s0\n', ''),
     'vendor/etc/init/init.mi_thermald.rc': blob_fixup()
