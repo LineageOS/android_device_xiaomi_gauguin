@@ -1,4 +1,4 @@
-# All unpinned blobs are extracted from V12.5.7.0.RJSCNXM.
+# All unpinned blobs are extracted from V13.0.5.0.SJSCNXM.
 
 # ACDB
 vendor/etc/acdbdata/adsp_avs_config.acdb
@@ -646,8 +646,8 @@ vendor/lib64/hw/fingerprint.goodix.so:vendor/lib64/hw/fingerprint.goodix.lito.so
 vendor/lib64/libgoodixhwfingerprint.so
 vendor/lib64/libgf_ca.so
 vendor/lib64/libgf_hal.so
-vendor/lib64/vendor.goodix.hardware.cap.biometrics.fingerprint@2.1.so
 vendor/lib64/vendor.xiaomi.hardware.fingerprintextension@1.0.so
+vendor/lib64/vendor.xiaomi.hardware.fx.tunnel@1.0.so
 
 # FM
 system_ext/lib/fm_helium.so
@@ -842,7 +842,6 @@ vendor/lib64/libkeymasterdeviceutils.so
 vendor/lib64/libkeymasterprovision.so
 vendor/lib64/libkeymasterutils.so
 vendor/lib64/libqtikeymaster4.so
-vendor/lib64/libkeymaster_messages.so
 
 # Listen
 vendor/lib/hw/sound_trigger.primary.lito.so
@@ -1076,7 +1075,6 @@ product/etc/permissions/telephony_product_privapp-permissions-qti.xml
 -system_ext/app/QtiTelephonyService/QtiTelephonyService.apk
 system_ext/etc/permissions/qcrilhook.xml
 system_ext/etc/permissions/telephony_system-ext_privapp-permissions-qti.xml
-system_ext/etc/permissions/telephonyservice.xml
 system_ext/framework/qcrilhook.jar
 system_ext/framework/qti-telephony-common.jar
 -system_ext/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk
@@ -1166,6 +1164,11 @@ vendor/radio/qcril_database/upgrade/7_version_update_ecc_table.sql
 
 # RIL (IMS)
 -system_ext/priv-app/ims/ims.apk
+-system_ext/app/ImsRcsService/ImsRcsService.apk
+system_ext/etc/permissions/vendor.qti.ims.rcsservice.xml
+system_ext/framework/vendor.qti.ims.factory-V1.0-java.jar
+system_ext/framework/vendor.qti.ims.factory-V1.1-java.jar
+system_ext/framework/vendor.qti.ims.factory-V2.0-java.jar
 system_ext/lib64/lib-imsvideocodec.so
 system_ext/lib64/lib-imsvt.so
 system_ext/lib64/lib-imsvtextutils.so
@@ -1417,7 +1420,7 @@ vendor/lib64/libscveObjectTracker_stub.so
 vendor/lib64/libscveObjectTracker.so
 
 # Soter
--app/SoterService/SoterService.apk
+-vendor/app/SoterService/SoterService.apk
 vendor/bin/hw/vendor.qti.hardware.soter@1.0-service
 vendor/etc/init/vendor.qti.hardware.soter@1.0-service.rc
 vendor/lib64/hw/vendor.qti.hardware.soter@1.0-impl.so
@@ -1432,6 +1435,9 @@ vendor/bin/thermal-engine
 vendor/etc/init/init_thermal-engine.rc
 vendor/etc/thermal-4k.conf
 vendor/etc/init/init.mi_thermald.rc
+-vendor/lib/libthermalclient.so
+-vendor/lib64/libthermalclient.so
+vendor/etc/thermal-4k.conf
 vendor/etc/thermal-arvr.conf
 vendor/etc/thermal-camera.conf
 vendor/etc/thermal-chg-only.conf
@@ -1531,7 +1537,6 @@ vendor/firmware/Lollipop_RTP.bin
 vendor/firmware/magazine_quick_RTP.bin
 vendor/firmware/MessageSent_RTP.bin
 vendor/firmware/Mi_RTP.bin
-vendor/firmware/MiClassicRemix_RTP.bin
 vendor/firmware/MiHouse_RTP.bin
 vendor/firmware/MiJazz_RTP.bin
 vendor/firmware/MiMix2_RTP.bin
@@ -1543,11 +1548,9 @@ vendor/firmware/NFC_card_rtp.bin
 vendor/firmware/NFC_card_slow_rtp.bin
 vendor/firmware/notification_cleanall_rtp.bin
 vendor/firmware/notification_remove_rtp.bin
-vendor/firmware/notification_setting_close_rtp.bin
 vendor/firmware/NotificationXylophone_RTP.bin
 vendor/firmware/offline_countdown_RTP.bin
 vendor/firmware/Orange_RTP.bin
-vendor/firmware/osc_rtp_24K_5s.bin
 vendor/firmware/pan_RTP.bin
 vendor/firmware/Potion_RTP.bin
 vendor/firmware/punch_RTP.bin
