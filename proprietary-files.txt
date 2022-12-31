@@ -524,34 +524,34 @@ vendor/lib64/hw/vendor.qti.hardware.capabilityconfigstore@1.0-impl.so
 # Consumer IR
 vendor/lib64/hw/consumerir.default.so:vendor/lib64/hw/consumerir.lito.so
 
-# Display (Prebuilt) - From V13.0.3.0.SJSCNXM
-vendor/bin/hw/vendor.qti.hardware.display.composer-service|b49bb8ed6fcc8ea3c31bd7921936251758b5f2b0
-vendor/etc/init/vendor.qti.hardware.display.composer-service.rc|a3eba2a9d34285d2fce0d0f774684604644ffb9e
--vendor/etc/vintf/manifest/vendor.qti.hardware.display.composer-service.xml|8687b6af9c705287541058e47431d1cc3b38f9ec
-vendor/lib64/libdisplaydebug.so|deea6fb9219af5fbfd4ac1fdd0db3971738986c9
-vendor/lib64/libdrm.so|581bab16371621c42d9ac8729381a4eb745bcfd5
-vendor/lib64/libdrmutils.so|a72740dd27a7ad01dae537326ff59ed3d3fbe0bd
-vendor/lib64/libgpu_tonemapper.so|73bdd0857db294628dd1db950b64bdb1c146a5a3
-vendor/lib64/libqdutils.so|d466306648759a882a8018115e8da7da80557ed7
-vendor/lib64/libqservice.so|fac123ffeab6ad2dfbc48b6f36bb6f74b2d2590a
-vendor/lib64/libsdedrm.so|b52a3243d127725fc77b02428efffb37deceb31a
-vendor/lib64/libsdmcore.so|6e00827bc56106eee676c811d607990afa7b2a4d
-vendor/lib64/libsdmutils.so|bf737cba7fbd0750bef919fda13b9ac3f735cd15
+# Display (Prebuilt)
+vendor/bin/hw/vendor.qti.hardware.display.composer-service
+vendor/etc/init/vendor.qti.hardware.display.composer-service.rc
+-vendor/etc/vintf/manifest/vendor.qti.hardware.display.composer-service.xml
+vendor/lib64/libdisplaydebug.so
+vendor/lib64/libdrm.so
+vendor/lib64/libdrmutils.so
+vendor/lib64/libgpu_tonemapper.so
+vendor/lib64/libqdutils.so
+vendor/lib64/libqservice.so
+vendor/lib64/libsdedrm.so
+vendor/lib64/libsdmcore.so
+vendor/lib64/libsdmutils.so
 
-# Display Calibration - From V13.0.3.0.SJSCNXM
-vendor/etc/qdcm_calib_data_xiaomi_36_02_0a_video_mode_dsc_dsi_panel.xml|55c12c039a2ca6909a87afb19f8227fe9fd91fb0
-vendor/etc/qdcm_calib_data_xiaomi_42_02_0b_video_mode_dsc_dsi_panel.xml|95b410ac214bb9b07b1da7c7f8bb3feba8b60a9f
+# Display Calibration
+vendor/etc/qdcm_calib_data_xiaomi_36_02_0a_video_mode_dsc_dsi_panel.xml
+vendor/etc/qdcm_calib_data_xiaomi_42_02_0b_video_mode_dsc_dsi_panel.xml
 
 # Display Firmware
 vendor/firmware/NT36xxx_MP_Setting_Criteria_5935.csv
 vendor/firmware/NT36xxx_MP_Setting_Criteria_5937.csv
 
-# Display Feature - From V13.0.3.0.SJSCNXM
-vendor/bin/hw/vendor.xiaomi.hardware.displayfeature@1.0-service|55eba0254f7796a19c2a29a17e8076eec1b075f0
-vendor/etc/init/vendor.xiaomi.hardware.displayfeature@1.0-service.rc|c129a277fe9ba05188ac6445a887a1e4b793e795
-vendor/lib64/hw/displayfeature.default.so|1eb1ac311b56dfd278225d59a85c61e570d3369d
-vendor/lib64/hw/vendor.xiaomi.hardware.displayfeature@1.0-impl.so|92f2343457147f03096520359bc17dab46aa9a1b
-vendor/lib64/vendor.xiaomi.hardware.displayfeature@1.0.so|da7b571b93a786972fc2386633372e8e61c9d753
+# Display Feature
+vendor/bin/hw/vendor.xiaomi.hardware.displayfeature@1.0-service
+vendor/etc/init/vendor.xiaomi.hardware.displayfeature@1.0-service.rc
+vendor/lib64/hw/displayfeature.default.so
+vendor/lib64/hw/vendor.xiaomi.hardware.displayfeature@1.0-impl.so
+vendor/lib64/vendor.xiaomi.hardware.displayfeature@1.0.so
 
 # Display Postprocessing
 vendor/bin/ppd
@@ -739,40 +739,40 @@ vendor/lib64/vendor.qti.gnss@4.0-service.so
 vendor/lib64/vendor.qti.gnss@4.0.so
 vendor/lib64/vendor.qti.hardware.cacert@1.0.so
 
-# Graphics - From V13.0.3.0.SJSCNXM
-vendor/lib/egl/eglSubDriverAndroid.so|23e8f1d57f9815de666c08932a9077be4c3c89a8
-vendor/lib/egl/libEGL_adreno.so|f549f7beeff57642fa4b5e612a2341658e87f98d
-vendor/lib/egl/libGLESv1_CM_adreno.so|f54363abee49c8ca8d46acf2f3d7fb1e4b93decd
-vendor/lib/egl/libGLESv2_adreno.so|abb1c0b10997c40af2089a1151e0604393f9435d
-vendor/lib/egl/libq3dtools_adreno.so|c5d8634f50096882adf07a374f5787984c0034b1
-vendor/lib/egl/libq3dtools_esx.so|0f142725aedf66bab34ecae6a373345e03fcde93
-vendor/lib/libC2D2.so|81a7fad54e1131db70bb16f90d6d33039b3e0785
-vendor/lib/libCB.so|632a47e121a50e74e9a1165e3e921c14fb15e7e7
-vendor/lib/libOpenCL.so|e8c2d26375221791839037546d0afbcd56b9a1ef
-vendor/lib/libVkLayer_q3dtools.so|818bb39b693bb62a519ad8d4cab6ef805eaeff75
-vendor/lib/libadreno_utils.so|d9c2e8c78404f424cc918163667f48eb1678db44
-vendor/lib/libc2d30_bltlib.so|f08659cee55cd7fc3170418d521df7df9a61b7c9
-vendor/lib/libgpudataproducer.so|d024a8c380756231d8e6e749268251635c5b770c
-vendor/lib/libgsl.so|79b734e97ae150668c5b84f2eec64d43a802c64f
-vendor/lib/libllvm-glnext.so|18f4aba8f8c3a6c0a179b0ad49b1b1492b640eb6
-vendor/lib/libllvm-qcom.so|48737ef2dd2647cc7bb9e1074c261e76961ef996
-vendor/lib64/egl/eglSubDriverAndroid.so|92907eb716a2446bb00654fce6a055f88b5baaa3
-vendor/lib64/egl/libEGL_adreno.so|79398648ba7fe74ce18a387aaf568b481727a2b9
-vendor/lib64/egl/libGLESv1_CM_adreno.so|387c024152dd55e7a7f4cf17294f148a4974a044
-vendor/lib64/egl/libGLESv2_adreno.so|ccf8f066d21ddb0219350b17b28908b148dec776
-vendor/lib64/egl/libq3dtools_adreno.so|02013a3d510d3ea48fc75307a25630b9611d61a1
-vendor/lib64/egl/libq3dtools_esx.so|5a479010147d40ecbfbcc361e0594fe1be89ef9e
-vendor/lib64/libC2D2.so|e8286aad14cda6b0ee2993df6aa1418d756822eb
-vendor/lib64/libCB.so|494656e6fb1c7688accfc0c2396ad93c513789f1
-vendor/lib64/libOpenCL.so|90d5833eb3492746b8a5cf0aa03d1eb968236078
-vendor/lib64/libVkLayer_q3dtools.so|5689c23654742801382fc3c4e8c894941136d18a
-vendor/lib64/libadreno_utils.so|7774e35cbc0e50cb03061a7c0ec08ef8893c0742
-vendor/lib64/libc2d30_bltlib.so|1198f020aed3803deed73d215c6d0f1460300189
-vendor/lib64/libgpudataproducer.so|20a9fad6a3c7663ae0ee261b56a7e2a978dd9f60
-vendor/lib64/libgsl.so|76841b0ec0711d96f6a5780970482e88111eea2f
-vendor/lib64/libllvm-glnext.so|08a5ef5d6b38446dfa4f51b2633627d5523f9aee
-vendor/lib64/libllvm-qcom.so|1b68bd8b02ce0efff0f79ec8223970d031e53466
--vendor/app/com.qualcomm.qti.gpudrivers.lito.api30/com.qualcomm.qti.gpudrivers.lito.api30.apk|687e8f81fe3960641d149a1958acd6b701cf8c27
+# Graphics
+vendor/lib/egl/eglSubDriverAndroid.so
+vendor/lib/egl/libEGL_adreno.so
+vendor/lib/egl/libGLESv1_CM_adreno.so
+vendor/lib/egl/libGLESv2_adreno.so
+vendor/lib/egl/libq3dtools_adreno.so
+vendor/lib/egl/libq3dtools_esx.so
+vendor/lib/libC2D2.so
+vendor/lib/libCB.so
+vendor/lib/libOpenCL.so
+vendor/lib/libVkLayer_q3dtools.so
+vendor/lib/libadreno_utils.so
+vendor/lib/libc2d30_bltlib.so
+vendor/lib/libgpudataproducer.so
+vendor/lib/libgsl.so
+vendor/lib/libllvm-glnext.so
+vendor/lib/libllvm-qcom.so
+vendor/lib64/egl/eglSubDriverAndroid.so
+vendor/lib64/egl/libEGL_adreno.so
+vendor/lib64/egl/libGLESv1_CM_adreno.so
+vendor/lib64/egl/libGLESv2_adreno.so
+vendor/lib64/egl/libq3dtools_adreno.so
+vendor/lib64/egl/libq3dtools_esx.so
+vendor/lib64/libC2D2.so
+vendor/lib64/libCB.so
+vendor/lib64/libOpenCL.so
+vendor/lib64/libVkLayer_q3dtools.so
+vendor/lib64/libadreno_utils.so
+vendor/lib64/libc2d30_bltlib.so
+vendor/lib64/libgpudataproducer.so
+vendor/lib64/libgsl.so
+vendor/lib64/libllvm-glnext.so
+vendor/lib64/libllvm-qcom.so
+-vendor/app/com.qualcomm.qti.gpudrivers.lito.api30/com.qualcomm.qti.gpudrivers.lito.api30.apk
 
 # Graphics (HDR) - from nio S1RTS32.41-20-16-1-3
 vendor/lib64/libhdr_tm.so|4be3cfff1ef40cbc6ad329b79c60881263aa6723
@@ -789,25 +789,25 @@ vendor/lib64/libsdm-disp-vndapis.so|fd0b0beac164c92bfa012dbc059cb50cdde2dec6
 vendor/lib64/libsdmextension.so|99377ab065105f0cbd17bbe5907cdbb8027a9f17
 vendor/lib64/libtinyxml2_1.so|fb0a2b16e5cfd28515268edc5c2345190d1ef4e5
 
-# Graphics (Vulkan) - From V13.0.3.0.SJSCNXM
-vendor/lib/hw/vulkan.adreno.so|797053c770836d11afada1899cb63b63f7975be3
-vendor/lib64/hw/vulkan.adreno.so|8ca49d8ff3c43343eafce9c6076719948eb6dc24
+# Graphics (Vulkan)
+vendor/lib/hw/vulkan.adreno.so
+vendor/lib64/hw/vulkan.adreno.so
 
-# Graphics Firmware - From V13.0.3.0.SJSCNXM
-vendor/firmware/a615_zap.b00|1f966d9754aa6b971d39f5b3d9637480e67aa3fe
-vendor/firmware/a615_zap.b01|f573fd354cb5126af9089460e6e24a9da1de2a23
-vendor/firmware/a615_zap.b02|4ae54047f9629f2470a5d58f3940c5eb51298b96
-vendor/firmware/a615_zap.elf|610be19cbea2eb980ecc24c5c8c80f3aa7865e2c
-vendor/firmware/a615_zap.mdt|b04002734da421d5ee6300a19cfe5b0de85270bf
-vendor/firmware/a619_gmu.bin|0c211ef8a3246d649a4ae52a926d128b61e3c264
-vendor/firmware/a630_sqe.fw|09a86618d0c8282bba3ed85774e9841fb3230826
-vendor/firmware/a650_gmu.bin|c744acb10afb7c980d333c5b6521e2a18993ff14
-vendor/firmware/a650_sqe.fw|130a0df5c562e69ab717867ebc0b7abf6f3bcb3f
-vendor/firmware/a650_zap.b00|8c20cfff20d7fe9814581b353c1f58d38636e8c5
-vendor/firmware/a650_zap.b01|749c213e01f8f042e8e0c5a64d14e7e9e0d25c3f
-vendor/firmware/a650_zap.b02|270bae014df75a913c6c124155f2cc85706258e6
-vendor/firmware/a650_zap.elf|88f17eec45aa4da3452252ace2386533ca8bd979
-vendor/firmware/a650_zap.mdt|c9c24976e6e0a168d3f6b32326200139bd66fcf2
+# Graphics Firmware
+vendor/firmware/a615_zap.b00
+vendor/firmware/a615_zap.b01
+vendor/firmware/a615_zap.b02
+vendor/firmware/a615_zap.elf
+vendor/firmware/a615_zap.mdt
+vendor/firmware/a619_gmu.bin
+vendor/firmware/a630_sqe.fw
+vendor/firmware/a650_gmu.bin
+vendor/firmware/a650_sqe.fw
+vendor/firmware/a650_zap.b00
+vendor/firmware/a650_zap.b01
+vendor/firmware/a650_zap.b02
+vendor/firmware/a650_zap.elf
+vendor/firmware/a650_zap.mdt
 
 # IOP
 vendor/bin/hw/vendor.qti.hardware.iop@2.0-service
