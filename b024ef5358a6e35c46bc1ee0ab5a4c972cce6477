@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "3b2f544f_cb79f810",
+        "filename": "device.mk",
+        "patchSetId": 3
+      },
+      "lineNbr": 357,
+      "author": {
+        "id": 25732
+      },
+      "writtenOn": "2023-01-01T17:36:09Z",
+      "side": 1,
+      "message": "Why do you want to build both pn54x and snxxx HALs?",
+      "range": {
+        "startLine": 356,
+        "startChar": 4,
+        "endLine": 357,
+        "endChar": 42
+      },
+      "revId": "b024ef5358a6e35c46bc1ee0ab5a4c972cce6477",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
