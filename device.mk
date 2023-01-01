@@ -435,6 +435,10 @@ PRODUCT_PACKAGES += \
     android.hardware.sensors@1.0-service \
     libsensorndkbridge
 
+# Shim
+PRODUCT_PACKAGES += \
+    libpiex_shim
+
 # Telephony
 PRODUCT_PACKAGES += \
     ims-ext-common \
