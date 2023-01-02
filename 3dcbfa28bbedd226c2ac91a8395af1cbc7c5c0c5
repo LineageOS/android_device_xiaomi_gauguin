@@ -1,4 +1,28 @@
 {
-  "comments": [],
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "e1c3d958_ebd4e98f",
+        "filename": "proprietary-files.txt",
+        "patchSetId": 5
+      },
+      "lineNbr": 1259,
+      "author": {
+        "id": 25732
+      },
+      "writtenOn": "2023-01-02T13:28:00Z",
+      "side": 1,
+      "message": "And now you\u0027re shipping two secure element services...",
+      "range": {
+        "startLine": 1259,
+        "startChar": 0,
+        "endLine": 1259,
+        "endChar": 51
+      },
+      "revId": "3dcbfa28bbedd226c2ac91a8395af1cbc7c5c0c5",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ],
   "submitRequirementResults": []
 }
