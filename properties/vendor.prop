@@ -49,7 +49,6 @@ vendor.audio.volume.headset.gain.depcal=true
 vendor.voice.path.for.pcm.voip=true
 
 # Bluetooth
-persist.vendor.qcom.bluetooth.soc=cherokee
 bluetooth.device.class_of_device=90,2,12
 bluetooth.hardware.power.idle_cur_ma=36
 bluetooth.hardware.power.operating_voltage_mv=3700
@@ -69,6 +68,11 @@ bluetooth.profile.pan.nap.enabled?=true
 bluetooth.profile.pan.panu.enabled?=true
 bluetooth.profile.pbap.server.enabled?=true
 bluetooth.profile.sap.server.enabled?=true
+persist.vendor.bt.aac_frm_ctl.enabled=true
+persist.vendor.qcom.bluetooth.soc=cherokee
+persist.vendor.qcom.bluetooth.enable.splita2dp=true
+persist.vendor.qcom.bluetooth.a2dp_offload_cap=sbc-aptx-aptxtws-aptxhd-aac-ldac-aptxadaptiver2
+persist.vendor.qcom.bluetooth.twsp_state.enabled=false
 vendor.qcom.bluetooth.soc=cherokee
 
 # Camera
