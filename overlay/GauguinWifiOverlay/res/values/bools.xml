@@ -50,4 +50,9 @@
 
     <!-- Indicate the device support request channel on Wi-Fi Aware data-path. -->
     <bool translatable="false" name="config_wifiSupportChannelOnDataPath">true</bool>
+
+    <!-- Indicates that non-persistent MAC randomization is allowed on open networks that do not
+     use captive portals -->
+    <bool translatable="false" name="config_wifiAllowNonPersistentMacRandomizationOnOpenSsids">true</bool>
+
 </resources>
