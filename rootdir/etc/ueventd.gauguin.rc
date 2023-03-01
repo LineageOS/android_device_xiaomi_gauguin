@@ -1,0 +1,8 @@
+#
+# Copyright (C) 2022-2023 The LineageOS Project
+#
+# SPDX-License-Identifier: Apache-2.0
+#
+
+# Lineage Health
+/sys/class/power_supply/battery input_suspend        0660    system  system
