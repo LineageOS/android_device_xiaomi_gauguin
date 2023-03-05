@@ -48,6 +48,10 @@ PRODUCT_SHIPPING_API_LEVEL := 29
 # Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
+# ANT+
+PRODUCT_PACKAGES += \
+    com.dsi.ant@1.0.vendor
+
 # Audio
 PRODUCT_PACKAGES += \
     android.hardware.audio.effect@6.0-impl \
