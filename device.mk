@@ -503,9 +503,7 @@ PRODUCT_COPY_FILES += \
 
 # WiFi
 PRODUCT_PACKAGES += \
-    android.hardware.wifi@1.0-service \
-    vendor.qti.hardware.wifi.hostapd@1.2.vendor \
-    vendor.qti.hardware.wifi.supplicant@2.2.vendor
+    android.hardware.wifi@1.0-service
 
 PRODUCT_PACKAGES += \
     hostapd \
