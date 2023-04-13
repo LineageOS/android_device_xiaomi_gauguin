@@ -523,4 +523,7 @@
         <item>900</item> <!--item>sensorLocationY</item-->
         <item>200</item> <!--item>sensorRadius</item-->
     </array>
+
+    <!-- Doze: should the TYPE_PICK_UP_GESTURE sensor be used as a pulse signal. -->
+    <bool name="config_dozePulsePickup">true</bool>
 </resources>
