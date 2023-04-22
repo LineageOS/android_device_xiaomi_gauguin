@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.android.settings.overlay.m2007J17i">
+
     <application android:hasCode="false" />
-    <overlay android:targetPackage="com.android.settings.m2007J17i"
-             android:requiredSystemPropertyName="ro.product.model"
-             android:requiredSystemPropertyValue="M2007J17I"
-             android:isStatic="true" />
+
+    <overlay
+        android:targetPackage="com.android.settings"
+        android:requiredSystemPropertyName="ro.boot.hwc"
+        android:requiredSystemPropertyValue="INDIA"
+        android:isStatic="true" />
 </manifest>
