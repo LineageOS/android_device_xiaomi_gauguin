@@ -1258,7 +1258,6 @@ vendor/etc/sensors/config/sns_tilt_sw_disabled.json
 vendor/etc/sensors/config/sns_tilt_sw_enabled.json
 vendor/etc/sensors/config/sns_tilt_to_wake.json
 vendor/etc/sensors/config/sns_tilt.json
-vendor/etc/sensors/hals.conf
 vendor/etc/sensors/judge_calibrated.json
 vendor/etc/sensors/proto/descriptor.proto
 vendor/etc/sensors/proto/nanopb.proto
