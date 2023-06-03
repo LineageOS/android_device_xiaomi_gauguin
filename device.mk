@@ -427,8 +427,7 @@ PRODUCT_PACKAGES += \
 
 # Shim
 PRODUCT_PACKAGES += \
-    libpiex_shim \
-    libweakcount_shim
+    libpiex_shim
 
 # Telephony
 PRODUCT_PACKAGES += \
