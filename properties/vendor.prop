@@ -59,6 +59,8 @@ persist.camera.gyro.disable=0
 persist.vendor.cne.feature=1
 
 # Crypto
+ro.crypto.dm_default_key.options_format.version=2
+ro.crypto.volume.metadata.method=dm-default-key
 ro.crypto.volume.filenames_mode=aes-256-cts
 
 # Display
