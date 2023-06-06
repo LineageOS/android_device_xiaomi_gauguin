@@ -41,7 +41,6 @@ on init
     chmod 0777 /sys/devices/platform/soc/soc:qcom,dsi-display-primary/dynamic_dsi_clock
 
 on post-fs-data
-    mkdir /data/vendor/nfc 0770 nfc nfc
     mkdir /data/vendor/mac_addr 0770 system wifi
 
     mkdir /data/vendor/thermal 0771 root system
@@ -91,34 +90,8 @@ on property:vendor.camera.bokeh.disable=1
 on property:vendor.camera.bokeh.disable=0
     setprop persist.vendor.camera.bokeh.disable 0
 
-on property:ro.boot.product.hardware.sku=nfc
-    enable qti_esepowermanager_service_1_1
-    enable vendor.nfc_hal_service
-    enable vendor.secure_element_hal_service
-
 service nv_mac /vendor/bin/nv_mac
     class late_start
     user system
     group system inet net_admin wifi net_raw
     oneshot
-
-service qti_esepowermanager_service_1_1 /vendor/bin/hw/vendor.qti.esepowermanager@1.1-service
-    override
-    class hal
-    user system
-    group nfc system
-    disabled
-
-service vendor.nfc_hal_service /vendor/bin/hw/android.hardware.nfc_snxxx@1.2-service
-    override
-    class hal
-    user nfc
-    group nfc
-    disabled
-
-service vendor.secure_element_hal_service /vendor/bin/hw/android.hardware.secure_element_snxxx@1.2-service
-    override
-    class hal
-    user secure_element
-    group secure_element
-    disabled

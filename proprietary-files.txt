@@ -939,9 +939,7 @@ vendor/lib64/unnhal-acc-common.so
 vendor/lib64/unnhal-acc-hta.so
 vendor/lib64/unnhal-acc-hvx.so
 
-# NFC
-vendor/etc/libnfc-nxp.conf
-vendor/etc/libnfc-nxp_RF.conf:vendor/libnfc-nxp_RF.conf
+# NFC firmware
 vendor/lib/libsn100u_fw.so:vendor/lib64/libsn100u_fw.so
 
 # Peripheral manager
@@ -1193,7 +1191,6 @@ vendor/lib64/vendor.qti.ims.rcsconfig@2.0.so
 vendor/lib64/vendor.qti.ims.rcsconfig@2.1.so
 vendor/lib64/vendor.qti.imsrtpservice@3.0-service-Impl.so
 vendor/lib64/vendor.qti.imsrtpservice@3.0.so
-
 
 # RIL (IMS) - from cupid-user-13-TKQ1.220630.001-V13.0.4.0.TLCMIXM-release-keys
 -system_ext/app/ImsRcsService/ImsRcsService.apk|93877b05f97ce9691f344b50512461b67a981b95
