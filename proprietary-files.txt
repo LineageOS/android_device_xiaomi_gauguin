@@ -424,6 +424,12 @@ vendor/lib64/libthreadutils.so
 vendor/lib64/libvideofilter_only.so
 vendor/lib64/libvidhance.so
 vendor/lib64/libwa_rtdof.so
+vendor/lib64/libanc_dc_base.so
+vendor/lib64/libwa_dof.so
+vendor/lib64/libwa_refocus.so
+vendor/lib64/libsdk_sr.so
+vendor/lib64/libbeauty_face_interface.so
+vendor/lib64/libmiai_portraitsupernight.so
 vendor/lib64/libxmi_hdr_checker.so
 vendor/lib64/libxmi_high_dynamic_range.so
 vendor/lib64/vendor.qti.hardware.camera.postproc@1.0-service-impl.so|aabcddc3af932023f64d51196a97dc11cf8ac3b2
