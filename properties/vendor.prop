@@ -111,6 +111,9 @@ drm.service.enabled=true
 # Factory Reset Protection
 ro.frp.pst=/dev/block/bootdevice/by-name/frp
 
+# FM
+vendor.hw.fm.init=0
+
 # Keystore
 ro.hardware.keystore_desede=true
 
