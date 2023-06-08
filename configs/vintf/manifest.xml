@@ -556,5 +556,9 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
             <name>IFingerprintSensorTest</name>
             <instance>default</instance>
         </interface>
+        <interface>
+            <name>IFingerprintEngineering</name>
+            <instance>default</instance>
+        </interface>
     </hal>
 </manifest>
