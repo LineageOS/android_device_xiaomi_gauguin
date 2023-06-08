@@ -1,0 +1,48 @@
+on boot
+    # Add a cpuset for the camera daemon
+    # We want all cores for camera
+    mkdir /dev/cpuset/camera-daemon
+    write /dev/cpuset/camera-daemon/cpus 0-7
+    write /dev/cpuset/camera-daemon/mems 0
+    chown cameraserver cameraserver /dev/cpuset/camera-daemon
+    chown cameraserver cameraserver /dev/cpuset/camera-daemon/tasks
+    chmod 0660 /dev/cpuset/camera-daemon/tasks
+
+    # Create persist for camera calibration data
+    mkdir /mnt/vendor/persist/camera 0755 system cameraserver
+
+on fs
+    mkdir /mnt/vendor/persist/camera 0777 root root
+
+    #+ add for watermark
+    chown system system /dev/tfa_reg
+    chown system system /dev/tfa_rw
+    chown system system /dev/tfa_rpc
+    chown system system /dev/tfa_profile
+    chown system system /dev/tfa_control
+    chmod 0660 /dev/tfa_reg
+    chmod 0660 /dev/tfa_rw
+    chmod 0660 /dev/tfa_rpc
+    chmod 0660 /dev/tfa_profile
+    chmod 0660 /dev/tfa_control
+
+#####copy megvii files#####
+on property:sys.boot_completed=1
+    mkdir /data/vendor/camera/model 0777 cameraserver audio
+    mkdir /data/vendor/camera/model/rt_model 0777 cameraserver audio
+    copy /vendor/etc/camera/model/rt_model/cache_data /data/vendor/camera/model/rt_model/cache_data
+    chown cameraserver audio /data/vendor/camera/model/rt_model/cache_data
+    chmod 0777 /data/vendor/camera/model/rt_model/cache_data
+    copy /vendor/etc/camera/model/rt_model/model_mdl_cache /data/vendor/camera/model/rt_model/model_mdl_cache
+    chown cameraserver audio /data/vendor/camera/model/rt_model/model_mdl_cache
+    chmod 0777 /data/vendor/camera/model/rt_model/model_mdl_cache
+    copy /vendor/etc/camera/model/rt_model/segment_model /data/vendor/camera/model/rt_model/segment_model
+    chown cameraserver audio /data/vendor/camera/model/rt_model/segment_model
+    chmod 0777 /data/vendor/camera/model/rt_model/segment_model
+
+# for bokeh control
+on property:vendor.camera.bokeh.disable=1
+    setprop persist.vendor.camera.bokeh.disable 1
+
+on property:vendor.camera.bokeh.disable=0
+    setprop persist.vendor.camera.bokeh.disable 0
