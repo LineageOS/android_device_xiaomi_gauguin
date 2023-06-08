@@ -29,16 +29,10 @@ on early-init
     exec u:r:vendor_modprobe:s0 -- /vendor/bin/modprobe -a -d /vendor/lib/modules audio_tfa98xx audio_cs35l41
 
 on fs
-    mkdir /mnt/vendor/persist/camera 0777 root root
     mkdir /mnt/vendor/persist/audio 0755 system system
     mkdir /mnt/vendor/persist/subsys 0770 root system
 
     chmod 0666 /sys/kernel/boot_adsp/ssr
-    chmod 644 /mnt/vendor/persist/audio/us_manual_cal
-
-on init
-    # Mipi Display feature
-    chmod 0777 /sys/devices/platform/soc/soc:qcom,dsi-display-primary/dynamic_dsi_clock
 
 on post-fs-data
     mkdir /data/vendor/mac_addr 0770 system wifi
@@ -49,16 +43,12 @@ on post-fs-data
     chmod 0644 /dev/elliptic0
     chmod 0644 /dev/elliptic1
 
-on boot
-    chown system system /sys/class/touch/touch_dev/palm_sensor
-
-    # Create persist for camera calibration data
-    mkdir /mnt/vendor/persist/camera 0755 system cameraserver
-
-    chown system system /sys/class/leds/white/brightness
-    chown system system /sys/class/leds/white/breath
+on early-boot
     chown system system /sys/class/leds/white/delay_off
     chown system system /sys/class/leds/white/delay_on
+
+on boot
+    chown system system /sys/class/touch/touch_dev/palm_sensor
 
     # Touchpanel
     chown system system /sys/touchpanel/double_tap
@@ -68,27 +58,6 @@ on boot
     setprop persist.vendor.qg_cold_temp -150
     setprop persist.vendor.qg_coff_gain 1
     setprop persist.vendor.qg_cld_coff_gain 1.5
-
-on property:sys.boot_completed=1
-    mkdir /data/vendor/camera/model 0777 cameraserver audio
-    mkdir /data/vendor/camera/model/rt_model 0777 cameraserver audio
-
-    copy /vendor/etc/camera/model/rt_model/cache_data /data/vendor/camera/model/rt_model/cache_data
-    copy /vendor/etc/camera/model/rt_model/model_mdl_cache /data/vendor/camera/model/rt_model/model_mdl_cache
-    copy /vendor/etc/camera/model/rt_model/segment_model /data/vendor/camera/model/rt_model/segment_model
-
-    chmod 0777 /data/vendor/camera/model/rt_model/cache_data
-    chmod 0777 /data/vendor/camera/model/rt_model/model_mdl_cache
-    chmod 0777 /data/vendor/camera/model/rt_model/segment_model
-    chown cameraserver audio  /data/vendor/camera/model/rt_model/cache_data
-    chown cameraserver audio  /data/vendor/camera/model/rt_model/model_mdl_cache
-    chown cameraserver audio  /data/vendor/camera/model/rt_model/segment_model
-
-on property:vendor.camera.bokeh.disable=1
-    setprop persist.vendor.camera.bokeh.disable 1
-
-on property:vendor.camera.bokeh.disable=0
-    setprop persist.vendor.camera.bokeh.disable 0
 
 service nv_mac /vendor/bin/nv_mac
     class late_start
