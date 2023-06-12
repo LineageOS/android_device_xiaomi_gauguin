@@ -1,5 +1,4 @@
 runtime_resource_overlay {
     name: "GauguinWifiOverlay",
-    sdk_version: "current",
     vendor: true,
 }
