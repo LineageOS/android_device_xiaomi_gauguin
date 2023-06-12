@@ -326,27 +326,6 @@ case "$target" in
                 ;;
         esac
         ;;
-    "lito")
-        case "$soc_hwid" in
-            400|440)
-                sku_ver=`cat /sys/devices/platform/soc/aa00000.qcom,vidc1/sku_version` 2> /dev/null
-                if [ $sku_ver -eq 1 ]; then
-                    setprop vendor.media.target.version 1
-                fi
-                ;;
-            434|459)
-                sku_ver=`cat /sys/devices/platform/soc/aa00000.qcom,vidc1/sku_version` 2> /dev/null
-                setprop vendor.media.target.version 2
-                if [ $sku_ver -eq 1 ]; then
-                    setprop vendor.media.target.version 3
-                fi
-                ;;
-            476)
-                # Fraser soc_id 476
-                setprop vendor.display.enable_qsync_idle 1
-                ;;
-        esac
-        ;;
     "bengal")
         case "$soc_hwid" in
             441|473)
