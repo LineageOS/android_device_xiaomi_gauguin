@@ -44,6 +44,8 @@ on post-fs-data
     chmod 0644 /dev/elliptic1
 
 on early-boot
+    setprop vendor.media.target.version 3
+
     chown system system /sys/class/leds/white/delay_off
     chown system system /sys/class/leds/white/delay_on
 
