@@ -1,5 +1,4 @@
 runtime_resource_overlay {
     name: "GauguinSettingsOverlay",
-    sdk_version: "current",
     vendor: true,
 }
