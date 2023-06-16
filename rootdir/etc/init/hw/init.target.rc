@@ -78,7 +78,6 @@ on early-boot
     start vendor.sensors
 
 on boot
-    write /dev/cpuset/audio-app/cpus 1-2
 #USB controller configuration
     setprop vendor.usb.rndis.func.name "gsi"
     setprop vendor.usb.rmnet.func.name "gsi"
