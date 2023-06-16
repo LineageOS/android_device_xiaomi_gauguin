@@ -50,8 +50,6 @@ on early-boot
     chown system system /sys/class/leds/white/delay_on
 
 on boot
-    chown system system /sys/class/touch/touch_dev/palm_sensor
-
     # Set the default voltage to 5V
     setprop persist.vendor.cp.taper_term_mv 5000
     setprop persist.vendor.qg_cold_temp -150
