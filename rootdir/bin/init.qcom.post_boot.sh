@@ -41,17 +41,6 @@ case "$target" in
     case "$soc_id" in
         "434" | "459" )
 
-        # Core control parameters on silver
-        echo 0 0 0 0 1 1 > /sys/devices/system/cpu/cpu0/core_ctl/not_preferred
-        echo 4 > /sys/devices/system/cpu/cpu0/core_ctl/min_cpus
-        echo 60 > /sys/devices/system/cpu/cpu0/core_ctl/busy_up_thres
-        echo 40 > /sys/devices/system/cpu/cpu0/core_ctl/busy_down_thres
-        echo 100 > /sys/devices/system/cpu/cpu0/core_ctl/offline_delay_ms
-        echo 8 > /sys/devices/system/cpu/cpu0/core_ctl/task_thres
-
-        # Disable Core control on gold
-        echo 0 > /sys/devices/system/cpu/cpu6/core_ctl/enable
-
         # disable unfiltering
         echo 20000000 > /proc/sys/kernel/sched_task_unfilter_period
 
