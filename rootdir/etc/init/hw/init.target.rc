@@ -70,9 +70,6 @@ on late-fs
     exec_start wait_for_keymaster
     mount_all --late
 
-on post-fs-data
-    mkdir /vendor/data/tombstones 0771 system system
-
 on early-boot
     start vendor.sensors
 
