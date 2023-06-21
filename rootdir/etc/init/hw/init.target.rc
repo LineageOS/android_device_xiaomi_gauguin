@@ -83,9 +83,6 @@ on fs
     chmod 0666 /sys/kernel/boot_adsp/ssr
 
 on post-fs
-    # set RLIMIT_MEMLOCK to 64MB
-    setrlimit 8 67108864 67108864
-
     mkdir /mnt/vendor/persist/fpc 0770 system system
     mkdir /mnt/vendor/persist/goodix 0770 system system
 
