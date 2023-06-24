@@ -29,15 +29,6 @@
 
 target=`getprop ro.board.platform`
 
-function configure_memory_parameters() {
-    # Set Memory parameters.
-
-    # Disable wsf for all targets beacause we are using efk.
-    # wsf Range : 1..1000 So set to bare minimum value 1.
-    echo 1 > /proc/sys/vm/watermark_scale_factor
-fi
-}
-
 case "$target" in
     "lito")
 
@@ -107,8 +98,9 @@ case "$target" in
         echo "0:1248000" > /sys/devices/system/cpu/cpu_boost/input_boost_freq
         echo 120 > /sys/devices/system/cpu/cpu_boost/input_boost_ms
 
-        # Set Memory parameters
-        configure_memory_parameters
+	# Disable wsf for all targets beacause we are using efk.
+	# wsf Range : 1..1000 So set to bare minimum value 1.
+	echo 1 > /proc/sys/vm/watermark_scale_factor
 
         # Enable bus-dcvs
         for device in /sys/devices/platform/soc
