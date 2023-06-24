@@ -1137,6 +1137,7 @@ vendor/radio/qcril_database/upgrade/7_version_update_ecc_table.sql
 
 # RIL (IMS)
 -system_ext/priv-app/ims/ims.apk
+-system_ext/app/ImsRcsService/ImsRcsService.apk
 system_ext/etc/permissions/vendor.qti.ims.rcsservice.xml
 system_ext/framework/vendor.qti.ims.factory-V1.0-java.jar
 system_ext/framework/vendor.qti.ims.factory-V1.1-java.jar
@@ -1195,10 +1196,6 @@ vendor/lib64/vendor.qti.ims.rcsconfig@2.0.so
 vendor/lib64/vendor.qti.ims.rcsconfig@2.1.so
 vendor/lib64/vendor.qti.imsrtpservice@3.0-service-Impl.so
 vendor/lib64/vendor.qti.imsrtpservice@3.0.so
-
-# RIL (IMS) - from cupid-user-13-TKQ1.220630.001-V13.0.4.0.TLCMIXM-release-keys
--system_ext/app/ImsRcsService/ImsRcsService.apk|93877b05f97ce9691f344b50512461b67a981b95
-system_ext/framework/vendor.qti.ims.connection-V1.0-java.jar|e01800d96b0db524836856410d3dd0b9352ec46c
 
 # Secure Element
 vendor/bin/hw/vendor.qti.secure_element@1.2-service
