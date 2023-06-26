@@ -22,7 +22,6 @@ on boot
     chmod 0666 /dev/input/event2
 
 on post-fs-data
-    mkdir /data/vendor/fortsense 0770 system system
     mkdir /data/vendor/fpc 0770 system system
     mkdir /data/vendor/fpdump 0770 system system
     mkdir /data/vendor/goodix 0770 system system
