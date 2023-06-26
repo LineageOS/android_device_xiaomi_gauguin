@@ -214,6 +214,11 @@ ro.telephony.default_cdma_sub=0
 ro.vendor.radio.5g=3
 telephony.lteOnCdmaDevice=1
 
+# Sensor
+persist.vendor.sensors.debug.ssc_qmi_debug=true
+persist.vendor.sensors.enable.mag_filter=true
+persist.vendor.sensors.odl.adsp=true
+
 # SoC
 ro.soc.manufacturer=QTI
 ro.soc.model=SM7225
