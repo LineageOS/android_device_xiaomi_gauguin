@@ -25,9 +25,6 @@
 # ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #
 
-on early-init
-    exec u:r:vendor_modprobe:s0 -- /vendor/bin/modprobe -a -d /vendor/lib/modules audio_tfa98xx audio_cs35l41
-
 on fs
     mkdir /mnt/vendor/persist/audio 0755 system system
     mkdir /mnt/vendor/persist/subsys 0770 root system
@@ -35,11 +32,6 @@ on fs
     chmod 0666 /sys/kernel/boot_adsp/ssr
 
 on post-fs-data
-    mkdir /data/vendor/mac_addr 0770 system wifi
-
-    mkdir /data/vendor/thermal 0771 root system
-    mkdir /data/vendor/thermal/config 0771 root system
-
     chmod 0644 /dev/elliptic0
     chmod 0644 /dev/elliptic1
 
