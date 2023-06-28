@@ -180,6 +180,9 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.drm-service.clearkey
 
+PRODUCT_PACKAGES += \
+    android.hardware.drm@1.4.vendor
+
 # Filesystem
 PRODUCT_PACKAGES += \
     e2fsck_ramdisk \
