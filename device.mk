@@ -68,6 +68,7 @@ PRODUCT_PACKAGES += \
     audio.usb.default
 
 PRODUCT_PACKAGES += \
+    liba2dpoffload \
     libaudiopreprocessing \
     libbatterylistener \
     libbundlewrapper \
@@ -75,6 +76,7 @@ PRODUCT_PACKAGES += \
     libdownmix \
     libdynproc \
     libeffectproxy \
+    libexthwplugin \
     libhdmiedid \
     libhfp \
     libldnhncr \
@@ -83,6 +85,7 @@ PRODUCT_PACKAGES += \
     libqcomvoiceprocessing \
     libreverbwrapper \
     libsndmonitor \
+    libspkrprot \
     libtinycompress \
     libvisualizer \
     libvolumelistener
