@@ -495,6 +495,7 @@
         <item>900</item> <!--item>sensorLocationY</item-->
         <item>200</item> <!--item>sensorRadius</item-->
     </array>
+
     <array name="config_sfps_sensor_props_1" translatable="false">
         <item>local:4630946480857061761</item> <!--item>displayId</item-->
         <item>1080</item> <!--item>sensorLocationX</item-->
@@ -514,4 +515,6 @@
     <!-- Whether the new Auto Selection Network UI should be shown -->
     <bool name="config_enableNewAutoSelectNetworkUI">true</bool>
 
+    <!-- Default value for performant auth feature. -->
+    <bool name="config_performantAuthDefault">true</bool>
 </resources>
