@@ -46,12 +46,10 @@ echo 0 > /proc/sys/kernel/sched_coloc_busy_hyst_max_ms
 # configure governor settings for little cluster
 echo "schedutil" > /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor
 echo 1248000 > /sys/devices/system/cpu/cpu0/cpufreq/schedutil/hispeed_freq
-echo 576000 > /sys/devices/system/cpu/cpu0/cpufreq/scaling_min_freq
 
 # configure governor settings for big cluster
 echo "schedutil" > /sys/devices/system/cpu/cpu6/cpufreq/scaling_governor
 echo 1248000 > /sys/devices/system/cpu/cpu6/cpufreq/schedutil/hispeed_freq
-echo 652800 > /sys/devices/system/cpu/cpu6/cpufreq/scaling_min_freq
 
 #colocation v3 settings
 echo 740000 > /sys/devices/system/cpu/cpufreq/policy0/schedutil/rtg_boost_freq
