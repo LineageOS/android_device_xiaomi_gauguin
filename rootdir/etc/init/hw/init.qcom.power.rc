@@ -81,7 +81,7 @@ on property:sys.boot_completed=1
     write /sys/devices/platform/soc/soc:qcom,npu-npu-llcc-bw/devfreq/soc:qcom,npu-npu-llcc-bw/bw_hwmon/up_scale 250
     write /sys/devices/virtual/npu/msm_npu/pwr 0
 
-    #Enable mem_latency governor for L3, LLCC, and DDR scaling
+    # Enable mem_latency governor for L3, LLCC, and DDR scaling
     write /sys/devices/platform/soc/soc:qcom,cpu0-cpu-llcc-lat/devfreq/soc:qcom,cpu0-cpu-llcc-lat/governor mem_latency
     write /sys/devices/platform/soc/soc:qcom,cpu0-cpu-llcc-lat/devfreq/soc:qcom,cpu0-cpu-llcc-lat/polling_interval 8
     write /sys/devices/platform/soc/soc:qcom,cpu0-cpu-llcc-lat/devfreq/soc:qcom,cpu0-cpu-llcc-lat/mem_latency/ratio_ceil 400
@@ -114,11 +114,57 @@ on property:sys.boot_completed=1
     write /sys/devices/platform/soc/soc:qcom,cpu6-cpu-ddr-latfloor/devfreq/soc:qcom,cpu6-cpu-ddr-latfloor/governor compute
     write /sys/devices/platform/soc/soc:qcom,cpu6-cpu-ddr-latfloor/devfreq/soc:qcom,cpu6-cpu-ddr-latfloor/polling_interval 8
 
-    #Enable cdspl3 governor for L3 cdsp nodes
+    # Enable cdspl3 governor for L3 cdsp nodes
     write /sys/devices/platform/soc/18321000.qcom,devfreq-l3/18321000.qcom,devfreq-l3:qcom,cdsp-cdsp-l3-lat/devfreq/18321000.qcom,devfreq-l3:qcom,cdsp-cdsp-l3-lat/governor cdspl3
 
     write /sys/devices/platform/soc/18321000.qcom,devfreq-l3/18321000.qcom,devfreq-l3:qcom,cpu6-cpu-l3-lat/devfreq/18321000.qcom,devfreq-l3:qcom,cpu6-cpu-l3-lat/wb_filter_ratio 25000
     write /sys/devices/platform/soc/18321000.qcom,devfreq-l3/18321000.qcom,devfreq-l3:qcom,cpu6-cpu-l3-lat/devfreq/18321000.qcom,devfreq-l3:qcom,cpu6-cpu-l3-lat/wb_pct_thres 60
 
-    #Enable PowerHAL hint processing
+    # Disable unfiltering
+    write /proc/sys/kernel/sched_task_unfilter_period 20000000
+
+    # Setting b.L scheduler parameters
+    # Default sched up and down migrate values are 95 and 85
+    write /proc/sys/kernel/sched_downmigrate 65
+    write /proc/sys/kernel/sched_upmigrate 71
+
+    write /proc/sys/kernel/sched_walt_rotate_big_tasks 1
+    write /proc/sys/kernel/sched_coloc_busy_hyst_ns 0
+    write /proc/sys/kernel/sched_coloc_busy_hysteresis_enable_cpus 0
+    write /proc/sys/kernel/sched_coloc_busy_hyst_max_ms 0
+
+    # Configure governor settings for big.LITTLE cluster
+    write /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor schedutil
+    write /sys/devices/system/cpu/cpu6/cpufreq/scaling_governor schedutil
+    write /sys/devices/system/cpu/cpu0/cpufreq/schedutil/hispeed_freq 1248000
+    write /sys/devices/system/cpu/cpu6/cpufreq/schedutil/hispeed_freq 1248000
+
+    # Colocation v3 settings
+    write /sys/devices/system/cpu/cpufreq/policy0/schedutil/rtg_boost_freq 740000
+    write /sys/devices/system/cpu/cpufreq/policy6/schedutil/rtg_boost_freq 0
+    write /proc/sys/kernel/sched_min_task_util_for_boost 51
+
+    # sched_load_boost as -6 is equivalent to target load as 85. It is per cpu tunable.
+    write /sys/devices/system/cpu/cpu6/sched_load_boost -6
+    write /sys/devices/system/cpu/cpu7/sched_load_boost -6
+    write /sys/devices/system/cpu/cpu6/cpufreq/schedutil/hispeed_load 85
+
+    # Enable conservative pl
+    write /proc/sys/kernel/sched_conservative_pl 1
+
+    # Disable wsf for all targets beacause we are using efk.
+    # wsf Range : 1..1000 So set to bare minimum value 1.
+    write /proc/sys/vm/watermark_scale_factor 1
+
+    # cpuset parameters
+    write /dev/cpuset/background/cpus 0-5
+    write /dev/cpuset/system-background/cpus 0-5
+
+    # Turn off scheduler boost at the end
+    write /proc/sys/kernel/sched_boost 0
+
+    # Turn off sleep modes
+    write /sys/module/lpm_levels/parameters/sleep_disabled 0
+
+    # Enable PowerHAL hint processing
     setprop vendor.powerhal.init 1
