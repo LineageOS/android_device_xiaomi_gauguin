@@ -1,4 +1,6 @@
-# All unpinned blobs are extracted from V13.0.5.0.SJSCNXM.
+# All unpinned blobs are extracted from gauguinin-user 12 RKQ1.200826.002 V14.0.3.0.SJSINXM release-keys.
+# gauguin_CN: gauguin-user 12 RKQ1.200826.002 V14.0.2.0.SJSCNXM release-keys
+# gauguin_GL: gauguin-user 12 RKQ1.200826.002 V14.0.2.0.SJSMIXM release-keys
 
 # ACDB
 vendor/etc/acdbdata/Forte/Forte_Bluetooth_cal.acdb
@@ -372,7 +374,6 @@ vendor/lib64/camera/com.qti.sensormodule.sunny_ov16a1q.bin
 vendor/lib64/camera/com.qti.sensormodule.sunny_ov8856.bin
 vendor/lib64/camera/com.qti.sensormodule.sunny_s5khm2.bin
 vendor/lib64/camera/com.qti.tuned.default.bin
-vendor/lib64/camera/com.qti.tuned.gauguin_ofilm_s5khm2_wide.bin
 vendor/lib64/camera/com.qti.tuned.gauguin_sunny_hi259_macro.bin
 vendor/lib64/camera/com.qti.tuned.gauguin_sunny_ov02b1b_depth.bin
 vendor/lib64/camera/com.qti.tuned.gauguin_sunny_ov16a1q_front.bin
@@ -383,11 +384,12 @@ vendor/lib64/camera/fdconfigpreviewlite.bin
 vendor/lib64/camera/fdconfigvideo.bin
 vendor/lib64/camera/fdconfigvideolite.bin
 
-# Camera Sensors (Mi 10T Lite) - from V12.0.2.0.RJSMIXM
-vendor/lib/camera/com.qti.sensormodule.sunny_imx682.bin|8c24261a16ace9652cbfa56cc0662fc49e015017
-vendor/lib/camera/com.qti.tuned.gauguin_sunny_imx682_wide.bin|2e678e9ebaa8f1b7f0ba75e438bc11dd4cbe0f65
+# Camera Sensors (Redmi Note 9 Pro 5G) - from gauguin_CN
+vendor/lib64/camera/com.qti.tuned.gauguin_ofilm_s5khm2_wide.bin|256d571115abd7c88badc31194f470cab80934ff
+
+# Camera Sensors (Mi 10T Lite) - from gauguin_GL
 vendor/lib64/camera/com.qti.sensormodule.sunny_imx682.bin|8c24261a16ace9652cbfa56cc0662fc49e015017
-vendor/lib64/camera/com.qti.tuned.gauguin_sunny_imx682_wide.bin|2e678e9ebaa8f1b7f0ba75e438bc11dd4cbe0f65
+vendor/lib64/camera/com.qti.tuned.gauguin_sunny_imx682_wide.bin|852246141bd983ab173b70fcfb2f7e352b779dc4
 
 # CDSP
 vendor/bin/cdsprpcd
@@ -577,10 +579,8 @@ vendor/lib64/mediadrm/libwvdrmengine.so
 # DRM (OEM Crypto API)
 vendor/lib64/libcpion.so
 vendor/lib64/libminkdescriptor.so
+vendor/lib64/liboemcrypto.so
 vendor/lib64/libtrustedapploader.so
-
-# DRM (OEM Crypto API) - from from V12.0.2.0.RJSMIXM
-vendor/lib64/liboemcrypto.so|6967571dfa2de7f4d73731ab0879245361827831
 
 # DSP Service
 vendor/bin/dspservice
@@ -589,12 +589,12 @@ vendor/etc/seccomp_policy/vendor.qti.hardware.dsp.policy
 vendor/lib/vendor.qti.hardware.dsp@1.0.so
 vendor/lib64/vendor.qti.hardware.dsp@1.0.so
 
-# Embedded Secure Element power manager
-vendor/bin/hw/vendor.qti.esepowermanager@1.1-service
-vendor/etc/init/vendor.qti.esepowermanager@1.1-service.rc
-vendor/lib64/hw/vendor.qti.esepowermanager@1.1-impl.so
-vendor/lib64/vendor.qti.esepowermanager@1.0.so
-vendor/lib64/vendor.qti.esepowermanager@1.1.so
+# Embedded Secure Element power manager - from gauguin_CN
+vendor/bin/hw/vendor.qti.esepowermanager@1.1-service|649bea818a6b865ab744ac0aae52657557199918
+vendor/etc/init/vendor.qti.esepowermanager@1.1-service.rc|3c024c7135ec3dd8658624509ee61396a74f1ede
+vendor/lib64/hw/vendor.qti.esepowermanager@1.1-impl.so|c6b853c5a008123490afeb103a979daf1eb42ee3
+vendor/lib64/vendor.qti.esepowermanager@1.0.so|1d9663e2ad911aa75da4b07a2b17dd023d4c796e
+vendor/lib64/vendor.qti.esepowermanager@1.1.so|3e71c2927fe56732b081b6476df2efbd58d27178
 
 # Feature Enabler Client
 vendor/bin/feature_enabler_client
@@ -851,8 +851,8 @@ vendor/lib64/unnhal-acc-common.so
 vendor/lib64/unnhal-acc-hta.so
 vendor/lib64/unnhal-acc-hvx.so
 
-# NFC firmware
-vendor/lib/libsn100u_fw.so:vendor/lib64/libsn100u_fw.so
+# NFC firmware - from gauguin_CN
+vendor/lib/libsn100u_fw.so:vendor/lib64/libsn100u_fw.so|2ed395ac4019876d74f3f31a4e3d5043e9106909
 
 # NVMAC
 vendor/bin/nv_mac
@@ -1071,13 +1071,13 @@ vendor/radio/qcril_database/upgrade/7_version_update_ecc_table.sql
 # SECCOMP policy
 vendor/etc/seccomp_policy/mediacodec.policy
 
-# Secure Element
-vendor/bin/hw/vendor.qti.secure_element@1.2-service
-vendor/etc/init/vendor.qti.secure_element@1.2-service.rc
-vendor/lib64/android.hardware.secure_element@1.0-impl.so
-vendor/lib64/jcos_nq_client.so
-vendor/lib64/ls_nq_client.so
-vendor/lib64/se_nq_extn_client.so
+# Secure Element - from gauguin_CN
+vendor/bin/hw/vendor.qti.secure_element@1.2-service|3154e090b25eb04bb3150d7523a4c31f4126b8de
+vendor/etc/init/vendor.qti.secure_element@1.2-service.rc|cb8e44a67709a5d9c2f0544058d79eb9f6faad7b
+vendor/lib64/android.hardware.secure_element@1.0-impl.so|8e480172d9e34e20345ca05cdfe86c0190a20bb8
+vendor/lib64/jcos_nq_client.so|b0430238ee9a9874e3702d2be5968539598a95d2
+vendor/lib64/ls_nq_client.so|a906a909d2ea16c2bb81dc263cc76a339459fda8
+vendor/lib64/se_nq_extn_client.so|1503c49d969167adb420d36d2712aa16c4875c2e
 
 # Sensors
 vendor/bin/sensors.qti
@@ -1140,6 +1140,7 @@ vendor/etc/sensors/config/sns_gyro_cal.json
 vendor/etc/sensors/config/sns_mag_cal.json
 vendor/etc/sensors/config/sns_mag_cal_legacy.json
 vendor/etc/sensors/config/sns_nonui.json
+vendor/etc/sensors/config/sns_oem13.json
 vendor/etc/sensors/config/sns_pedometer.json
 vendor/etc/sensors/config/sns_rmd.json
 vendor/etc/sensors/config/sns_rotv.json
@@ -1191,7 +1192,6 @@ vendor/etc/init/init.mi_thermald.rc
 
 # Thermal Configs
 vendor/etc/thermal-4k.conf
-vendor/etc/thermal-4k.conf
 vendor/etc/thermal-arvr.conf
 vendor/etc/thermal-camera.conf
 vendor/etc/thermal-chg-only.conf
@@ -1202,6 +1202,8 @@ vendor/etc/thermal-map-india.conf
 vendor/etc/thermal-map.conf
 vendor/etc/thermal-nolimits.conf
 vendor/etc/thermal-normal.conf
+vendor/etc/thermal-per-camera.conf
+vendor/etc/thermal-per-normal.conf
 vendor/etc/thermal-phone.conf
 vendor/etc/thermal-region-map.conf
 vendor/etc/thermal-tgame.conf
