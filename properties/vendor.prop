@@ -120,13 +120,13 @@ ro.surface_flinger.force_hwc_copy_for_virtual_displays=true
 
 # Display (Phase Offsets)
 debug.sf.enable_advanced_sf_phase_offset=1
-debug.sf.high_fps_early_gl_phase_offset_ns=-2000000
-debug.sf.high_fps_early_phase_offset_ns=-4000000
-debug.sf.high_fps_late_app_phase_offset_ns=1000000
-debug.sf.high_fps_late_sf_phase_offset_ns=-2000000
-debug.sf.perf_fps_early_gl_phase_offset_ns=-5000000
-debug.sf.perf_fps_early_phase_offset_ns=-5000000
-debug.sf.perf_fps_late_sf_phase_offset_ns=-5000000
+debug.sf.use_phase_offsets_as_durations=1
+debug.sf.late.sf.duration=10500000
+debug.sf.late.app.duration=20500000
+debug.sf.early.sf.duration=16000000
+debug.sf.early.app.duration=16500000
+debug.sf.earlyGl.sf.duration=13500000
+debug.sf.earlyGl.app.duration=21000000
 
 # DPM
 persist.vendor.dpm.feature=1
