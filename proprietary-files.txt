@@ -65,6 +65,7 @@ vendor/lib/rfsa/adsp/capi_v2_aptX_CLHDADV_Encoder.so
 vendor/lib/rfsa/adsp/capi_v2_aptX_CLHDAD_Speech_Decoder.so
 
 # Audio
+vendor/lib/hw/audio.primary.default.so
 vendor/lib/hw/audio.primary.lito.so
 vendor/lib/hw/vendor.qti.hardware.audiohalext@1.0-impl.so
 vendor/lib/libadiertac.so
