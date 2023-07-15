@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "255847dc_75616373",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2023-07-15T13:41:10Z",
+      "side": 1,
+      "message": "This is bad, you shouldn\u0027t use tabs here.",
+      "revId": "6a5d52bd88c6b867bf6cca5c602515f27603e53b",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
