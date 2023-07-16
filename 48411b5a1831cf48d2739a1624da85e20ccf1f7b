@@ -16,6 +16,24 @@
       "message": "This config is no longer used anywhere.",
       "revId": "48411b5a1831cf48d2739a1624da85e20ccf1f7b",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "5d668a16_b260df81",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 32442
+      },
+      "writtenOn": "2023-07-16T06:13:31Z",
+      "side": 1,
+      "message": "Thanks for letting me know",
+      "parentUuid": "ddb76213_47dfed76",
+      "revId": "48411b5a1831cf48d2739a1624da85e20ccf1f7b",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
