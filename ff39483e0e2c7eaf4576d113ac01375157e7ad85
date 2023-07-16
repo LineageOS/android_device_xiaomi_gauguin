@@ -16,6 +16,24 @@
       "message": "Have you modified hals.conf?\nIf not no need import to tree",
       "revId": "ff39483e0e2c7eaf4576d113ac01375157e7ad85",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "41c9bc9f_976ae465",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 29515
+      },
+      "writtenOn": "2023-07-16T03:23:23Z",
+      "side": 1,
+      "message": "nvm",
+      "parentUuid": "6e3ad07b_07bddff2",
+      "revId": "ff39483e0e2c7eaf4576d113ac01375157e7ad85",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
