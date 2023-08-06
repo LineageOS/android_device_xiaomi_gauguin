@@ -16,6 +16,24 @@
       "message": "Commit message is unclear in answering an important question: why?",
       "revId": "3986752bac1475f5ec77866f1e88412960d289d1",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "063f5dbf_83d88af2",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 5
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 32442
+      },
+      "writtenOn": "2023-08-06T13:52:51Z",
+      "side": 1,
+      "message": "- Dirac on testing didn\u0027t really gave a big difference in audio output quality.\n- I utilize sensor@1.0-xiaomi for pickup sensor, hence deemed to drop XiaomiParts implementation.",
+      "parentUuid": "beadaa03_fb884589",
+      "revId": "3986752bac1475f5ec77866f1e88412960d289d1",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
