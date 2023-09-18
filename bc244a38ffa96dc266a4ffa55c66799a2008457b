@@ -16,6 +16,24 @@
       "message": "just curious, why?",
       "revId": "bc244a38ffa96dc266a4ffa55c66799a2008457b",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "b37f3b34_d4097fbb",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 10
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 32442
+      },
+      "writtenOn": "2023-09-18T14:30:53Z",
+      "side": 1,
+      "message": "The post-boost script in the CLO contains a collection of platform-specific optimizations, some of which are irrelevant to our particular platform. This commit removes the extraneous code and retaining only the optimizations essential to our platform.",
+      "parentUuid": "d23cd604_745f91cc",
+      "revId": "bc244a38ffa96dc266a4ffa55c66799a2008457b",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
