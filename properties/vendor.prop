@@ -72,7 +72,7 @@ bluetooth.profile.sap.server.enabled?=true
 
 # Camera
 camera.disable_zsl_mode=true
-vendor.camera.aux.packagelist=org.lineageos.snap,org.codeaurora.snapcam
+vendor.camera.aux.packagelist=org.codeaurora.snapcam
 
 # Crypto
 ro.crypto.dm_default_key.options_format.version=2
