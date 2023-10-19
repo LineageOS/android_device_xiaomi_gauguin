@@ -1,4 +1,5 @@
 # Camera
+camera.                                         u:object_r:vendor_camera_prop:s0
 persist.camera.                                 u:object_r:vendor_camera_prop:s0
 persist.vendor.camera                           u:object_r:vendor_camera_prop:s0
 vendor.camera.boot_complete                     u:object_r:vendor_camera_prop:s0
@@ -6,20 +7,28 @@ vendor.camera.sensor.                           u:object_r:vendor_camera_prop:s0
 ro.vendor.camera.                               u:object_r:vendor_camera_prop:s0
 ro.vendor.camera.res.fmq.size                   u:object_r:vendor_camera_prop:s0
 ro.vendor.camera.req.fmq.size                   u:object_r:vendor_camera_prop:s0
+ro.camera.res.fmq.size                          u:object_r:vendor_camera_prop:s0
+ro.camera.req.fmq.size                          u:object_r:vendor_camera_prop:s0
 
 # Fingerprint
-persist.vendor.fpc.                             u:object_r:vendor_fp_prop:s0
-persist.vendor.sys.fp.                          u:object_r:vendor_fp_prop:s0
-ro.hardware.fp                                  u:object_r:vendor_fp_prop:s0
-vendor.fps_hal.                                 u:object_r:vendor_fp_prop:s0
-ro.boot.fpsensor                                u:object_r:vendor_fp_prop:s0
-
-# FM Radio
-ro.vendor.fm.                                   u:object_r:vendor_fm_prop:s0
+gf.debug.                                       u:object_r:vendor_fingerprint_prop:s0
+persist.vendor.fpc.                             u:object_r:vendor_fingerprint_prop:s0
+persist.vendor.sys.fp.                          u:object_r:vendor_fingerprint_prop:s0
+persist.sys.fp.                                 u:object_r:vendor_fingerprint_prop:s0
+ro.hardware.fp                                  u:object_r:vendor_fingerprint_prop:s0
+vendor.fps_hal.                                 u:object_r:vendor_fingerprint_prop:s0
+ro.boot.fpsensor                                u:object_r:vendor_fingerprint_prop:s0
 
 # Global
 ro.boot.factorybuild                            u:object_r:vendor_public_vendor_default_prop:s0
 ro.boot.hwversion                               u:object_r:vendor_public_vendor_default_prop:s0
+
+# IMEI
+ro.vendor.oem.imei                              u:object_r:vendor_deviceid_prop:s0
+ro.vendor.oem.imei1                             u:object_r:vendor_deviceid_prop:s0
+ro.vendor.oem.meid                              u:object_r:vendor_deviceid_prop:s0
+persist.vendor.radio.imei                       u:object_r:vendor_deviceid_prop:s0
+persist.vendor.radio.meid                       u:object_r:vendor_deviceid_prop:s0
 
 # Power
 vendor.powerhal.state                           u:object_r:vendor_power_prop:s0
@@ -34,14 +43,14 @@ persist.vendor.sys.pay                          u:object_r:vendor_tee_listener_p
 # RIL
 ro.vendor.ril                                   u:object_r:vendor_public_vendor_default_prop:s0
 
+# Sensor
+persist.sensor.                                 u:object_r:vendor_sensors_prop:s0
+
 # Telephony
-ro.vendor.oem.imei                 u:object_r:vendor_deviceid_prop:s0
-ro.vendor.oem.meid                 u:object_r:vendor_deviceid_prop:s0
-ro.vendor.oem.psno                 u:object_r:vendor_sno_prop:s0
-ro.vendor.oem.sno                  u:object_r:vendor_sno_prop:s0
-persist.vendor.radio.imei          u:object_r:vendor_deviceid_prop:s0
-persist.vendor.radio.meid          u:object_r:vendor_deviceid_prop:s0
+ro.vendor.oem.psno                              u:object_r:vendor_sno_prop:s0
+ro.vendor.oem.sno                               u:object_r:vendor_sno_prop:s0
 
 # Thermal
+sys.thermal.                                    u:object_r:vendor_thermal_normal_prop:s0
 vendor.sys.thermal.                             u:object_r:vendor_thermal_normal_prop:s0
-
+persist.sys.thermal.config                      u:object_r:vendor_thermal_normal_prop:s0

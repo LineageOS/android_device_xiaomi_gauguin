@@ -1,12 +1,7 @@
-# Allow access to the HALs
-hal_client_domain(hal_fingerprint_default, vendor_hal_perf)
-
-# Allow binder communication with vendor_hal_perf_default
-binder_call(hal_fingerprint_default, vendor_hal_perf_default)
+typeattribute hal_fingerprint_default data_between_core_and_vendor_violators;
 
 allow hal_fingerprint_default fingerprint_data_file:dir rw_dir_perms;
 allow hal_fingerprint_default fingerprint_data_file:file create_file_perms;
-allow hal_fingerprint_default hal_fingerprint_hwservice:hwservice_manager find;
 
 allow hal_fingerprint_default {
   fingerprint_device
@@ -31,9 +26,7 @@ allow hal_fingerprint_default {
 
 r_dir_file(hal_fingerprint_default, firmware_file)
 
-get_prop(system_server, vendor_fp_prop);
-
-set_prop(hal_fingerprint_default, vendor_fp_prop)
+set_prop(hal_fingerprint_default, vendor_fingerprint_prop)
 
 allow hal_fingerprint_default vendor_sysfs_spss:dir { search };
 allow hal_fingerprint_default vendor_sysfs_spss:file { open read };
