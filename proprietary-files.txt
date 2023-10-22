@@ -486,17 +486,16 @@ vendor/lib64/hw/vendor.qti.hardware.capabilityconfigstore@1.0-impl.so
 # Consumer IR
 vendor/lib64/hw/consumerir.default.so:vendor/lib64/hw/consumerir.lito.so
 
-# Display - from nio S1RTS32.41-20-16-1-3
-vendor/lib64/libdisplayskuutils.so|3ddb2ffe55aa9aef686cf3be00ae5e0d1d8f9d93
+# Display - from FP4
 vendor/lib64/libhdr_tm.so|4be3cfff1ef40cbc6ad329b79c60881263aa6723
-vendor/lib64/libhdrdynamic.so|b4f1c90d04c158c56afb0644ccf553a19d5ff115
-vendor/lib64/libhdrdynamicootf.so|3dc3c098e285fab5a0b3306b2b750e74bbcfba86
+vendor/lib64/libdisplayqos.so|15701f18257c43be5657bbd867a8acf1f469e373
+vendor/lib64/libdisplayskuutils.so|ac4f2231f098c03824844799106685bf81f97782
 vendor/lib64/libqseed3.so|c9fb729cf48278d0c87d27c0af17ae3a8ccb1bf7
-vendor/lib64/libsdm-color.so|5bda5568cc91771b12ca0fa9d6e28ef5ac05d5cf
+vendor/lib64/libsdm-color.so|d4e008d6dfca0b5f9bbf5e3b583f33e2606460e4
 vendor/lib64/libsdm-colormgr-algo.so|1fb7f3cb11557bbf677afb5d6eda0e4e9fd3ac58
-vendor/lib64/libsdm-diag.so|f532f28a93bb8568652579ea97267d3053ad9cfe
-vendor/lib64/libsdm-disp-vndapis.so|fd0b0beac164c92bfa012dbc059cb50cdde2dec6
-vendor/lib64/libsdmextension.so|99377ab065105f0cbd17bbe5907cdbb8027a9f17
+vendor/lib64/libsdm-diag.so|d602a56edde3fb2cf7de81d5ab18ef2ef3cf3814
+vendor/lib64/libsdm-disp-vndapis.so|2f1abd975b1f1dbabcc410e56c29ac296adcc411
+vendor/lib64/libsdmextension.so|f2ab90d1880fd30a6673110ad9f36cf93aebd5b9
 vendor/lib64/libtinyxml2_1.so|fb0a2b16e5cfd28515268edc5c2345190d1ef4e5
 
 # Display Calibration
@@ -507,22 +506,19 @@ vendor/etc/qdcm_calib_data_xiaomi_42_02_0b_video_mode_dsc_dsi_panel.xml
 vendor/firmware/NT36xxx_MP_Setting_Criteria_5935.csv
 vendor/firmware/NT36xxx_MP_Setting_Criteria_5937.csv
 
-# Display Postprocessing
-vendor/bin/ppd
-vendor/lib64/libdpps.so
-
-# Display Postprocessing - from nio S1RTS32.41-20-16-1-3
-vendor/bin/hw/vendor.display.color@1.0-service|9c77c3655befc1c53f842e1b9605b83e3dc64259
+# Display Postprocessing - from FP4
+vendor/bin/hw/vendor.display.color@1.0-service|1fa47c2d3fff52c362848c59dbc40b4073c59ea9
+vendor/bin/ppd|c478fa8957564bf1b2649b6ba80c07f72b0b318f
+vendor/lib64/libdpps.so|02538edc4f214b3d6018031aa8460efbc1760223
 vendor/etc/init/vendor.display.color@1.0-service.rc|5ad673f879b3685a0e79b5633437e5499cb94f48
-vendor/lib64/libdisp-aba.so|902839da31464e54bd4756747db2dd7ad867484f
-vendor/lib64/libdisplayqos.so|56cfe5471e5c282ac83a31e5b155342ade8c08d0
-vendor/lib64/vendor.display.color@1.0.so|e1c1f1591849f77603221c64a382262ae0e97a9f
-vendor/lib64/vendor.display.color@1.1.so|00d2f85e2138bbdd9518c365c8a1b779d2c8deae
-vendor/lib64/vendor.display.color@1.2.so|e1bbbd487df97bc80fd0b0050f363adbea81cc90
-vendor/lib64/vendor.display.color@1.3.so|2e098d2ed666c0dc45f45d093ecb32be5733f3a7
-vendor/lib64/vendor.display.color@1.4.so|fe3380621cf3384284fc19d82b8644910adb06ec
-vendor/lib64/vendor.display.color@1.5.so|9a2c10cbf8ed37371528cc33b7957ff6595ac2ee
-vendor/lib64/vendor.display.postproc@1.0.so|6fd8249ae537e145f1940cdd264773898e6f64b9
+vendor/lib64/libdisp-aba.so|894b0fe1ace5effb471ebb7437cd590a096e47d8
+vendor/lib64/vendor.display.color@1.0.so|f1f7d91884c8e3c9ea300e67f5df91057094de40
+vendor/lib64/vendor.display.color@1.1.so|e7ab973147c3e03e31efacee13e8d8a9c841eb7b
+vendor/lib64/vendor.display.color@1.2.so|fe9ec904459b7675297e5ef6883ae98b438fb77f
+vendor/lib64/vendor.display.color@1.3.so|32c721417938e870d34170c08c93c817e7d4447b
+vendor/lib64/vendor.display.color@1.4.so|ff2233791d4e2c5c0da0f194546c42fc0eb68164
+vendor/lib64/vendor.display.color@1.5.so|de239337ad42863e5eabeff196b20345d0dce00c
+vendor/lib64/vendor.display.postproc@1.0.so|e94ad60150b7b6b1c09133c03341044a32cdfde7
 
 # DPM
 system/framework/tcmclient.jar
