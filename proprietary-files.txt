@@ -1,4 +1,5 @@
 # All unpinned blobs are extracted from gauguinin-user 12 RKQ1.200826.002 V14.0.3.0.SJSINXM release-keys.
+# FP4 : Fairphone/FP4eea/FP4:13/TKQ1.230127.002/TP1V:user/release-keys
 # gauguin_CN: gauguin-user 12 RKQ1.200826.002 V14.0.2.0.SJSCNXM release-keys
 # gauguin_GL: gauguin-user 12 RKQ1.200826.002 V14.0.2.0.SJSMIXM release-keys
 
@@ -127,11 +128,11 @@ vendor/lib64/hw/vendor.qti.hardware.btconfigstore@1.0-impl.so
 vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.0.so
 vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.1.so
 
-# CACert
-vendor/app/CACertService/CACertService.apk
-vendor/lib64/libcacertclient.so
-vendor/lib64/libjnihelper.so
-vendor/lib64/vendor.qti.hardware.cacert@1.0.so
+# CACert - from FP4
+vendor/app/CACertService/CACertService.apk|0adef425b5c1d8f7805177c78d034895d65dcb0a
+vendor/lib64/libcacertclient.so|d73c1651d2a66a595a65edc43d5605501bc2fd73
+vendor/lib64/libjnihelper.so|4add738a52a07cad2e999ea4a6c540bd179527ee
+vendor/lib64/vendor.qti.hardware.cacert@1.0.so|f8f65b093fe367ffe0a8f23d7c7ff88ec09b80c5
 
 # Camera
 vendor/lib64/hw/camera.qcom.so
@@ -402,8 +403,6 @@ vendor/lib/libfastcvdsp_stub.so
 vendor/lib/libmdsprpc.so
 vendor/lib/libsdsprpc.so
 vendor/lib/libsysmon_cdsp_skel.so
-vendor/lib64/libcdfw.so
-vendor/lib64/libcdfw_remote_api.so
 vendor/lib64/libcdsp_default_listener.so
 vendor/lib64/libcdsprpc.so
 vendor/lib64/libfastcvdsp_stub.so
@@ -622,38 +621,38 @@ vendor/bin/hw/android.hardware.gatekeeper@1.0-service-qti
 vendor/etc/init/android.hardware.gatekeeper@1.0-service-qti.rc
 vendor/lib64/hw/android.hardware.gatekeeper@1.0-impl-qti.so
 
-# GNSS
-vendor/bin/loc_launcher
-vendor/bin/lowi-server
-vendor/bin/slim_daemon
-vendor/bin/xtra-daemon
-vendor/bin/xtwifi-client
-vendor/bin/xtwifi-inet-agent
-vendor/etc/vintf/manifest/vendor.qti.gnss@4.0-service.xml
-vendor/lib64/hw/vendor.qti.gnss@4.0-impl.so
-vendor/lib64/libaoa.so
-vendor/lib64/libdataitems.so
-vendor/lib64/libgdtap.so
-vendor/lib64/libizat_client_api.so
-vendor/lib64/libizat_core.so
-vendor/lib64/liblbs_core.so
-vendor/lib64/libloc_api_v02.so
-vendor/lib64/liblocationservice.so
-vendor/lib64/liblocationservice_glue.so
-vendor/lib64/liblowi_client.so
-vendor/lib64/liblowi_wifihal.so
-vendor/lib64/libqcc_file_agent.so
-vendor/lib64/libqdma_file_agent.so
-vendor/lib64/libslimclient.so
-vendor/lib64/libxtadapter.so
-vendor/lib64/vendor.qti.gnss@1.0.so
-vendor/lib64/vendor.qti.gnss@1.1.so
-vendor/lib64/vendor.qti.gnss@1.2.so
-vendor/lib64/vendor.qti.gnss@2.0.so
-vendor/lib64/vendor.qti.gnss@2.1.so
-vendor/lib64/vendor.qti.gnss@3.0.so
-vendor/lib64/vendor.qti.gnss@4.0-service.so
-vendor/lib64/vendor.qti.gnss@4.0.so
+# GNSS - from FP4
+vendor/bin/loc_launcher|f0b95b7d523d2785a3090c2598c4bbd6170f1ba1
+vendor/bin/lowi-server|5dac21643422cc9f62aad5c79e0110241948f031
+vendor/bin/xtra-daemon|f9af378bf52e0e177ab9c91c4792c202fa8f25ed
+vendor/etc/vintf/manifest/vendor.qti.gnss@4.0-service.xml|6514b13f55abc0acc28e004c35ff93fb972d61a9
+vendor/lib64/libcdfw.so|76aa65aea92ef92e0c4e4a6700c049d5de549c18
+vendor/lib64/libcdfw_remote_api.so|e43217af385097ea8d939a7c0cc60c3e092ad086
+vendor/lib64/hw/vendor.qti.gnss@4.0-impl.so|0f68732435cef39376a7b8db12e676a5f4394a49
+vendor/lib64/libaoa.so|6aacf99d44a05c80bf77ee01ac21da20ce98368d
+vendor/lib64/libdataitems.so|9b344d4f91166cf6c9ccd0acceb5df08c9c4c650
+vendor/lib64/libgdtap.so|500675e4bee26627cda1f1cc87b8a6838f65b7a7
+vendor/lib64/libizat_client_api.so|4a982ffe253557b58934df0e9278f97fef5862f2
+vendor/lib64/libizat_core.so|0f809a966fac50831d5ac7a6d379ffd2afc572fb
+vendor/lib64/liblbs_core.so|83ee6243715eb7261beca1b5a44dc5221ecdc028
+vendor/lib64/libloc_api_v02.so|17dd11173437bf194f87154144d3a65705c47a9a
+vendor/lib64/libloc_api_wds.so|0f506584fe78cc1be3cf0f022b4314d2575796b1
+vendor/lib64/liblocationservice.so|148aaee8ce013debbd2571679bb1a81800eeb270
+vendor/lib64/liblocationservice_glue.so|5087838ca49c474063785ad361d35f2cead2c873
+vendor/lib64/liblowi_client.so|b388eefaf096fccb254302b7dc0bac29f3db6f6b
+vendor/lib64/liblowi_wifihal.so|0e55bc598b3bbbeba4bd8bdf000df38131614a5b
+vendor/lib64/libqcc_file_agent.so|0345fc438536bc11f3e65999e0b750efb19ba9f9
+vendor/lib64/libqdma_file_agent.so|9c9a03ea1507a247e9d736b4073781d893f865f4
+vendor/lib64/libslimclient.so|92d00c9a720d53309c10766a8d72a6c3425a95b7
+vendor/lib64/libxtadapter.so|b46b0ad003e9738e7ee9d6e51722f63505c47323
+vendor/lib64/vendor.qti.gnss@1.0.so|50f716e9e4295a18b93fc674f2b6c132053a8246
+vendor/lib64/vendor.qti.gnss@1.1.so|3b771c3bb5221fb1b27fcbb355c339e582771616
+vendor/lib64/vendor.qti.gnss@1.2.so|a470538976d60f81dbae201734ffd96dd3bcf037
+vendor/lib64/vendor.qti.gnss@2.0.so|bdd134a8496c2b62e3ef69e66c8e698537280345
+vendor/lib64/vendor.qti.gnss@2.1.so|eaeec862a315de1729b7497dacd2441fe781b9e7
+vendor/lib64/vendor.qti.gnss@3.0.so|1c4e2b5e81031140ab1230e5fc00b35c1f085834
+vendor/lib64/vendor.qti.gnss@4.0-service.so|6d006555dce2da619f394b42e24104d76f79f36e
+vendor/lib64/vendor.qti.gnss@4.0.so|8ae256c3a5f69914a5aab20e4cbaba3be54c7f15
 
 # Graphics
 vendor/lib/egl/eglSubDriverAndroid.so
