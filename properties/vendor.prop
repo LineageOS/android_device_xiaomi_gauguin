@@ -81,18 +81,6 @@ ro.crypto.volume.filenames_mode=aes-256-cts
 ro.crypto.volume.options=::v2
 
 # Display
-debug.egl.hw=0
-debug.sf.hw=0
-debug.sf.enable_gl_backpressure=1
-debug.sf.disable_client_composition_cache=1
-debug.sf.latch_unsignaled=1
-debug.sf.predict_hwc_composition_strategy=0
-persist.sys.sf.color_mode=0
-persist.sys.sf.color_saturation=1.0
-persist.sys.sf.native_mode=2
-ro.opengles.version=196610
-ro.hardware.egl=adreno
-ro.hardware.vulkan=adreno
 ro.vendor.display.sensortype=2
 vendor.display.comp_mask=2
 vendor.display.disable_excl_rect_partial_fb=1
@@ -102,19 +90,12 @@ vendor.display.disable_offline_rotator=1
 vendor.display.disable_scaler=0
 vendor.display.enable_async_powermode=0
 vendor.display.enable_hdr10_gpu_target=1
-vendor.display.enable_optimize_refresh=1
+vendor.display.enable_perf_hint_large_comp_cycle=1
 vendor.display.enable_posted_start_dyn=1
-vendor.display.use_smooth_motion=0
+vendor.display.enable_optimize_refresh=1
 vendor.display.qdcm.disable_factory_mode=1
 vendor.display.qdcm.mode_combine=1
-vendor.gralloc.disable_ubwc=0
-vendor.display.enable_perf_hint_large_comp_cycle=1
-ro.surface_flinger.has_wide_color_display=true
-ro.surface_flinger.has_HDR_display=true
-ro.surface_flinger.use_color_management=true
-ro.surface_flinger.wcg_composition_dataspace=143261696
-ro.surface_flinger.protected_contents=true
-ro.surface_flinger.force_hwc_copy_for_virtual_displays=true
+vendor.display.use_smooth_motion=0
 
 # Display (Phase Offsets)
 debug.sf.enable_advanced_sf_phase_offset=1
@@ -125,6 +106,21 @@ debug.sf.early.sf.duration=16000000
 debug.sf.early.app.duration=16500000
 debug.sf.earlyGl.sf.duration=13500000
 debug.sf.earlyGl.app.duration=21000000
+
+# Display (Refresh Rate)
+ro.surface_flinger.use_content_detection_for_refresh_rate=true
+ro.surface_flinger.set_display_power_timer_ms=1000
+ro.surface_flinger.set_idle_timer_ms=250
+ro.surface_flinger.set_touch_timer_ms=300
+vendor.display.idle_time=1100
+
+# Display (Surface Flinger)
+ro.surface_flinger.force_hwc_copy_for_virtual_displays=true
+ro.surface_flinger.has_wide_color_display=true
+ro.surface_flinger.has_HDR_display=true
+ro.surface_flinger.protected_contents=true
+ro.surface_flinger.use_color_management=true
+ro.surface_flinger.wcg_composition_dataspace=143261696
 
 # DPM
 persist.vendor.dpm.feature=1
@@ -141,6 +137,21 @@ ro.frp.pst=/dev/block/bootdevice/by-name/frp
 vendor.hw.fm.init=0
 ro.vendor.fm.use_audio_session=true
 
+# Graphics
+debug.egl.hw=0
+debug.sf.hw=0
+debug.sf.disable_client_composition_cache=1
+debug.sf.enable_gl_backpressure=1
+debug.sf.latch_unsignaled=1
+debug.sf.predict_hwc_composition_strategy=0
+persist.sys.sf.color_mode=0
+persist.sys.sf.color_saturation=1.0
+persist.sys.sf.native_mode=2
+ro.opengles.version=196610
+ro.hardware.egl=adreno
+ro.hardware.vulkan=adreno
+vendor.gralloc.disable_ubwc=0
+
 # Keystore
 ro.hardware.keystore_desede=true
 
@@ -155,13 +166,6 @@ ro.vendor.extension_library=libqti-perfd-client.so
 
 # RCS
 persist.rcs.supported=0
-
-# Refresh Rate
-ro.surface_flinger.use_content_detection_for_refresh_rate=true
-ro.surface_flinger.set_display_power_timer_ms=1000
-ro.surface_flinger.set_idle_timer_ms=250
-ro.surface_flinger.set_touch_timer_ms=300
-vendor.display.idle_time=1100
 
 # RIL
 persist.radio.multisim.config=dsds
