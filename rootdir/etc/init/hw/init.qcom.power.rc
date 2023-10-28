@@ -89,10 +89,6 @@ on property:vendor.setup.power=1
     # wsf Range : 1..1000 So set to bare minimum value 1.
     write /proc/sys/vm/watermark_scale_factor 1
 
-    # cpuset parameters
-    write /dev/cpuset/background/cpus 0-5
-    write /dev/cpuset/system-background/cpus 0-5
-
     # Turn off sleep modes
     write /sys/module/lpm_levels/parameters/sleep_disabled 0
 
