@@ -1,3 +1,4 @@
+
 # Copyright (c) 2018-2020, The Linux Foundation. All rights reserved.
 #
 # Redistribution and use in source and binary forms, with or without
@@ -26,11 +27,6 @@
 # IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #
 #
-
-import /vendor/etc/init/hw/init.gauguin.rc
-import /vendor/etc/init/hw/init.gauguin.camera.rc
-import /vendor/etc/init/hw/init.gauguin.fingerprint.rc
-import /vendor/etc/init/hw/init.gauguin.nfc.rc
 
 on early-init
     # Configure governor settings for big.LITTLE cluster
@@ -90,7 +86,13 @@ on fs
     chown root system /mnt/vendor/persist
     chmod 0771 /mnt/vendor/persist
     restorecon_recursive /mnt/vendor/persist
+
+    mkdir /mnt/vendor/persist/audio 0755 system system
+    mkdir /mnt/vendor/persist/camera 0777 root root
     mkdir /mnt/vendor/persist/data 0700 system system
+    mkdir /mnt/vendor/persist/subsys 0770 root system
+
+    chmod 0666 /sys/kernel/boot_adsp/ssr
 
 on post-fs
     # set RLIMIT_MEMLOCK to 64MB
@@ -101,6 +103,12 @@ on post-fs
     chmod 0644 /mnt/vendor/dsp/fastrpc_shell_3
     mount none /mnt/vendor/dsp/fastrpc_shell_3 /vendor/dsp/cdsp/fastrpc_shell_3 bind
 
+    mkdir /mnt/vendor/persist/fpc 0770 system system
+    mkdir /mnt/vendor/persist/goodix 0770 system system
+
+    chmod 0644 /dev/elliptic0
+    chmod 0644 /dev/elliptic1
+
 on late-fs
     wait_for_prop hwservicemanager.ready true
     mount_all --late
@@ -108,8 +116,16 @@ on late-fs
 on early-boot
     start vendor.sensors
 
+    setprop vendor.media.target.version 3
+
+    chown system system /sys/class/leds/white/delay_off
+    chown system system /sys/class/leds/white/delay_on
+
 on boot
+    chmod 0666 /dev/input/event2
+
     write /dev/cpuset/audio-app/cpus 1-2
+
 #USB controller configuration
     setprop vendor.usb.rndis.func.name "gsi"
     setprop vendor.usb.rmnet.func.name "gsi"
@@ -117,6 +133,12 @@ on boot
     setprop vendor.usb.dpl.inst.name "dpl"
     setprop vendor.usb.qdss.inst.name "qdss_mdm"
     setprop vendor.usb.controller a600000.dwc3
+
+    # Set the default voltage to 5V
+    setprop persist.vendor.cp.taper_term_mv 5000
+    setprop persist.vendor.qg_cold_temp -150
+    setprop persist.vendor.qg_coff_gain 1
+    setprop persist.vendor.qg_cld_coff_gain 1.5
 
 on boot && property:persist.vendor.usb.controller.default=*
     setprop vendor.usb.controller ${persist.vendor.usb.controller.default}
@@ -127,8 +149,9 @@ on property:vendor.usb.controller=*
 on property:init.svc.vendor.charger=running
     start vendor.power_off_alarm
 
-    setprop vendor.usb.controller a600000.dwc3
+    setprop persist.sys.usb.config mass_storage
     setprop sys.usb.configfs 1
+    setprop vendor.usb.controller a600000.dwc3
     setprop vendor.setup.power 1
 
     # keep one LITTLE and one big
@@ -187,8 +210,68 @@ service vendor.per_proxy /vendor/bin/pm-proxy
     group system
     disabled
 
+# NVMAC
+service nv_mac /vendor/bin/nv_mac
+    class late_start
+    user system
+    group system inet net_admin wifi net_raw
+    oneshot
+
+# NFC
+service qti_esepowermanager_service_1_1 /vendor/bin/hw/vendor.qti.esepowermanager@1.1-service
+    override
+    class hal
+    user system
+    group nfc system
+    disabled
+
+service secureelement-hal_1_2 /vendor/bin/hw/vendor.qti.secure_element@1.2-service
+    override
+    class hal
+    user system
+    group system
+    disabled
+
+service vendor.nfc_hal_service /vendor/bin/hw/android.hardware.nfc_snxxx@1.2-service
+    override
+    class hal
+    user nfc
+    group nfc
+    disabled
+
 on property:init.svc.vendor.per_mgr=running
     start vendor.per_proxy
 
 on property:sys.shutdown.requested=*
     stop vendor.per_proxy
+
+on property:ro.boot.hwc=GLOBAL
+    enable qti_esepowermanager_service_1_1
+    enable secureelement-hal_1_2
+    enable vendor.nfc_hal_service
+
+on property:ro.boot.hwc=CN
+    enable qti_esepowermanager_service_1_1
+    enable secureelement-hal_1_2
+    enable vendor.nfc_hal_service
+
+#####copy megvii files#####
+on property:sys.boot_completed=1
+    mkdir /data/vendor/camera/model 0777 cameraserver audio
+    mkdir /data/vendor/camera/model/rt_model 0777 cameraserver audio
+    copy /vendor/etc/camera/model/rt_model/cache_data /data/vendor/camera/model/rt_model/cache_data
+    chown cameraserver audio /data/vendor/camera/model/rt_model/cache_data
+    chmod 0777 /data/vendor/camera/model/rt_model/cache_data
+    copy /vendor/etc/camera/model/rt_model/model_mdl_cache /data/vendor/camera/model/rt_model/model_mdl_cache
+    chown cameraserver audio /data/vendor/camera/model/rt_model/model_mdl_cache
+    chmod 0777 /data/vendor/camera/model/rt_model/model_mdl_cache
+    copy /vendor/etc/camera/model/rt_model/segment_model /data/vendor/camera/model/rt_model/segment_model
+    chown cameraserver audio /data/vendor/camera/model/rt_model/segment_model
+    chmod 0777 /data/vendor/camera/model/rt_model/segment_model
+
+# for bokeh control
+on property:vendor.camera.bokeh.disable=1
+    setprop persist.vendor.camera.bokeh.disable 1
+
+on property:vendor.camera.bokeh.disable=0
+    setprop persist.vendor.camera.bokeh.disable 0
