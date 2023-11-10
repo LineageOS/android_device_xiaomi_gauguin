@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "61da9152_60f247c3",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2023-11-10T09:58:25Z",
+      "side": 1,
+      "message": "Wouldn\u0027t it be better to do just this?\n\nhttps://github.com/LineageOS/android_device_xiaomi_sm8350-common/blob/lineage-20/BoardConfigCommon.mk#L68",
+      "revId": "443b3b82e919fe2a4e79729120ce10377aa6bd04",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
