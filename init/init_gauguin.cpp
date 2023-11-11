@@ -23,6 +23,7 @@ void property_override(char const prop[], char const value[]) {
 }
 
 void load_gauguin() {
+    property_override("bluetooth.device.default_name", "Mi 10T Lite");
     property_override("ro.build.fingerprint", "Xiaomi/gauguin_global/gauguin:12/RKQ1.200826.002/V14.0.2.0.SJSMIXM:user/release-keys");
     property_override("ro.product.brand", "Xiaomi");
     property_override("ro.product.device", "gauguin");
@@ -31,6 +32,7 @@ void load_gauguin() {
 }
 
 void load_gauguinpro() {
+    property_override("bluetooth.device.default_name", "Redmi Note 9 Pro");
     property_override("ro.build.fingerprint", "Redmi/gauguin/gauguin:12/RKQ1.200826.002/V14.0.2.0.SJSCNXM:user/release-keys");
     property_override("ro.product.brand", "Redmi");
     property_override("ro.product.device", "gauguinpro");
@@ -39,6 +41,7 @@ void load_gauguinpro() {
 }
 
 void load_gauguininpro() {
+    property_override("bluetooth.device.default_name", "Mi 10i");
     property_override("ro.build.fingerprint", "Xiaomi/gauguininpro/gauguininpro:12/RKQ1.200826.002/V14.0.3.0.SJSINXM:user/release-keys");
     property_override("ro.product.brand", "Xiaomi");
     property_override("ro.product.device", "gauguininpro");
