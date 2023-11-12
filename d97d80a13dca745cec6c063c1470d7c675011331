@@ -16,6 +16,24 @@
       "message": "Should this include \"5G\" according to the changes in the updater and wiki?",
       "revId": "d97d80a13dca745cec6c063c1470d7c675011331",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "b03e9cd4_dbfc04c2",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 32442
+      },
+      "writtenOn": "2023-11-12T11:16:18Z",
+      "side": 1,
+      "message": "The devices were indeed sold with \"5G\" with their name onto it.\nBut I don\u0027t remember stock ROM having 5G in their bluetooth name.\nWell, I installed both CN and IN stock ROM past year, I found out that\nnon of the variant had appended 5G in their bluetooth name.",
+      "parentUuid": "e58ae045_34b1c380",
+      "revId": "d97d80a13dca745cec6c063c1470d7c675011331",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
