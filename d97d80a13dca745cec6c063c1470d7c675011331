@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "e58ae045_34b1c380",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 16011
+      },
+      "writtenOn": "2023-11-12T11:03:23Z",
+      "side": 1,
+      "message": "Should this include \"5G\" according to the changes in the updater and wiki?",
+      "revId": "d97d80a13dca745cec6c063c1470d7c675011331",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
