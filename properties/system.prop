@@ -2,9 +2,6 @@
 audio.offload.buffer.size.kb=32
 audio.offload.gapless.enabled=true
 
-# Charger
-ro.charger.enable_suspend=1
-
 # CNE
 persist.vendor.cne.feature=1
 
