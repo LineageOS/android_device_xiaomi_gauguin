@@ -1,6 +1,6 @@
-# For diag over socket
 userdebug_or_eng(`
+  # For diag over socket
   allow kernel self:qipcrtr_socket create;
 ')
-# Ignore the socket if it fails to create
+
 dontaudit kernel self:qipcrtr_socket create;
