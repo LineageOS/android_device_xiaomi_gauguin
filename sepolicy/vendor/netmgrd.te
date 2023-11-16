@@ -1,1 +1,5 @@
 get_prop(vendor_netmgrd, vendor_radio_prop)
+
+userdebug_or_eng(`
+  allow vendor_netmgrd vendor_diag_device:chr_file rw_file_perms;
+')
