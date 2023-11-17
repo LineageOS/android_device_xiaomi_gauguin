@@ -7,3 +7,6 @@ allow tee {
 }:file create_file_perms;
 
 allow tee mnt_vendor_file:dir rw_dir_perms;
+
+# b/198130336
+dontaudit tee tmpfs:dir read;
