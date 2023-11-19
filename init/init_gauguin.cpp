@@ -29,6 +29,7 @@ void load_gauguin() {
     property_override("ro.product.device", "gauguin");
     property_override("ro.product.model", "M2007J17G");
     property_override("ro.boot.product.hardware.sku", "nfc");
+    property_override("ro.boot.hardware.sku", "nfc");
 }
 
 void load_gauguinpro() {
@@ -38,6 +39,7 @@ void load_gauguinpro() {
     property_override("ro.product.device", "gauguinpro");
     property_override("ro.product.model", "M2007J17C");
     property_override("ro.boot.product.hardware.sku", "nfc");
+    property_override("ro.boot.hardware.sku", "nfc");
 }
 
 void load_gauguininpro() {
