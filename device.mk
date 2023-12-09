@@ -167,8 +167,7 @@ PRODUCT_PACKAGES += \
     memtrack.lito
 
 PRODUCT_PACKAGES += \
-    libtinyxml \
-    libvulkan \
+    libvulkan
 
 PRODUCT_PACKAGES += \
     vendor.display.config@1.11.vendor \
