@@ -16,6 +16,9 @@ genfscon sysfs /devices/platform/soc/soc:fingerprint_fpc/wakeup_enable          
 genfscon sysfs /class/power_supply/battery/capacity                                                 u:object_r:sysfs_battery_supply:s0
 genfscon sysfs /devices/platform/soc/soc:maxim_ds28e16/power_supply/batt_verify                     u:object_r:sysfs_battery_supply:s0
 
+# IIO
+genfscon sysfs /bus/iio/devices                                                 u:object_r:vendor_sysfs_battery_supply:s0
+
 # kmsg
 genfscon proc /last_kmsg                                                        u:object_r:proc_last_kmsg:s0
 
