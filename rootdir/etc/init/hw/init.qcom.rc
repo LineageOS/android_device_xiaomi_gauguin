@@ -191,10 +191,10 @@ service loc_launcher /system/vendor/bin/loc_launcher
     user gps
     group gps
 
-service qcom-sh /vendor/bin/init.qcom.sh
+service init-radio-sh /vendor/bin/init.radio.sh
     class late_start
-    user root
-    group root system radio
+    user radio
+    group root radio
     oneshot
 
 service vendor.atfwd /vendor/bin/ATFWD-daemon
@@ -202,11 +202,12 @@ service vendor.atfwd /vendor/bin/ATFWD-daemon
     user system
     group system radio
 
-service vendor.msm_irqbalance /vendor/bin/msm_irqbalance -f /system/vendor/etc/msm_irqbalance.conf
+service vendor.msm_irqbalance /vendor/bin/msm_irqbalance -f /vendor/etc/msm_irqbalance.conf
+    socket msm_irqbalance seqpacket 660 root system
     class core
     user root
     group root
-    disabled
+    task_profiles ServiceCapacityLow
 
 service time_daemon /vendor/bin/time_daemon
     class main
