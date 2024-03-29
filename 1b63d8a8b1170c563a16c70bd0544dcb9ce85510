@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "78cf6e0b_190b36c4",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 32968
+      },
+      "writtenOn": "2024-03-29T16:04:34Z",
+      "side": 1,
+      "message": "This is required for NFC to work on Android 14",
+      "revId": "1b63d8a8b1170c563a16c70bd0544dcb9ce85510",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
