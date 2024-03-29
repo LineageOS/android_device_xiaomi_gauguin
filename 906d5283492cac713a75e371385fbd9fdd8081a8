@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "cc918a15_f9134188",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 32968
+      },
+      "writtenOn": "2024-03-29T16:05:22Z",
+      "side": 1,
+      "message": "Updated recovery is useful for bug-free updates",
+      "revId": "906d5283492cac713a75e371385fbd9fdd8081a8",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
