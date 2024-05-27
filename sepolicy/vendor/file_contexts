@@ -1,12 +1,12 @@
 # Audio
-/dev/socket/audio_hw_socket                                             u:object_r:audio_socket:s0
+/dev/socket/audio_hw_socket                                             u:object_r:vendor_audio_socket:s0
 
 # Camera
-/mnt/vendor/persist/camera(/.*)?                                        u:object_r:camera_persist_file:s0
+/mnt/vendor/persist/camera(/.*)?                                        u:object_r:vendor_persist_camera_file:s0
 /vendor/lib64/libipebpsstriping\.so                                     u:object_r:same_process_hal_file:s0
 
 # Charger
-/vendor/bin/batterysecret                                               u:object_r:batterysecret_exec:s0
+/vendor/bin/batterysecret                                               u:object_r:vendor_batterysecret_exec:s0
 
 # Elliptic
 /dev/elliptic[0-9]                                                      u:object_r:ultrasound_device:s0
@@ -23,15 +23,15 @@
 /data/vendor/fpc(/.*)?                                                  u:object_r:fingerprint_vendor_data_file:s0
 /data/vendor/fpdump(/.*)?                                               u:object_r:fingerprint_vendor_data_file:s0
 
-# IR
+# IR devices
 /dev/ir_spi                                                             u:object_r:lirc_device:s0
 
 # IIO
 /sys/devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-02/c440000.qcom,spmi:qcom,pm7250b@2:vadc@3100/iio:device[0-9](/.*?) u:object_r:vendor_sysfs_battery_supply:s0
 
 # LED
-/sys/devices/platform/soc/[a-z0-9]+.qcom,spmi/spmi-[0-1]/spmi0-0[0-9]/[a-z0-9]+.qcom,spmi:qcom,[a-z0-9]+@[0-9]:qcom,leds@d000/leds(/.*)?            u:object_r:sysfs_leds:s0
-/sys/devices/platform/soc/[a-z0-9]+.i2c/i2c-[0-9]/[0-9]-[0-9]+/leds(/.*)?                                                                           u:object_r:sysfs_leds:s0
+/sys/devices/platform/soc/[a-z0-9]+.qcom,spmi/spmi-[0-9]+/spmi[0-9]+-[0-9]+/[a-z0-9]+.qcom,spmi:qcom,[a-z0-9]+@[0-9]+:qcom,leds@[a-z0-9]+/leds(/.*)?  u:object_r:sysfs_leds:s0 
+/sys/devices/platform/soc/[a-z0-9]+.i2c/i2c-[0-9]+/[0-9]+-[0-9]+/leds(/.*)?                                                                           u:object_r:sysfs_leds:s0
 
 # Lights
 /vendor/bin/hw/android\.hardware\.light-service\.xiaomi                 u:object_r:hal_light_default_exec:s0
@@ -43,17 +43,14 @@
 /vendor/bin/hw/android\.hardware\.nfc-service\.nxp                      u:object_r:hal_nfc_default_exec:s0
 
 # Persist subsystem
-/mnt/vendor/persist/subsys(/.*)?                                        u:object_r:persist_subsys_file:s0
+/mnt/vendor/persist/subsys(/.*)?                                        u:object_r:vendor_persist_subsys_file:s0
 
 # Radio
 /vendor/bin/init\.radio\.sh                                             u:object_r:init_radio_exec:s0
 
-# SSR
-/sys/devices(/platform)?/soc/[a-z0-9\.:]+,[a-z0-9\-\_]+/subsys[0-9]+/name         u:object_r:vendor_sysfs_ssr:s0
-
 # Sysfs (Wakeup)
 /sys/devices/virtual/diag/diag/wakeup[0-9]+(/.*)?                          u:object_r:sysfs_wakeup:s0
-/sys/devices/virtual/input/input4/wakeup[0-9]+(/.*)?                       u:object_r:sysfs_wakeup:s0
+/sys/devices/virtual/input/input[0-9]+/wakeup[0-9]+(/.*)?                  u:object_r:sysfs_wakeup:s0
 /sys/devices/virtual/misc/msm_aac/wakeup[0-9]+(/.*)?                       u:object_r:sysfs_wakeup:s0
 /sys/devices/virtual/misc/msm_alac/wakeup[0-9]+(/.*)?                      u:object_r:sysfs_wakeup:s0
 /sys/devices/virtual/misc/msm_amrnb/wakeup[0-9]+(/.*)?                     u:object_r:sysfs_wakeup:s0
@@ -70,9 +67,9 @@
 /sys/devices/virtual/misc/msm_wmapro/wakeup[0-9]+(/.*)?                    u:object_r:sysfs_wakeup:s0
 
 # Thermal
-/vendor/bin/mi_thermald                                                 u:object_r:mi_thermald_exec:s0
-/data/vendor/thermal(/.*)?                                              u:object_r:thermal_data_file:s0
+/data/vendor/thermal(/.*)?                                              u:object_r:vendor_thermal_data_file:s0
+/vendor/bin/mi_thermald                                                 u:object_r:vendor_mi_thermald_exec:s0
 
 # WiFi
-/vendor/bin/nv_mac                                                      u:object_r:vendor_wcnss_service_exec:s0
 /data/vendor/mac_addr(/.*)?                                             u:object_r:vendor_wifi_vendor_data_file:s0
+/vendor/bin/nv_mac                                                      u:object_r:vendor_wcnss_service_exec:s0
