@@ -1,12 +1,8 @@
 typeattribute tee data_between_core_and_vendor_violators;
 
+# Allow tee to read and write the fingerprint data file
 allow tee fingerprint_data_file:dir create_dir_perms;
-allow tee {
-  fingerprint_data_file
-  mnt_vendor_file
-}:file create_file_perms;
-
-allow tee mnt_vendor_file:dir rw_dir_perms;
+allow tee fingerprint_data_file:file create_file_perms;
 
 # b/198130336
 dontaudit tee tmpfs:dir read;
