@@ -6,6 +6,7 @@
 
 soong_namespace {
     imports: [
+        "bootable/deprecated-ota",
         "hardware/google/interfaces",
         "hardware/google/pixel",
         "hardware/lineage/interfaces/power-libperfmgr",
