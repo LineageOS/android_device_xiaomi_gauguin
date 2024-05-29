@@ -122,7 +122,6 @@ vendor/lib64/libjnihelper.so|4add738a52a07cad2e999ea4a6c540bd179527ee
 vendor/lib64/vendor.qti.hardware.cacert@1.0.so|f8f65b093fe367ffe0a8f23d7c7ff88ec09b80c5
 
 # Camera
-vendor/etc/init/android.hardware.camera.provider@2.4-service_64.rc:vendor/etc/init/android.hardware.camera.provider@2.4-service_64-qti.rc
 vendor/lib64/hw/camera.qcom.so
 vendor/lib64/hw/com.qti.chi.override.so
 vendor/lib64/libHalSuperSensorServer.so
