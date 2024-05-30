@@ -131,7 +131,7 @@ on boot && property:persist.vendor.usb.controller.default=*
 on property:vendor.usb.controller=*
     setprop sys.usb.controller ${vendor.usb.controller}
 
-on property:init.svc.vendor.charger=running
+on charger
     start vendor.power_off_alarm
 
     setprop persist.sys.usb.config mass_storage
