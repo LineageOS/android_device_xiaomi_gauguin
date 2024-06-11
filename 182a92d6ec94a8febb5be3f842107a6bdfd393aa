@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "abe670b6_e7a31dd0",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 32442
+      },
+      "writtenOn": "2024-06-11T03:28:54Z",
+      "side": 1,
+      "message": "A global variant user has confirmed that this fixes the issue mentioned above.",
+      "revId": "182a92d6ec94a8febb5be3f842107a6bdfd393aa",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
