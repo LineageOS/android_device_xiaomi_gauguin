@@ -127,7 +127,8 @@ PRODUCT_PACKAGES += \
     libdng_sdk.vendor \
     libgui_vendor \
     libmegface \
-    libMegviiFacepp-0.5.2
+    libMegviiFacepp-0.5.2 \
+    libpng.vendor
 
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.camera.flash-autofocus.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.camera.flash-autofocus.xml \
@@ -404,7 +405,10 @@ PRODUCT_COPY_FILES += \
 
 # QMI
 PRODUCT_PACKAGES += \
-    libjson
+    libcurl.vendor \
+    libjson \
+    libjsoncpp.vendor \
+    libsqlite.vendor
 
 # Protobuf
 PRODUCT_PACKAGES += \
