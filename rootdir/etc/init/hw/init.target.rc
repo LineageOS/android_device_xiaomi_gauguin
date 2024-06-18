@@ -114,9 +114,6 @@ on early-boot
 
     setprop vendor.media.target.version 3
 
-    chown system system /sys/class/leds/white/delay_off
-    chown system system /sys/class/leds/white/delay_on
-
 on boot
     chmod 0666 /dev/input/event2
 
