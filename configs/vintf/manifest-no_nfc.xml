@@ -1,4 +1,4 @@
-<manifest version="5.0" type="device" target-level="5">
+<manifest version="5.0" type="device" target-level="6">
     <hal format="aidl" override="true">
         <name>android.hardware.nfc</name>
     </hal>
