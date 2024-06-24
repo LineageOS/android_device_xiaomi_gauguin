@@ -242,7 +242,7 @@ vendor.usb.controller=a600000.dwc3
 vendor.usb.qdss.inst.name=qdss_mdm
 vendor.usb.diag.func.name=diag
 vendor.usb.use_ffs_mtp=1
-vendor.usb.use_gadget_hal=0
+vendor.usb.use_gadget_hal=1
 
 # Verity
 ro.apk_verity.mode=2
