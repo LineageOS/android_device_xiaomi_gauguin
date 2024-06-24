@@ -233,6 +233,7 @@ ro.soc.model=SM7225
 ro.product.property_source_order=odm,vendor,product,system_ext,system
 
 # USB
+sys.usb.mtp.batchcancel=1
 vendor.usb.rndis.func.name=gsi
 vendor.usb.rmnet.func.name=gsi
 vendor.usb.rmnet.inst.name=rmnet
@@ -240,7 +241,7 @@ vendor.usb.dpl.inst.name=dpl
 vendor.usb.controller=a600000.dwc3
 vendor.usb.qdss.inst.name=qdss_mdm
 vendor.usb.diag.func.name=diag
-vendor.usb.use_ffs_mtp=0
+vendor.usb.use_ffs_mtp=1
 vendor.usb.use_gadget_hal=0
 
 # Verity
