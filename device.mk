@@ -391,6 +391,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.touchscreen.multitouch.jazzhand.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.touchscreen.multitouch.jazzhand.xml
 
+# Updater
+AB_OTA_UPDATER := false
+
 # USB
 $(call inherit-product, vendor/qcom/opensource/usb/vendor_product.mk)
 
