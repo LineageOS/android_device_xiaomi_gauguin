@@ -48,6 +48,10 @@
 # Radio
 /vendor/bin/init\.radio\.sh                                             u:object_r:init_radio_exec:s0
 
+# SSR
+/sys/devices/platform/soc/aab0000.qcom,venus/subsys[0-9]+/name             u:object_r:vendor_sysfs_ssr:s0
+/sys/devices/platform/soc/aab0000.qcom,venus/subsys[0-9]+/restart_level    u:object_r:vendor_sysfs_ssr_toggle:s0
+
 # Sysfs (Wakeup)
 /sys/devices/virtual/diag/diag/wakeup[0-9]+(/.*)?                          u:object_r:sysfs_wakeup:s0
 /sys/devices/virtual/input/input[0-9]+/wakeup[0-9]+(/.*)?                  u:object_r:sysfs_wakeup:s0
