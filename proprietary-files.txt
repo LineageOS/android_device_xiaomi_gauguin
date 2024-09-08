@@ -4,7 +4,6 @@
 # gauguin_GL: gauguin-user 12 RKQ1.200826.002 V14.0.2.0.SJSMIXM release-keys
 
 # Current blobs with ELF checks disabled:
-# libOmxVideoDSMode, libOmxVpp depend on libOmxCore, which is a gnu makefile target
 # imsdatadaemon, libcne, libwqe, lowi-server, mutualex depend on libwpa_client, which is a gnu makefile target
 # libmiai_portraitsupernight, libmialgoengine, libwa_dof, libwa_refocus, libwa_rtdof, is unable to resolve its symbols
 
@@ -794,8 +793,6 @@ vendor/lib/libqcodec2_v4l2codec.so
 
 # Media configs
 vendor/etc/media_lagoon/video_system_specs.json
-vendor/etc/seccomp_policy/mediacodec.policy
-vendor/etc/system_properties.xml
 
 # Mink-Lowi Interface daemon
 vendor/bin/mlid
@@ -826,21 +823,6 @@ vendor/lib/libsn100u_fw.so:vendor/lib64/libsn100u_fw.so|2ed395ac4019876d74f3f31a
 
 # NVMAC
 vendor/bin/nv_mac
-
-# OMX
-vendor/lib/libOmxAacDec.so
-vendor/lib/libOmxAlacDec.so
-vendor/lib/libOmxAmrDec.so
-vendor/lib/libOmxAmrwbplusDec.so
-vendor/lib/libOmxApeDec.so
-vendor/lib/libOmxDsdDec.so
-vendor/lib/libOmxEvrcDec.so
-vendor/lib/libOmxG711Dec.so
-vendor/lib/libOmxQcelp13Dec.so
-vendor/lib/libOmxVideoDSMode.so;DISABLE_CHECKELF
-vendor/lib/libOmxVpp.so;DISABLE_CHECKELF
-vendor/lib/libOmxWmaDec.so
-vendor/lib/libdsd2pcm.so
 
 # Peripheral Manager
 vendor/bin/pm-proxy
@@ -1157,9 +1139,3 @@ vendor/lib64/libwvhidl.so
 
 # WiFi
 vendor/bin/cnss-daemon
-
-# WiFi Display
-vendor/lib/libwfdcommonutils_proprietary.so
-vendor/lib/libwfddisplayconfig_proprietary.so
-vendor/lib/libwfdmmservice_proprietary.so
-vendor/lib/libwfdutils_proprietary.so

@@ -14,6 +14,8 @@ $(call inherit-product, device/xiaomi/gauguin/device.mk)
 # Inherit some common Lineage stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
+TARGET_SUPPORTS_OMX_SERVICE := false
+
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := lineage_gauguin
 PRODUCT_DEVICE := gauguin
