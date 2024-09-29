@@ -145,6 +145,11 @@ drm.service.enabled=true
 # Factory Reset Protection
 ro.frp.pst=/dev/block/bootdevice/by-name/frp
 
+# Fingerprint
+persist.vendor.fingerprint.type=side
+persist.vendor.fingerprint.sensor_location=1080|900|200
+persist.vendor.fingerprint.sensor_modules=fpc,goodix
+
 # FM
 vendor.hw.fm.init=0
 ro.vendor.fm.use_audio_session=true

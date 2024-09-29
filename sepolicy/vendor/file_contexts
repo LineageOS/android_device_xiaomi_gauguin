@@ -11,9 +11,6 @@
 # Elliptic
 /dev/elliptic[0-9]                                                      u:object_r:ultrasound_device:s0
 
-# Fingerprint
-/vendor/bin/hw/android\.hardware\.biometrics\.fingerprint@2.3-service\.xiaomi                           u:object_r:hal_fingerprint_default_exec:s0
-
 # Fingerprint - devices
 /dev/goodix_fp                                                          u:object_r:fingerprint_device:s0
 
@@ -22,6 +19,9 @@
 /data/vendor/goodix(/.*)?                                               u:object_r:fingerprint_vendor_data_file:s0
 /data/vendor/fpc(/.*)?                                                  u:object_r:fingerprint_vendor_data_file:s0
 /data/vendor/fpdump(/.*)?                                               u:object_r:fingerprint_vendor_data_file:s0
+
+# HALs
+/vendor/bin/hw/android\.hardware\.biometrics\.fingerprint-service\.xiaomi  u:object_r:hal_fingerprint_default_exec:s0
 
 # IR devices
 /dev/lirc[0-9]+                                                    u:object_r:lirc_device:s0
