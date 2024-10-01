@@ -51,6 +51,8 @@ blob_fixups: blob_fixups_user_type = {
         .regex_replace(' +seclabel u:r:batterysecret:s0\n', ''),
     'vendor/etc/init/init.mi_thermald.rc': blob_fixup()
         .regex_replace(' +seclabel u:r:mi_thermald:s0\n', ''),
+    'vendor/etc/seccomp_policy/atfwd@2.0.policy': blob_fixup()
+        .add_line_if_missing('gettid: 1'),
     'vendor/lib64/camera/components/com.mi.node.watermark.so': blob_fixup()
         .add_needed('libpiex_shim.so'),
     ('vendor/lib64/libarcsoft_hta.so', 'vendor/lib64/libarcsoft_hdrplus_hvx_stub.so', 'vendor/lib64/libarcsoft_super_night_raw.so', 'vendor/lib64/libmialgo_rfs.so', 'vendor/lib64/libMIAIHDRhvx_interface.so'): blob_fixup()
