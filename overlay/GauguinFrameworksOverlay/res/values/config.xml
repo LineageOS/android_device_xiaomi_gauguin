@@ -34,7 +34,8 @@
     <bool name="config_dozeAfterScreenOffByDefault">true</bool>
 
     <!-- Minimum screen brightness setting allowed by power manager.
-         The user is forbidden from setting the brightness below this level. -->
+         The user is forbidden from setting the brightness below this level.
+         Equivalent to 1/255. -->
     <item name="config_screenBrightnessSettingMinimumFloat" format="float" type="dimen">0.0</item>
 
     <!-- Maximum screen brightness allowed by the power manager.
@@ -42,13 +43,15 @@
     <item name="config_screenBrightnessSettingMaximumFloat" format="float" type="dimen">1.0</item>
 
     <!-- Default screen brightness setting set.
-         Must be in the range specified by minimum and maximum. -->
-    <item name="config_screenBrightnessSettingDefaultFloat" format="float" type="dimen">0.4</item>
+         Must be in the range specified by minimum and maximum.
+         Equivalent to 128/255. -->
+    <item name="config_screenBrightnessSettingDefaultFloat" format="float" type="dimen">0.50196</item>
 
     <!-- Screen brightness used to dim the screen while dozing in a very low power state.
          May be less than the minimum allowed brightness setting
          that can be set by the user. -->
-    <item name="config_screenBrightnessDozeFloat" format="float" type="dimen">0.1</item>
+    <integer name="config_screenBrightnessDoze">17</integer>
+    <item name="config_screenBrightnessDozeFloat" format="float" type="dimen">0.06666</item>
 
     <!-- Power Management: Specifies whether to decouple the auto-suspend state of the
          device from the display on/off state.
