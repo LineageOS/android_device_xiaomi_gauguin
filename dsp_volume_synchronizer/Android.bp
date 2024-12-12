@@ -1,0 +1,33 @@
+android_app {
+    name: "DSPVolumeSynchronizer",
+    certificate: "platform",
+    srcs: ["src/**/*.java"],
+    platform_apis: true,
+    privileged: true,
+    system_ext_specific: true,
+    static_libs: [
+        "androidx.core_core",
+        "SettingsLib",
+    ],
+
+    required: [
+        "privapp-permissions_com.xiaomi.dspvolume",
+        "config-com.xiaomi.dspvolume",
+    ],
+}
+
+prebuilt_etc {
+    name: "privapp-permissions_com.xiaomi.dspvolume",
+    sub_dir: "permissions",
+    src: "privapp-permissions_com.xiaomi.dspvolume.xml",
+    system_ext_specific: true,
+    filename_from_src: true,
+}
+
+prebuilt_etc {
+    name: "config-com.xiaomi.dspvolume",
+    sub_dir: "sysconfig",
+    src: "config-com.xiaomi.dspvolume.xml",
+    system_ext_specific: true,
+    filename_from_src: true,
+}
