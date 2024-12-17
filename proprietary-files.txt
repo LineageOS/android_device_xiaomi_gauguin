@@ -3,6 +3,11 @@
 # gauguin_CN: gauguin-user 12 RKQ1.200826.002 V14.0.2.0.SJSCNXM release-keys
 # gauguin_GL: gauguin-user 12 RKQ1.200826.002 V14.0.2.0.SJSMIXM release-keys
 
+# Current blobs with ELF checks disabled:
+# libOmxVideoDSMode, libOmxVpp depend on libOmxCore, which is a gnu makefile target
+# imsdatadaemon, libcne, libwqe, lowi-server, mutualex depend on libwpa_client, which is a gnu makefile target
+# libmiai_portraitsupernight, libmialgoengine, libwa_dof, libwa_refocus, libwa_rtdof, is unable to resolve its symbols
+
 # ACDB
 vendor/etc/acdbdata/Forte/Forte_Bluetooth_cal.acdb
 vendor/etc/acdbdata/Forte/Forte_General_cal.acdb
