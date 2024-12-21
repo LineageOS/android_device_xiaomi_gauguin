@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.android.settingsproviders.m2007J17g">
+
+    <overlay
+        android:targetPackage="com.android.providers.settings"
+        android:requiredSystemPropertyName="ro.boot.hwc"
+        android:requiredSystemPropertyValue="GLOBAL"
+        android:isStatic="true" />
+</manifest>

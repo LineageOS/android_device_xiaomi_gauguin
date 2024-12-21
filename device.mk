@@ -32,10 +32,18 @@ PRODUCT_PACKAGES += \
     GauguinSettingsOverlay \
     GauguinSystemUIOverlay \
     GauguinTelephonyOverlay \
-    GauguinWifiOverlay \
+    GauguinWifiOverlay
+
+PRODUCT_PACKAGES += \
     SettingsOverlayM2007J17C \
     SettingsOverlayM2007J17G \
-    SettingsOverlayM2007J17I
+    SettingsOverlayM2007J17I \
+    SettingsProviderOverlayM2007J17C \
+    SettingsProviderOverlayM2007J17G \
+    SettingsProviderOverlayM2007J17I \
+    WifiOverlayM2007J17C \
+    WifiOverlayM2007J17G \
+    WifiOverlayM2007J17I
 
 PRODUCT_ENFORCE_RRO_TARGETS := *
 

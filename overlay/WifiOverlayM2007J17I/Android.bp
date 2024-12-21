@@ -1,0 +1,4 @@
+runtime_resource_overlay {
+    name: "WifiOverlayM2007J17I",
+    product_specific: true,
+}
