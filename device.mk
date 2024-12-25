@@ -44,6 +44,9 @@ PRODUCT_PACKAGES += \
     WifiOverlayM2007J17G \
     WifiOverlayM2007J17I
 
+PRODUCT_PACKAGES += \
+    NcmTetheringOverlay
+
 PRODUCT_ENFORCE_RRO_TARGETS := *
 
 # Set support hide display cutout feature
