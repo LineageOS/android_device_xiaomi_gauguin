@@ -16,6 +16,41 @@
       "message": "put in hardware/xiaomi?",
       "revId": "c2aafdc8d5aa3e147db20a80725c988517dbaf60",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "e17d0297_6061ae05",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 25732
+      },
+      "writtenOn": "2025-01-10T14:48:14Z",
+      "side": 1,
+      "message": "I\u0027d place there a primary audio HAL wrapper, not this thing",
+      "parentUuid": "a266aa10_f8ae3d4b",
+      "revId": "c2aafdc8d5aa3e147db20a80725c988517dbaf60",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "e72722d6_316d3992",
+        "filename": "dsp_volume_synchronizer/src/com/xiaomi/dspvolume/VolumeListenerService.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 25732
+      },
+      "writtenOn": "2025-01-10T14:48:14Z",
+      "side": 1,
+      "message": "Is this thing CRLF?",
+      "revId": "c2aafdc8d5aa3e147db20a80725c988517dbaf60",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
