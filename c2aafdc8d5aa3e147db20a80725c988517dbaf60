@@ -36,6 +36,24 @@
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "052ddf88_1f3bfc68",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 29620
+      },
+      "writtenOn": "2025-01-10T15:36:18Z",
+      "side": 1,
+      "message": "To seba: you\u0027d better assign me or let me do/join that work if you want a rewrite. This is a bug from sm8150 period which affects a large population of xiaomi devices and apparently it\u0027s the first fix after 5yrs+, and nobody of you fixed in the past 5yrs.\n\nThe code isn\u0027t hard(also for cpp) but the idea and the process for debug is.\n\nIf something like \u003cyou just hold this commit and re-do a 100% “your-authored-commit” instead\u003e happened I would consider it\u0027s a disaster",
+      "parentUuid": "e17d0297_6061ae05",
+      "revId": "c2aafdc8d5aa3e147db20a80725c988517dbaf60",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "e72722d6_316d3992",
