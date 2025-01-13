@@ -296,6 +296,12 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.se.omapi.uicc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.se.omapi.uicc.xml
 
+# Partitions
+PRODUCT_PACKAGES += \
+    vendor_bt_firmware_mountpoint \
+    vendor_dsp_mountpoint \
+    vendor_firmware_mnt_mountpoint
+
 # Power
 PRODUCT_PACKAGES += \
     android.hardware.power-service.lineage-libperfmgr
