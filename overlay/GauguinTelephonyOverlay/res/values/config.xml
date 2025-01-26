@@ -28,9 +28,6 @@
     <!-- String indicating the package name of the device ImsService implementation for RCS -->
     <string name="config_ims_rcs_package">org.codeaurora.ims</string>
 
-    <!-- Package name for the call-based number verification app -->
-    <string name="platform_number_verification_package" translatable="false">com.google.android.gms</string>
-
     <!-- Whether or not to support RCS User Capability Exchange -->
     <bool name="config_rcs_user_capability_exchange_enabled">false</bool>
 
