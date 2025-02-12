@@ -42,12 +42,12 @@
 # Radio
 /vendor/bin/init\.radio\.sh                                             u:object_r:init_radio_exec:s0
 
-# Sysfs (Wakeup)
-/sys/devices/virtual/input/input[0-9]+/wakeup[0-9]+(/.*)?                  u:object_r:sysfs_wakeup:s0
-
 # Thermal
 /data/vendor/thermal(/.*)?                                              u:object_r:vendor_thermal_data_file:s0
 /vendor/bin/mi_thermald                                                 u:object_r:vendor_mi_thermald_exec:s0
+
+# Sysfs (Wakeup)
+/sys/devices/virtual/input/input[0-9]+/wakeup[0-9]+(/.*)?               u:object_r:sysfs_wakeup:s0
 
 # WiFi
 /data/vendor/mac_addr(/.*)?                                             u:object_r:vendor_wifi_vendor_data_file:s0
