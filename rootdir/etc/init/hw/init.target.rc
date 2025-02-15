@@ -102,8 +102,6 @@ on early-boot
 on boot
     chmod 0666 /dev/input/event2
 
-    write /dev/cpuset/audio-app/cpus 1-2
-
     # Set the default voltage to 5V
     setprop persist.vendor.cp.taper_term_mv 5000
     setprop persist.vendor.qg_cold_temp -150
