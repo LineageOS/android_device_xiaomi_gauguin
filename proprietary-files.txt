@@ -4,7 +4,6 @@
 # gauguin_GL: gauguin-user 12 RKQ1.200826.002 V14.0.2.0.SJSMIXM release-keys
 
 # Current blobs with ELF checks disabled:
-# imsdatadaemon, libcne, libwqe, lowi-server, mutualex depend on libwpa_client, which is a gnu makefile target
 # libmiai_portraitsupernight, libmialgoengine, libwa_dof, libwa_refocus, libwa_rtdof, is unable to resolve its symbols
 
 # ACDB
@@ -417,17 +416,17 @@ vendor/etc/init/init.batterysecret.rc
 # CNE
 vendor/app/CneApp/CneApp.apk
 vendor/bin/cnd
-vendor/bin/mutualex;DISABLE_CHECKELF
+vendor/bin/mutualex
 vendor/etc/cne/profileSlm.xml
 vendor/etc/cne/slm.conf
 vendor/etc/default-permissions/com.qualcomm.qti.cne.xml
 vendor/etc/init/cnd.rc
 vendor/etc/init/mutualex.rc
-vendor/lib64/libcne.so;DISABLE_CHECKELF
+vendor/lib64/libcne.so
 vendor/lib64/libcneapiclient.so
 vendor/lib64/libcneoplookup.so
 vendor/lib64/libwms.so
-vendor/lib64/libwqe.so;DISABLE_CHECKELF
+vendor/lib64/libwqe.so
 vendor/lib64/libxml.so
 vendor/lib64/vendor.qti.data.factory@2.0.so
 vendor/lib64/vendor.qti.data.factory@2.1.so
@@ -598,7 +597,7 @@ vendor/lib64/hw/android.hardware.gatekeeper@1.0-impl-qti.so
 
 # GNSS - from FP4
 vendor/bin/loc_launcher|f0b95b7d523d2785a3090c2598c4bbd6170f1ba1
-vendor/bin/lowi-server;DISABLE_CHECKELF|5dac21643422cc9f62aad5c79e0110241948f031
+vendor/bin/lowi-server|5dac21643422cc9f62aad5c79e0110241948f031
 vendor/bin/xtra-daemon|f9af378bf52e0e177ab9c91c4792c202fa8f25ed
 vendor/etc/vintf/manifest/vendor.qti.gnss@4.0-service.xml|6514b13f55abc0acc28e004c35ff93fb972d61a9
 vendor/lib64/hw/vendor.qti.gnss@4.0-impl.so|0f68732435cef39376a7b8db12e676a5f4394a49
@@ -690,7 +689,7 @@ system_ext/lib64/libimsmedia_jni.so;SYMLINK=system_ext/priv-app/ims/lib/arm64/li
 system_ext/lib64/vendor.qti.imsrtpservice@3.0.so
 system_ext/priv-app/ims/ims.apk
 vendor/bin/ims_rtp_daemon
-vendor/bin/imsdatadaemon;DISABLE_CHECKELF
+vendor/bin/imsdatadaemon
 vendor/bin/imsqmidaemon
 vendor/bin/imsrcsd
 vendor/etc/init/ims_rtp_daemon.rc
