@@ -30,7 +30,6 @@ The Redmi Note 9 Pro 5G / Mi 10T Lite 5G / Mi 10i 5G (codenamed _"gauguin"_) is 
 
 ```
 #
-# Copyright (C) 2021 The LineageOS Project
-#
+# SPDX-FileCopyrightText: The LineageOS Project
 # SPDX-License-Identifier: Apache-2.0
 #

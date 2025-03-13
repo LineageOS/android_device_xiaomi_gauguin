@@ -1,4 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!--
+     SPDX-FileCopyrightText: The Linux Foundation
+     SPDX-License-Identifier: BSD-3-Clause
+-->
 <resources>
 
     <!-- boolean indicating whether the WiFi chipset has 5GHz band support.
