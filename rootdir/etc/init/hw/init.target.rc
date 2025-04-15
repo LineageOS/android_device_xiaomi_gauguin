@@ -110,9 +110,6 @@ on boot && property:persist.vendor.usb.controller.default=*
 on charger
     start vendor.power_off_alarm
 
-    setprop persist.sys.usb.config mass_storage
-    setprop sys.usb.configfs 1
-    setprop vendor.usb.controller a600000.dwc3
     setprop vendor.setup.power 1
 
     # keep one LITTLE and one big
