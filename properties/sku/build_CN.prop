@@ -1,6 +1,6 @@
 # China model
 bluetooth.device.default_name=Redmi Note 9 Pro
-ro.boot.product.vendor.sku=nfc
+ro.boot.product.vendor.sku=china
 ro.product.odm.brand=Redmi
 ro.product.odm.device=gauguinpro
 ro.product.odm.model=M2007J17C

@@ -84,15 +84,22 @@ DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := \
     hardware/xiaomi/vintf/xiaomi_framework_compatibility_matrix.xml \
     vendor/lineage/config/device_framework_matrix.xml
 
-DEVICE_MANIFEST_FILE := \
-    $(DEVICE_PATH)/configs/vintf/manifest.xml \
-    $(DEVICE_PATH)/configs/vintf/manifest-no_nfc.xml
+# DEVICE_MANIFEST_FILE := $(DEVICE_PATH)/configs/vintf/manifest.xml
 DEVICE_MATRIX_FILE := hardware/qcom-caf/common/compatibility_matrix.xml
 
-DEVICE_MANIFEST_SKUS += nfc
-DEVICE_MANIFEST_NFC_FILES := \
+DEVICE_MANIFEST_SKUS += china global india
+
+DEVICE_MANIFEST_CHINA_FILES := \
     $(DEVICE_PATH)/configs/vintf/manifest.xml \
-    $(DEVICE_PATH)/configs/vintf/manifest-nfc.xml
+    $(DEVICE_PATH)/configs/vintf/manifest-china.xml
+
+DEVICE_MANIFEST_GLOBAL_FILES := \
+    $(DEVICE_PATH)/configs/vintf/manifest.xml \
+    $(DEVICE_PATH)/configs/vintf/manifest-global.xml
+
+DEVICE_MANIFEST_INDIA_FILES := \
+    $(DEVICE_PATH)/configs/vintf/manifest.xml \
+    $(DEVICE_PATH)/configs/vintf/manifest-india.xml
 
 # Media
 TARGET_USES_ION := true

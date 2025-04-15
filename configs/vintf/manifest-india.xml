@@ -1,4 +1,9 @@
 <manifest version="5.0" type="device" target-level="6">
+    <hal format="hidl">
+        <name>android.hardware.secure_element</name>
+        <transport>hwbinder</transport>
+        <fqname>@1.2::ISecureElement/SIM1</fqname>
+    </hal>
     <hal format="aidl" override="true">
         <name>android.hardware.nfc</name>
     </hal>
