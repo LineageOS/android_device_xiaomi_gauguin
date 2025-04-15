@@ -191,8 +191,12 @@ on property:vendor.setup.power=1
     write /proc/irq/212/smp_affinity_list 2
     write /proc/irq/58/smp_affinity_list 1
 
-on property:ro.boot.product.vendor.sku=nfc
+on property:ro.boot.product.vendor.sku=china
     enable qti_esepowermanager_service_1_1
+    enable secureelement-hal_1_2
+    enable vendor.nfc_hal_service
+
+on property:ro.boot.product.vendor.sku=global
     enable secureelement-hal_1_2
     enable vendor.nfc_hal_service
 

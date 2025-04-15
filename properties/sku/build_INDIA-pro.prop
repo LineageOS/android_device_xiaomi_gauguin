@@ -1,5 +1,6 @@
 # Indian pro model
 bluetooth.device.default_name=Mi 10i
+ro.boot.product.vendor.sku=india
 ro.product.odm.brand=Xiaomi
 ro.product.odm.device=gauguininpro
 ro.product.odm.model=M2007J17I
