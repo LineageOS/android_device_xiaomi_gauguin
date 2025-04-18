@@ -1,7 +1,3 @@
-# Audio
-audio.offload.buffer.size.kb=32
-audio.offload.gapless.enabled=true
-
 # Camera
 vendor.camera.aux.packagelist=org.codeaurora.snapcam,com.android.camera,org.lineageos.aperture,org.lineageos.aperture.dev
 
