@@ -49,5 +49,8 @@ persist.rmnet.data.enable=true
 # Time
 persist.timed.enable=true
 
+# WiFi
+wifi.interface=wlan0
+
 # Vendor
 ro.vendor.qti.va_aosp.support=1
