@@ -5,3 +5,4 @@ ro.product.odm.brand=Xiaomi
 ro.product.odm.device=gauguinin
 ro.product.odm.model=M2007J17I
 ro.product.mod_device=gauguin_in_global
+vendor.usb.product_string=Mi 10i
