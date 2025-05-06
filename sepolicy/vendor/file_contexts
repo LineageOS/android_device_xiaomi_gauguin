@@ -22,13 +22,9 @@
 
 # HALs
 /vendor/bin/hw/android\.hardware\.biometrics\.fingerprint-service\.xiaomi  u:object_r:hal_fingerprint_default_exec:s0
-/vendor/bin/hw/android\.hardware\.ir-service\.xiaomi                       u:object_r:hal_ir_default_exec:s0
 
 # IIO
 /sys/devices/platform/soc/c440000\.qcom,spmi/spmi-0/spmi0-02/c440000\.qcom,spmi:qcom,pm7250b@2:vadc@3100/iio:device[0-9](/.*?) u:object_r:vendor_sysfs_battery_supply:s0
-
-# IR devices
-/dev/lirc[0-9]+                                                         u:object_r:lirc_device:s0
 
 # LED
 /sys/devices/platform/soc/[a-z0-9]+.qcom,spmi/spmi-0/spmi0-0[0-9]/[a-z0-9]+.qcom,spmi:qcom,[a-z0-9]+@[0-9]:qcom,leds@d000/leds/white(/.*)?  u:object_r:sysfs_leds:s0
