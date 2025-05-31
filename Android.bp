@@ -16,22 +16,8 @@ soong_namespace {
 }
 
 install_symlink {
-    name: "sku_gauguin_china_audio_symlink",
-    installed_location: "etc/audio/sku_china",
-    symlink_target: "/vendor/etc",
-    vendor: true,
-}
-
-install_symlink {
-    name: "sku_gauguin_global_audio_symlink",
-    installed_location: "etc/audio/sku_global",
-    symlink_target: "/vendor/etc",
-    vendor: true,
-}
-
-install_symlink {
-    name: "sku_gauguin_india_audio_symlink",
-    installed_location: "etc/audio/sku_india",
+    name: "sku_gauguin_audio_symlink",
+    installed_location: "etc/audio/sku_nfc",
     symlink_target: "/vendor/etc",
     vendor: true,
 }
