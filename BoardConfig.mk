@@ -53,7 +53,7 @@ BOARD_RAMDISK_USE_LZ4 := true
 
 TARGET_KERNEL_CLANG_VERSION := r530567
 TARGET_KERNEL_SOURCE := kernel/xiaomi/gauguin
-TARGET_KERNEL_CONFIG := gauguin_defconfig
+TARGET_KERNEL_CONFIG := vendor/lito-perf_defconfig vendor/xiaomi/gauguin.config
 
 # Platform
 TARGET_BOARD_PLATFORM := lito
