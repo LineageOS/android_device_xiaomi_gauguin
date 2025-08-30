@@ -90,9 +90,6 @@ DEVICE_MANIFEST_NFC_FILES := \
     $(DEVICE_PATH)/configs/vintf/manifest.xml \
     $(DEVICE_PATH)/configs/vintf/manifest-nfc.xml
 
-# Media
-TARGET_USES_ION := true
-
 # Metadata
 BOARD_USES_METADATA_PARTITION := true
 
