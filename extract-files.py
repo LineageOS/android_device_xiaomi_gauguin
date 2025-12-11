@@ -76,6 +76,8 @@ blob_fixups: blob_fixups_user_type = {
         .sig_replace('E7 09 00 94', '1F 20 03 D5'),
     'vendor/lib64/libwvhidl.so': blob_fixup()
         .add_needed('libcrypto_shim.so'),
+    'vendor/lib64/libdpps.so': blob_fixup()
+        .replace_needed('libtinyxml2.so', 'libtinyxml2-v34.so'),
 }  # fmt: skip
 
 module = ExtractUtilsModule(
