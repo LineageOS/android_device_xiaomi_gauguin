@@ -127,6 +127,7 @@ ro.surface_flinger.set_touch_timer_ms=300
 vendor.display.idle_time=1100
 
 # Display (Surface Flinger)
+ro.surface_flinger.blur_disabled_by_default=true
 ro.surface_flinger.force_hwc_copy_for_virtual_displays=true
 ro.surface_flinger.has_wide_color_display=true
 ro.surface_flinger.has_HDR_display=true
