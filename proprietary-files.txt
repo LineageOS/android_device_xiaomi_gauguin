@@ -1,5 +1,5 @@
 # All unpinned blobs are extracted from gauguinin-user 12 RKQ1.200826.002 V14.0.3.0.SJSINXM release-keys.
-# FP4 : Fairphone/FP4eea/FP4:13/TKQ1.230127.002/TP1V:user/release-keys
+# FP4 : Fairphone/FP4eea/FP4:11/FP4.QREL.14.28.3/14.28.3:user/release-keys
 # gauguin_CN: gauguin-user 12 RKQ1.200826.002 V14.0.2.0.SJSCNXM release-keys
 # gauguin_GL: gauguin-user 12 RKQ1.200826.002 V14.0.2.0.SJSMIXM release-keys
 
@@ -482,11 +482,11 @@ vendor/lib64/libdisplayqos.so|15701f18257c43be5657bbd867a8acf1f469e373
 vendor/lib64/libdisplayskuutils.so|ac4f2231f098c03824844799106685bf81f97782
 vendor/lib64/libhdr_tm.so|4be3cfff1ef40cbc6ad329b79c60881263aa6723
 vendor/lib64/libqseed3.so|c9fb729cf48278d0c87d27c0af17ae3a8ccb1bf7
-vendor/lib64/libsdm-color.so|d4e008d6dfca0b5f9bbf5e3b583f33e2606460e4
+vendor/lib64/libsdm-color.so|e6ab2eb6155499cdc401480aef6b017abf9c6186
 vendor/lib64/libsdm-colormgr-algo.so|1fb7f3cb11557bbf677afb5d6eda0e4e9fd3ac58
-vendor/lib64/libsdm-diag.so|d602a56edde3fb2cf7de81d5ab18ef2ef3cf3814
+vendor/lib64/libsdm-diag.so|485ddce0e07299ede0960dc69f74a3b5532b515a
 vendor/lib64/libsdm-disp-vndapis.so|2f1abd975b1f1dbabcc410e56c29ac296adcc411
-vendor/lib64/libsdmextension.so|f2ab90d1880fd30a6673110ad9f36cf93aebd5b9
+vendor/lib64/libsdmextension.so|14d6992e63abcdef7c64ae3318513e138275d529
 vendor/lib64/libtinyxml2_1.so|fb0a2b16e5cfd28515268edc5c2345190d1ef4e5
 
 # Display Calibration
@@ -496,13 +496,13 @@ vendor/etc/qdcm_calib_data_xiaomi_36_02_0a_video_mode_dsc_dsi_panel.xml
 vendor/etc/qdcm_calib_data_xiaomi_42_02_0b_video_mode_dsc_dsi_panel.xml
 
 # Display Postprocessing - from FP4
-vendor/bin/hw/vendor.display.color@1.0-service|1fa47c2d3fff52c362848c59dbc40b4073c59ea9
+vendor/bin/hw/vendor.display.color@1.0-service|0e8bf765c72173083d34e3faf658edaec752ee7d
 vendor/bin/ppd|c478fa8957564bf1b2649b6ba80c07f72b0b318f
 vendor/bin/qdcmss|536c34abfbf7833df440bfcd264bacdc88318067
 vendor/etc/init/qdcmss.rc|53d78d686678c4f923a9ec4ace7d4d3575b13788
 vendor/etc/init/vendor.display.color@1.0-service.rc|5ad673f879b3685a0e79b5633437e5499cb94f48
 vendor/lib64/libdisp-aba.so|894b0fe1ace5effb471ebb7437cd590a096e47d8
-vendor/lib64/libdpps.so|02538edc4f214b3d6018031aa8460efbc1760223
+vendor/lib64/libdpps.so|bdf7f1f679187e03a9db9f803ea21171527e0da7|5bb28108c6c1f97383ad8ee68a3b9eb458e24bec
 vendor/lib64/vendor.display.color@1.0.so|f1f7d91884c8e3c9ea300e67f5df91057094de40
 vendor/lib64/vendor.display.color@1.1.so|e7ab973147c3e03e31efacee13e8d8a9c841eb7b
 vendor/lib64/vendor.display.color@1.2.so|fe9ec904459b7675297e5ef6883ae98b438fb77f
@@ -597,34 +597,37 @@ vendor/lib64/hw/android.hardware.gatekeeper@1.0-impl-qti.so
 
 # GNSS - from FP4
 vendor/bin/loc_launcher|f0b95b7d523d2785a3090c2598c4bbd6170f1ba1
-vendor/bin/lowi-server|5dac21643422cc9f62aad5c79e0110241948f031
-vendor/bin/xtra-daemon|f9af378bf52e0e177ab9c91c4792c202fa8f25ed
-vendor/etc/vintf/manifest/vendor.qti.gnss@4.0-service.xml|6514b13f55abc0acc28e004c35ff93fb972d61a9
-vendor/lib64/hw/vendor.qti.gnss@4.0-impl.so|0f68732435cef39376a7b8db12e676a5f4394a49
-vendor/lib64/libaoa.so|6aacf99d44a05c80bf77ee01ac21da20ce98368d
+vendor/bin/lowi-server|b26e4664f1a9d110eefc7af27bf5c353720e86e2
+vendor/bin/xtra-daemon|ef6026ae36dbcaafe0ac21f01adf64f2dc5b5a36
+vendor/etc/vintf/manifest/vendor.qti.gnss@4.3-service.xml|7595c487d8096e8f759d3025c3ee59d351b42709
+vendor/lib64/hw/vendor.qti.gnss@4.3-impl.so|97e0b3c1cf2ddc541ad2623997ef3c6adda660ff
+vendor/lib64/libaoa.so|a0c7e2a220bed472d37d3bc4e56b1975935d0048
 vendor/lib64/libcdfw.so|76aa65aea92ef92e0c4e4a6700c049d5de549c18
 vendor/lib64/libcdfw_remote_api.so|e43217af385097ea8d939a7c0cc60c3e092ad086
-vendor/lib64/libdataitems.so|9b344d4f91166cf6c9ccd0acceb5df08c9c4c650
-vendor/lib64/libizat_client_api.so|4a982ffe253557b58934df0e9278f97fef5862f2
-vendor/lib64/libizat_core.so|0f809a966fac50831d5ac7a6d379ffd2afc572fb
-vendor/lib64/liblbs_core.so|83ee6243715eb7261beca1b5a44dc5221ecdc028
-vendor/lib64/libloc_api_v02.so|17dd11173437bf194f87154144d3a65705c47a9a
-vendor/lib64/libloc_api_wds.so|0f506584fe78cc1be3cf0f022b4314d2575796b1
-vendor/lib64/liblocationservice.so|148aaee8ce013debbd2571679bb1a81800eeb270
-vendor/lib64/liblocationservice_glue.so|5087838ca49c474063785ad361d35f2cead2c873
-vendor/lib64/liblowi_client.so|b388eefaf096fccb254302b7dc0bac29f3db6f6b
-vendor/lib64/liblowi_wifihal.so|0e55bc598b3bbbeba4bd8bdf000df38131614a5b
-vendor/lib64/libqcc_file_agent.so|0345fc438536bc11f3e65999e0b750efb19ba9f9
+vendor/lib64/libdataitems.so|dab11d82464bfa89ed1ccdf3aff5a8c402dc4f87
+vendor/lib64/libizat_client_api.so|f0dd48c0540f8c84ffb665c4b376fce93bbd0ade
+vendor/lib64/libizat_core.so|4b9644f9ce9142d461682c5d132bb5d252d1c542
+vendor/lib64/liblbs_core.so|f74b0507c98001dd013f41bb1742a5c2c2359816
+vendor/lib64/libloc_api_v02.so|d091631e57d93caea9dfd02d353bb9a6dea81b75
+vendor/lib64/libloc_api_wds.so|d359c51a23fa6706c979547196086a816aeeb556
+vendor/lib64/liblocationservice.so|2c4243dc51864a9c4f8b01ce4dd7b6560a78bde1
+vendor/lib64/liblocationservice_glue.so|afc93b3326dfafbdce6a35085cbea9454190d5d0
+vendor/lib64/liblowi_client.so|8d310ca17c90f24dea611acacf026a6282a25035
+vendor/lib64/liblowi_wifihal.so|63aaef870f65fcf7f6349ac1e3e8518111fbce5c
+vendor/lib64/libqcc_file_agent.so|8c335af4e9502e12a3995b78e8610b7b8676ac80
 vendor/lib64/libslimclient.so|92d00c9a720d53309c10766a8d72a6c3425a95b7
-vendor/lib64/libxtadapter.so|b46b0ad003e9738e7ee9d6e51722f63505c47323
+vendor/lib64/libxtadapter.so|abc08be948c12677e262b18f5be0e4db4f03432c
 vendor/lib64/vendor.qti.gnss@1.0.so|50f716e9e4295a18b93fc674f2b6c132053a8246
 vendor/lib64/vendor.qti.gnss@1.1.so|3b771c3bb5221fb1b27fcbb355c339e582771616
 vendor/lib64/vendor.qti.gnss@1.2.so|a470538976d60f81dbae201734ffd96dd3bcf037
 vendor/lib64/vendor.qti.gnss@2.0.so|bdd134a8496c2b62e3ef69e66c8e698537280345
 vendor/lib64/vendor.qti.gnss@2.1.so|eaeec862a315de1729b7497dacd2441fe781b9e7
 vendor/lib64/vendor.qti.gnss@3.0.so|1c4e2b5e81031140ab1230e5fc00b35c1f085834
-vendor/lib64/vendor.qti.gnss@4.0-service.so|6d006555dce2da619f394b42e24104d76f79f36e
 vendor/lib64/vendor.qti.gnss@4.0.so|8ae256c3a5f69914a5aab20e4cbaba3be54c7f15
+vendor/lib64/vendor.qti.gnss@4.1.so|006ae9f001bf3c64cfd974787bf2ac4b170816cd
+vendor/lib64/vendor.qti.gnss@4.2.so|7202f4a05bc0eea9d704c915582671582fe144e8
+vendor/lib64/vendor.qti.gnss@4.3-service.so|2cd7c121074d82050eb67b0ed40272632c3a3d90
+vendor/lib64/vendor.qti.gnss@4.3.so|7ce1927bce2078ebe730186a5e7e095442b7c7b3
 
 # Graphics
 vendor/lib/egl/eglSubDriverAndroid.so
