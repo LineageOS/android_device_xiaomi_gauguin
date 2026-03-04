@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-     Copyright (C) 2025 PixelOS
+     SPDX-FileCopyrightText: The LineageOS Project
      SPDX-License-Identifier: Apache-2.0
 -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.android.launcher.overlay.gauguin">
-    <overlay
-        android:isStatic="true"
-        android:priority="550"
-        android:targetPackage="com.android.launcher3" />
+          package="com.android.launcher.overlay.gauguin">
+    <overlay android:targetPackage="com.android.launcher3"
+             android:isStatic="true"
+             android:priority="550" />
 </manifest>
