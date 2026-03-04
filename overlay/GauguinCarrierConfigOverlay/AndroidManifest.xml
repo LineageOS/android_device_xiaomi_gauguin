@@ -1,13 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-      SPDX-FileCopyrightText: The LineageOS Project
-      SPDX-License-Identifier: Apache-2.0
+     SPDX-FileCopyrightText: The LineageOS Project
+     SPDX-License-Identifier: Apache-2.0
 -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.android.carrierconfig.overlay.gauguin">
-
-    <overlay
-        android:isStatic="true"
-        android:priority="800"
-        android:targetPackage="com.android.carrierconfig" />
+          package="com.android.carrierconfig.overlay.gauguin">
+    <overlay android:targetPackage="com.android.carrierconfig"
+             android:isStatic="true"
+             android:priority="800" />
 </manifest>
