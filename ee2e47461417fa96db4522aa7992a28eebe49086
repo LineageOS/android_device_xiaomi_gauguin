@@ -33,6 +33,24 @@
       "message": "You are also adding media_codecs_performance.xml without anything copying it?",
       "revId": "ee2e47461417fa96db4522aa7992a28eebe49086",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "661c798e_3569aa7a",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 34205
+      },
+      "writtenOn": "2026-03-05T07:12:01Z",
+      "side": 1,
+      "message": "The device makefile already copies everything from within the media directory.",
+      "parentUuid": "cbf427b4_098411a6",
+      "revId": "ee2e47461417fa96db4522aa7992a28eebe49086",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
