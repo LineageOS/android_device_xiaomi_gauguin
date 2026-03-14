@@ -1,3 +1,4 @@
+#!/bin/env python3
 #
 # SPDX-FileCopyrightText: The Android Open Source Project
 # SPDX-FileCopyrightText: The MoKee Open Source Project
