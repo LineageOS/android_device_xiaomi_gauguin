@@ -22,6 +22,30 @@
       },
       "revId": "1d9df0341e427c476792b2808162f2472d3d6cef",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "eb410332_10bd3739",
+        "filename": "proprietary-files.txt",
+        "patchSetId": 2
+      },
+      "lineNbr": 2,
+      "author": {
+        "id": 34205
+      },
+      "writtenOn": "2026-04-25T22:44:05Z",
+      "side": 1,
+      "message": "That\u0027s the one I found in vendor/build.prop of the latest firmware",
+      "parentUuid": "4eeb400f_29bb795b",
+      "range": {
+        "startLine": 2,
+        "startChar": 29,
+        "endLine": 2,
+        "endChar": 31
+      },
+      "revId": "1d9df0341e427c476792b2808162f2472d3d6cef",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ],
   "submitRequirementResults": [
