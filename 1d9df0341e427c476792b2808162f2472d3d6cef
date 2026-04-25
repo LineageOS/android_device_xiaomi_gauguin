@@ -46,6 +46,30 @@
       },
       "revId": "1d9df0341e427c476792b2808162f2472d3d6cef",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "5938c3b0_d1c03482",
+        "filename": "proprietary-files.txt",
+        "patchSetId": 2
+      },
+      "lineNbr": 2,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2026-04-25T23:12:15Z",
+      "side": 1,
+      "message": "vendor/build.prop is not right - that\u0027s often a prebuilt form a far older version (shipping), use product/etc/build.prop",
+      "parentUuid": "eb410332_10bd3739",
+      "range": {
+        "startLine": 2,
+        "startChar": 29,
+        "endLine": 2,
+        "endChar": 31
+      },
+      "revId": "1d9df0341e427c476792b2808162f2472d3d6cef",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ],
   "submitRequirementResults": [
