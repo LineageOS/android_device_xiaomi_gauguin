@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     SPDX-FileCopyrightText: The LineageOS Project
+     SPDX-License-Identifier: Apache-2.0
+-->
+<resources>
+    <!-- Align visible start-side content with the end-side inset. -->
+    <dimen name="status_bar_padding_start">37px</dimen>
+</resources>

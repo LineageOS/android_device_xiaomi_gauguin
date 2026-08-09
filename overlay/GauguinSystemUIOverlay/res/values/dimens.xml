@@ -4,8 +4,8 @@
      SPDX-License-Identifier: Apache-2.0
 -->
 <resources>
-    <!-- the padding on the top of the statusbar (usually 0) -->
-    <dimen name="status_bar_padding_top">8dp</dimen>
+    <!-- Center status bar content vertically within the display cutout. -->
+    <dimen name="status_bar_padding_top">0dp</dimen>
 
     <!-- The padding on the side of the navigation bar. Must be greater than or equal to
          navigation_extra_key_width -->
