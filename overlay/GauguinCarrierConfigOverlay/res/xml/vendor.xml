@@ -2338,6 +2338,8 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
     </carrier_config>
 
     <carrier_config>
+        <!-- Show carrier name with the localized Wi-Fi Calling suffix. -->
+        <int name="wfc_spn_format_idx_int" value="1" />
         <string-array name="ratchet_rat_families" num="3">
         <item value="1,2" />
         <item value="7,8,12" />
