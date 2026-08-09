@@ -5,3 +5,9 @@
 
 # Lineage Health
 /sys/class/power_supply/battery input_suspend        0660    system  system
+
+# Notification LED
+/sys/class/leds/white delay_on                       0640    system  system
+/sys/class/leds/white delay_off                      0640    system  system
+/sys/class/leds/white breath                         0640    system  system
+/sys/class/leds/white trigger                        0640    system  system
