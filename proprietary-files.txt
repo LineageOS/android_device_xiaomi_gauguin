@@ -1,5 +1,5 @@
 # All unpinned blobs are extracted from gauguinin-user 12 RKQ1.200826.002 V14.0.3.0.SJSINXM release-keys.
-# FP4 : Fairphone/FP4eea/FP4:15/FP4.SREL.15.14.4/15.14.4:user/release-keys
+# FP4 : Fairphone/FP4eea/FP4:15/FP4.QREL.15.20.0/15.20.0:user/release-keys
 # gauguin_CN: gauguin-user 12 RKQ1.200826.002 V14.0.2.0.SJSCNXM release-keys
 # gauguin_GL: gauguin-user 12 RKQ1.200826.002 V14.0.2.0.SJSMIXM release-keys
 
@@ -775,23 +775,23 @@ vendor/lib/libmulawdec.so
 vendor/bin/npu_launcher
 vendor/lib64/libnpu.so
 
-# Media
-system_ext/lib/libmmosal.so
-system_ext/lib/libmmparser_lite.so
-vendor/lib/libmmosal.so;MODULE_SUFFIX=_vendor
+# Media - from FP4
+system_ext/lib64/libmmosal.so|43e0618b504500c348d974426eed3b234818a744
+system_ext/lib64/libmmparser_lite.so|32cff38f557291b5e9d9e721590009095f25153d
+vendor/lib/libmmosal.so;MODULE_SUFFIX=_vendor|dd0d1a01f4934e519d86c1e43ab2cfd2cc11f524
 
-# Media C2
-vendor/bin/hw/vendor.qti.media.c2@1.0-service
-vendor/etc/init/vendor.qti.media.c2@1.0-service.rc
-vendor/etc/seccomp_policy/codec2.vendor.base-arm.policy
-vendor/etc/seccomp_policy/codec2.vendor.ext-arm.policy
-vendor/etc/vintf/manifest/c2_manifest_vendor.xml
-vendor/lib/libqcodec2_base.so
-vendor/lib/libqcodec2_basecodec.so
-vendor/lib/libqcodec2_core.so
-vendor/lib/libqcodec2_platform.so
-vendor/lib/libqcodec2_utils.so
-vendor/lib/libqcodec2_v4l2codec.so
+# Media C2 - from FP4
+vendor/bin/hw/vendor.qti.media.c2@1.0-service|c170ebc5a0416f609186639125132b87a5650ef8
+vendor/etc/init/vendor.qti.media.c2@1.0-service.rc|11209316ba8aae64b689217bc13b0804f6620678
+vendor/etc/seccomp_policy/codec2.vendor.base-arm.policy|3c396a276dfb589501105e7158459fa2d644607e
+vendor/etc/seccomp_policy/codec2.vendor.ext-arm.policy|a134d3d5d74294ca8164056b42389b1c7dbb2b65
+vendor/etc/vintf/manifest/c2_manifest_vendor.xml|0e532bf1c7d6a0ee2e7e03a9cc3283a5bffc7f8e
+vendor/lib/libqcodec2_base.so|5bec0dec355c90d2a9739105b6d9810291ab9995
+vendor/lib/libqcodec2_basecodec.so|4013b59c405701bcd9a380f6009924522fe99976
+vendor/lib/libqcodec2_core.so|41bf5b1c5c7c00796d7bda68d7e637ae58e57b37
+vendor/lib/libqcodec2_platform.so|02a602d167bfc4d09fe64132a16c0cb594aafad9
+vendor/lib/libqcodec2_utils.so|867b95c219f59126bbf19bb63fba43f9f7a30462
+vendor/lib/libqcodec2_v4l2codec.so|0f48aa047e9631c5a1f656080eec1dab8a3d1216
 
 # Media configs
 vendor/etc/media_lagoon/video_system_specs.json
